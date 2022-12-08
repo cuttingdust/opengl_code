@@ -289,14 +289,18 @@ int main(int, char **)
         glClearColor(0.1f, 0.1f, 0.1f, 1.0f);///状态设置
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); ///状态使用
         
-        lightPos.x = sin(glfwGetTime()) * 3;
-        lightPos.z = cos(glfwGetTime()) * 3;
+//        lightPos.x = sin(glfwGetTime()) * 3;
+//        lightPos.z = cos(glfwGetTime()) * 3;
         
         ourShader.use();
-        ourShader.setVec3("light.direction", -0.2f, -1.0f, -0.3f);
+        ourShader.setVec3("light.position", lightPos);
         ourShader.setVec3("light.ambient", 0.3f, 0.3f, 0.3f);
         ourShader.setVec3("light.diffuse", 0.7f, 0.7f, 0.7f);
         ourShader.setVec3("light.specular", 1.0f, 1.0f, 1.0f);
+        
+        ourShader.setFloat("light.constant", 1.0f);
+        ourShader.setFloat("light.linear", 0.09f);
+        ourShader.setFloat("light.quadratic", 0.032f);
         
         ourShader.setFloat("material.shininess", 64.0f);
 
@@ -337,14 +341,14 @@ int main(int, char **)
         }
         
         // also draw the lamp object
-//            lightShader.use();
-//            lightShader.setMat4("projection", projection);
-//            lightShader.setMat4("view", view);
-//            model = glm::mat4(1.0f);
-//            model = glm::translate(model, lightPos);
-//            model = glm::scale(model, glm::vec3(0.2f)); // a smaller cube
-//            lightShader.setMat4("model", model);
-//            glDrawArrays(GL_TRIANGLES, 0, 36);
+            lightShader.use();
+            lightShader.setMat4("projection", projection);
+            lightShader.setMat4("view", view);
+            model = glm::mat4(1.0f);
+            model = glm::translate(model, lightPos);
+            model = glm::scale(model, glm::vec3(0.2f)); // a smaller cube
+            lightShader.setMat4("model", model);
+            glDrawArrays(GL_TRIANGLES, 0, 36);
 
         
         
