@@ -264,7 +264,7 @@ int main(int, char **)
         lightShader.setMat4("projection", projection);
         lightShader.setMat4("view", view);
         lightShader.setVec3("lightColor", lightColor);
-        glDrawArrays(GL_TRIANGLES, 0, 32);
+        glDrawArrays(GL_TRIANGLES, 0, 36);
 
         
 

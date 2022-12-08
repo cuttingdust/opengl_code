@@ -322,7 +322,7 @@ int main(int, char **)
         lightShader.setMat4("model", model);
         lightShader.setMat4("projection", projection);
         lightShader.setMat4("view", view);
-        glDrawArrays(GL_TRIANGLES, 0, 32);
+        glDrawArrays(GL_TRIANGLES, 0, 36);
 
         
 
