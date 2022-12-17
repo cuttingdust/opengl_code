@@ -1,4 +1,0 @@
-Target dependency graph (2 targets)
-ZERO_CHECK in HelloGL, no dependencies
-NightlyMemoryCheck in HelloGL, depends on:
-ZERO_CHECK in HelloGL (explicit)

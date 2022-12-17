@@ -1,9 +1,0 @@
-/Users/handabao/MyFile/code/opengl/20_02_blending/build/CMakeFiles/HelloGL.dir
-/Users/handabao/MyFile/code/opengl/20_02_blending/build/CMakeFiles/Experimental.dir
-/Users/handabao/MyFile/code/opengl/20_02_blending/build/CMakeFiles/Nightly.dir
-/Users/handabao/MyFile/code/opengl/20_02_blending/build/CMakeFiles/Continuous.dir
-/Users/handabao/MyFile/code/opengl/20_02_blending/build/CMakeFiles/NightlyMemoryCheck.dir
-/Users/handabao/MyFile/code/opengl/20_02_blending/build/CMakeFiles/package.dir
-/Users/handabao/MyFile/code/opengl/20_02_blending/build/CMakeFiles/RUN_TESTS.dir
-/Users/handabao/MyFile/code/opengl/20_02_blending/build/CMakeFiles/ALL_BUILD.dir
-/Users/handabao/MyFile/code/opengl/20_02_blending/build/CMakeFiles/ZERO_CHECK.dir
