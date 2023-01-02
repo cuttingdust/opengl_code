@@ -1,0 +1,82 @@
+{
+  "_buildCommand2" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : false,
+    "targets" : null
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "17c28c7ca18625f2fafcf2ea0e1afaf0406e4d9221357f90cb7701a40eb62832"
+    },
+    {
+      "guid" : "17c28c7ca18625f2fafcf2ea0e1afaf0691a7ab6692b6f7365bb06a856da0887"
+    },
+    {
+      "guid" : "17c28c7ca18625f2fafcf2ea0e1afaf027e47dcf3e5b1755a550c152f6bcad98"
+    },
+    {
+      "guid" : "17c28c7ca18625f2fafcf2ea0e1afaf004c2ae45d13bdea11c058f39f109b890"
+    },
+    {
+      "guid" : "17c28c7ca18625f2fafcf2ea0e1afaf0fe45604b7d52d9ad0e5c7b614cb1a5e2"
+    },
+    {
+      "guid" : "17c28c7ca18625f2fafcf2ea0e1afaf03185ccbe5ba93044ee38df8a21709f6c"
+    },
+    {
+      "guid" : "17c28c7ca18625f2fafcf2ea0e1afaf0f43f7484c93f25c56fb4cd8e63e46171"
+    },
+    {
+      "guid" : "17c28c7ca18625f2fafcf2ea0e1afaf050ee1e6132ce37bc230bf81bc97c1987"
+    },
+    {
+      "guid" : "17c28c7ca18625f2fafcf2ea0e1afaf0cef3bda3ad755ec312062b2ec292478f"
+    }
+  ],
+  "containerPath" : "/Users/handabao/MyFile/code/opengl/32_01_shadow/build/HelloGL.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx13.1",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/handabao/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/handabao/Library/Developer/Xcode/DerivedData/HelloGL-azgnxpejigawqdbycmfukmoroali/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/handabao/Library/Developer/Xcode/DerivedData/HelloGL-azgnxpejigawqdbycmfukmoroali/Index.noindex/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}
