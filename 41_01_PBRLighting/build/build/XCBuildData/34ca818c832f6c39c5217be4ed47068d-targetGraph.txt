@@ -1,7 +1,0 @@
-Target dependency graph (3 targets)
-ZERO_CHECK in HelloGL, no dependencies
-HelloGL in HelloGL, depends on:
-ZERO_CHECK in HelloGL (explicit)
-ALL_BUILD in HelloGL, depends on:
-HelloGL in HelloGL (explicit)
-ZERO_CHECK in HelloGL (explicit)
