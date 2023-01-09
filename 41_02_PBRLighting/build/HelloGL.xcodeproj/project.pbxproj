@@ -1,0 +1,1943 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		0C1B851B8D19442D995771DB /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1ECF6A85396145BB83737292 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				003C8D08B0008F35F218E126 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+		184D6178942D4A9BAEB6926F /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E159C8ECC73E485C9B6C1119 /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				571234464C2A5D0D43F1AB42 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				4B064DD236DC4A4DBA2B5D89 /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+		1FBDCC219CEB4BBBBE38E78E /* NightlyMemoryCheck */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E934295A31FC47A18A83C91D /* Build configuration list for PBXAggregateTarget "NightlyMemoryCheck" */;
+			buildPhases = (
+				099966CFADCE118ED85804F2 /* Generate CMakeFiles/NightlyMemoryCheck */,
+			);
+			dependencies = (
+				3AF2175C64AC45ED92D078A7 /* PBXTargetDependency */,
+			);
+			name = NightlyMemoryCheck;
+			productName = NightlyMemoryCheck;
+		};
+		66CB63E51C274558A847A87C /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D812563100EC40CBBBCB9E39 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				81B1BB01F2324F9F40EB6803 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				383A02A0E795463B975A78A0 /* PBXTargetDependency */,
+				2962C51C26114430AE09BABD /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		6E7CB212085046A0A765C2F0 /* Nightly */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4F4F950BE05D4C19A8073EBF /* Build configuration list for PBXAggregateTarget "Nightly" */;
+			buildPhases = (
+				38F82B9D85E9A98AF452FABE /* Generate CMakeFiles/Nightly */,
+			);
+			dependencies = (
+				8A52D576C51045799BD45826 /* PBXTargetDependency */,
+			);
+			name = Nightly;
+			productName = Nightly;
+		};
+		B6175FB84BA04CD0983824CB /* Experimental */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 62054C7203EE4996A47B5698 /* Build configuration list for PBXAggregateTarget "Experimental" */;
+			buildPhases = (
+				6943A8BDD2605F2B80CC3CD8 /* Generate CMakeFiles/Experimental */,
+			);
+			dependencies = (
+				EE73E1FB7EC6462BBA1030E8 /* PBXTargetDependency */,
+			);
+			name = Experimental;
+			productName = Experimental;
+		};
+		BB05D18BE9A241A6B3F30304 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8AFFE243782F42CB9A98A542 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				ECA6FD8E018EF7911B9E3C29 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		F28B22DB1E9B4B3F8F68AF4D /* Continuous */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 70C5BDAE74364F659988C4EB /* Build configuration list for PBXAggregateTarget "Continuous" */;
+			buildPhases = (
+				C4C377029831841A068EE2A0 /* Generate CMakeFiles/Continuous */,
+			);
+			dependencies = (
+				A8550B2A32A840B3A2964ABC /* PBXTargetDependency */,
+			);
+			name = Continuous;
+			productName = Continuous;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0C2E86D7108E41E2AED5CC27 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/src/shader.cpp */ = {isa = PBXBuildFile; fileRef = D0C7F35CD9264E3DBCBAA7F2 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/src/shader.cpp */; };
+		18EA7542364A4A65AA3B71B6 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/screenShader.vs */ = {isa = PBXBuildFile; fileRef = E37E60A3BB894E4B8AA87489 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/screenShader.vs */; };
+		1D82AE4D331844EDB3EAC1E3 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/g_buffer.vs */ = {isa = PBXBuildFile; fileRef = 92C54A9FFE5E4968A85E362E /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/g_buffer.vs */; };
+		1D82CAA9E7DF4CFDBE3FCFD9 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/glad/src/glad.c */ = {isa = PBXBuildFile; fileRef = ABD74E10CF564CE595B16F4C /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/glad/src/glad.c */; };
+		3424146DAD9D4CF9BBDF9DA2 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/ssao.vs */ = {isa = PBXBuildFile; fileRef = 9027F83B339D4FD0B798217E /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/ssao.vs */; };
+		3C2A10D7076B4F28B9404D93 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/src/main.cpp */ = {isa = PBXBuildFile; fileRef = 08C52AFA5F02400C911F8017 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/src/main.cpp */; };
+		3CA4B5D44C4A4F97985651D4 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/skyboxShader.fs */ = {isa = PBXBuildFile; fileRef = E2044C5937A949E98A78B0CE /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/skyboxShader.fs */; };
+		3DA776CCB00348BC90BB0D51 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/ssao.fs */ = {isa = PBXBuildFile; fileRef = 3BDEF738EF3B46459B681011 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/ssao.fs */; };
+		3FC97C8B89D14DBA804FD6B4 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/asteroids.fs */ = {isa = PBXBuildFile; fileRef = B20B21D3F00C47929530FE80 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/asteroids.fs */; };
+		4477A32A37E440179A7CCA67 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/simpleDepthShader.vs */ = {isa = PBXBuildFile; fileRef = E1DF6C426FAD4A45832104D3 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/simpleDepthShader.vs */; };
+		456C277505674634B091DE4A /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/ssao_lighting.fs */ = {isa = PBXBuildFile; fileRef = 6A5FCC37CF5C45838B58344E /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/ssao_lighting.fs */; };
+		46EBEA605B4942FB9683220D /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/include/camera.h */ = {isa = PBXBuildFile; fileRef = E1A763D714094141B10B0FAA /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/include/camera.h */; };
+		4A44772BB948450EAD6756A3 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/ssao_geometry.vs */ = {isa = PBXBuildFile; fileRef = D2C4E9BCE32D4CD89904D3D0 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/ssao_geometry.vs */; };
+		4C145EC33B7E4A91AB61D9B5 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/blur.vs */ = {isa = PBXBuildFile; fileRef = 3B68403BDCE7427393180E64 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/blur.vs */; };
+		532565ED61714AE4B092C602 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/lighting.vs */ = {isa = PBXBuildFile; fileRef = 482F2CA8DDD245AFB78BE118 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/lighting.vs */; };
+		58F94ACA24A04D33B9DEB8F1 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/shaderSingleColor.fs */ = {isa = PBXBuildFile; fileRef = 38962F4A35BF4AB48AB3EB21 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/shaderSingleColor.fs */; };
+		5BEC0ECD798D404A9BE4E919 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/lighting.fs */ = {isa = PBXBuildFile; fileRef = 76CB5C9699B9488CA75BB04E /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/lighting.fs */; };
+		6BF7CA60CF9D42E5A016318C /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/include/stb_image.h */ = {isa = PBXBuildFile; fileRef = F1D785906FE74C24AB45DF6A /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/include/stb_image.h */; };
+		6C206C8EE4BF4358995FBDAB /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/shapes.fs */ = {isa = PBXBuildFile; fileRef = E46B1FF755DA42608E17EBEA /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/shapes.fs */; };
+		6D06827A4C3447438DCE4AFD /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/debugDepthQuad.vs */ = {isa = PBXBuildFile; fileRef = D94ECE779D9F45379C5CF0A2 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/debugDepthQuad.vs */; };
+		6FD49486ED0C42FEA39ECB38 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/deferred_shading.vs */ = {isa = PBXBuildFile; fileRef = 4FE9148BC9CA47A0B633EAE6 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/deferred_shading.vs */; };
+		778148541E6C499EA378C33F /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/debugDepthQuad.fs */ = {isa = PBXBuildFile; fileRef = 9BE868B70BEA47E59209194E /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/debugDepthQuad.fs */; };
+		79AEC169698D4BB8ADD9A061 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/src/mesh.cpp */ = {isa = PBXBuildFile; fileRef = 509A73BCF43E4C21AFED2BAD /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/src/mesh.cpp */; };
+		7D25B65D170C46D0908BF9C9 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/ssao_geometry.fs */ = {isa = PBXBuildFile; fileRef = F0DDFBC0D20E445ABD06D519 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/ssao_geometry.fs */; };
+		7E3CFFC7A46A48EEBAD07500 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/hdr.fs */ = {isa = PBXBuildFile; fileRef = 4662C3ADC54A4AABA2402FF0 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/hdr.fs */; };
+		7F4B738377E645EA8D23B1E3 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/light.fs */ = {isa = PBXBuildFile; fileRef = 0EE6805829CD494BBBB197A6 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/light.fs */; };
+		82D94957A16049D7906FFDF6 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/hdr.vs */ = {isa = PBXBuildFile; fileRef = 0B2053F6EB39402687C2DB5E /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/hdr.vs */; };
+		8C6D4A2CDFE947B58C1CF332 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 9E86F5A09D39468680646F2C /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/CMakeLists.txt */; };
+		947FE51037AC4C5884DD9247 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/include/model.h */ = {isa = PBXBuildFile; fileRef = 902FC72489EE4A70AAB6D31D /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/include/model.h */; };
+		9CA6B3295BD540C9B8F0813C /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/shapes.vs */ = {isa = PBXBuildFile; fileRef = 5E136AD34D5546E78B44A434 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/shapes.vs */; };
+		9D90158D52FC49DEA6C3A98F /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/lightShader.fs */ = {isa = PBXBuildFile; fileRef = 4174D15EC3C14463B1EBDD8B /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/lightShader.fs */; };
+		AE2F0E6A45F84CCD978815C9 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/blur.fs */ = {isa = PBXBuildFile; fileRef = 35B3E91348304652BC9E2A0C /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/blur.fs */; };
+		B150C92C6B87436A94FDF841 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/src/model.cpp */ = {isa = PBXBuildFile; fileRef = D39548CEE76A4003B1378529 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/src/model.cpp */; };
+		B508688C6BDA45F39018DFB0 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/shader.gs */ = {isa = PBXBuildFile; fileRef = 0A0C6A7902F843D7823B59AA /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/shader.gs */; };
+		B91FDB2B1AFE4C839CD3C6F4 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/src/camera.cpp */ = {isa = PBXBuildFile; fileRef = 4A3584BBE5A740C98BDCFC08 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/src/camera.cpp */; };
+		C1EA6E3667534CCE96AE8DCE /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/asteroids.vs */ = {isa = PBXBuildFile; fileRef = CDEACA94F4EC459380E14792 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/asteroids.vs */; };
+		C35C4E7C8D0240D6A60D8A53 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/skyboxShader.vs */ = {isa = PBXBuildFile; fileRef = 249A433271FB470DB9FC66D2 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/skyboxShader.vs */; };
+		C574D781A400446382E34A28 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/deferred_light_box.vs */ = {isa = PBXBuildFile; fileRef = 91E1474E693F49C2A33EE2CB /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/deferred_light_box.vs */; };
+		CA1F749718204EB8A932481F /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/simpleDepthShader.fs */ = {isa = PBXBuildFile; fileRef = E4EE12379D1041728CB57D1F /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/simpleDepthShader.fs */; };
+		CE5338979B72404593CC9021 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/deferred_light_box.fs */ = {isa = PBXBuildFile; fileRef = 17B47B1B938E46558B5EBC11 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/deferred_light_box.fs */; };
+		D0EB56CE94614A3086F50B0F /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/include/shader.h */ = {isa = PBXBuildFile; fileRef = 3781C6BF00C64F1DBF35EE94 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/include/shader.h */; };
+		D94844A289C043E8A9ED5E32 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/light.vs */ = {isa = PBXBuildFile; fileRef = 9D6DD6FF88D74D83B4D31417 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/light.vs */; };
+		E1A420AB5EA0495CAE7CC56B /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/screenShader.fs */ = {isa = PBXBuildFile; fileRef = D7F642DB15E446A8AADD945F /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/screenShader.fs */; };
+		EAEFE8B3DBF34E0CB1A825CB /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/shader.vs */ = {isa = PBXBuildFile; fileRef = 8B2809A3C8A34FBAB45383AA /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/shader.vs */; };
+		F10A43131FBD4047AB89FFD7 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/ssao_blur.fs */ = {isa = PBXBuildFile; fileRef = 82EBE2AD94194CC4B1256075 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/ssao_blur.fs */; };
+		F263ED1C53DC429882C3B668 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/include/mesh.h */ = {isa = PBXBuildFile; fileRef = 936EA5A80ACA4F898A22BD5F /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/include/mesh.h */; };
+		F485AA8C2AD64D4DBFB8F8A6 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/shader.fs */ = {isa = PBXBuildFile; fileRef = 72C916CE04024CD787952489 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/shader.fs */; };
+		F4FB00FBF4A141BA83599DE2 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/deferred_shading.fs */ = {isa = PBXBuildFile; fileRef = 16377B2141144BD48DE76ABD /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/deferred_shading.fs */; };
+		F7A1205DF1394C37BF0CF40D /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/g_buffer.fs */ = {isa = PBXBuildFile; fileRef = CBB4F204DE1C42C69DB43E50 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/g_buffer.fs */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		34115B7FC31D4EA3A1C7B38D /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		5A1A82C7FE51465E86D3B4BE /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		8F4826FDE3B64304954B9FFE /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		C85D4DAE341340EAB8D7DC27 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		103EA61FC1F64B3C8585474B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BAD7B54EC20405EAB947DA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66CB63E51C274558A847A87C;
+			remoteInfo = ALL_BUILD;
+		};
+		1EB1F249ABED41C8A2C46D61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BAD7B54EC20405EAB947DA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB05D18BE9A241A6B3F30304;
+			remoteInfo = ZERO_CHECK;
+		};
+		38E9CF04A9E7449EAEBA9A5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BAD7B54EC20405EAB947DA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FC81096C955450B88946A9D;
+			remoteInfo = HelloGL;
+		};
+		3B8930A23A9F4E35A38A8A99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BAD7B54EC20405EAB947DA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB05D18BE9A241A6B3F30304;
+			remoteInfo = ZERO_CHECK;
+		};
+		42887FE542A34B72B687384D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BAD7B54EC20405EAB947DA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB05D18BE9A241A6B3F30304;
+			remoteInfo = ZERO_CHECK;
+		};
+		5191B944B5D5473DA2382485 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BAD7B54EC20405EAB947DA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB05D18BE9A241A6B3F30304;
+			remoteInfo = ZERO_CHECK;
+		};
+		5D0B5DE971074DCA9CC34438 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BAD7B54EC20405EAB947DA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB05D18BE9A241A6B3F30304;
+			remoteInfo = ZERO_CHECK;
+		};
+		B3608FC8424846519FDA6581 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BAD7B54EC20405EAB947DA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB05D18BE9A241A6B3F30304;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04F9C9D8A8534E369B2FBEA3 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		08C52AFA5F02400C911F8017 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		0A0C6A7902F843D7823B59AA /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/shader.gs */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = shader.gs; path = shaders/shader.gs; sourceTree = SOURCE_ROOT; };
+		0B2053F6EB39402687C2DB5E /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/hdr.vs */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = hdr.vs; path = shaders/hdr.vs; sourceTree = SOURCE_ROOT; };
+		0EE6805829CD494BBBB197A6 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/light.fs */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = light.fs; path = shaders/light.fs; sourceTree = SOURCE_ROOT; };
+		113F9A39A8454E9088313454 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		16377B2141144BD48DE76ABD /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/deferred_shading.fs */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = deferred_shading.fs; path = shaders/deferred_shading.fs; sourceTree = SOURCE_ROOT; };
+		17B47B1B938E46558B5EBC11 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/deferred_light_box.fs */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = deferred_light_box.fs; path = shaders/deferred_light_box.fs; sourceTree = SOURCE_ROOT; };
+		249A433271FB470DB9FC66D2 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/skyboxShader.vs */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = skyboxShader.vs; path = shaders/skyboxShader.vs; sourceTree = SOURCE_ROOT; };
+		35B3E91348304652BC9E2A0C /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/blur.fs */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = blur.fs; path = shaders/blur.fs; sourceTree = SOURCE_ROOT; };
+		3781C6BF00C64F1DBF35EE94 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/include/shader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = shader.h; path = include/shader.h; sourceTree = SOURCE_ROOT; };
+		38962F4A35BF4AB48AB3EB21 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/shaderSingleColor.fs */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = shaderSingleColor.fs; path = shaders/shaderSingleColor.fs; sourceTree = SOURCE_ROOT; };
+		3B68403BDCE7427393180E64 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/blur.vs */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = blur.vs; path = shaders/blur.vs; sourceTree = SOURCE_ROOT; };
+		3BDEF738EF3B46459B681011 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/ssao.fs */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = ssao.fs; path = shaders/ssao.fs; sourceTree = SOURCE_ROOT; };
+		4174D15EC3C14463B1EBDD8B /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/lightShader.fs */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = lightShader.fs; path = shaders/lightShader.fs; sourceTree = SOURCE_ROOT; };
+		4662C3ADC54A4AABA2402FF0 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/hdr.fs */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = hdr.fs; path = shaders/hdr.fs; sourceTree = SOURCE_ROOT; };
+		482F2CA8DDD245AFB78BE118 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/lighting.vs */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = lighting.vs; path = shaders/lighting.vs; sourceTree = SOURCE_ROOT; };
+		4A3584BBE5A740C98BDCFC08 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/src/camera.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = camera.cpp; path = src/camera.cpp; sourceTree = SOURCE_ROOT; };
+		4FE9148BC9CA47A0B633EAE6 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/deferred_shading.vs */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = deferred_shading.vs; path = shaders/deferred_shading.vs; sourceTree = SOURCE_ROOT; };
+		509A73BCF43E4C21AFED2BAD /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/src/mesh.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mesh.cpp; path = src/mesh.cpp; sourceTree = SOURCE_ROOT; };
+		5E136AD34D5546E78B44A434 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/shapes.vs */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = shapes.vs; path = shaders/shapes.vs; sourceTree = SOURCE_ROOT; };
+		5E791F5A383A47648B5BE9B7 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		5FD0D76DC9FD4A07B5FC30AA /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		6A5FCC37CF5C45838B58344E /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/ssao_lighting.fs */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = ssao_lighting.fs; path = shaders/ssao_lighting.fs; sourceTree = SOURCE_ROOT; };
+		72C916CE04024CD787952489 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/shader.fs */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = shader.fs; path = shaders/shader.fs; sourceTree = SOURCE_ROOT; };
+		76CB5C9699B9488CA75BB04E /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/lighting.fs */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = lighting.fs; path = shaders/lighting.fs; sourceTree = SOURCE_ROOT; };
+		7EFA5E26D47D4E43A89695FA /* HelloGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = HelloGL; sourceTree = BUILT_PRODUCTS_DIR; };
+		82EBE2AD94194CC4B1256075 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/ssao_blur.fs */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = ssao_blur.fs; path = shaders/ssao_blur.fs; sourceTree = SOURCE_ROOT; };
+		8B2809A3C8A34FBAB45383AA /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/shader.vs */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = shader.vs; path = shaders/shader.vs; sourceTree = SOURCE_ROOT; };
+		9027F83B339D4FD0B798217E /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/ssao.vs */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = ssao.vs; path = shaders/ssao.vs; sourceTree = SOURCE_ROOT; };
+		902FC72489EE4A70AAB6D31D /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/include/model.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = model.h; path = include/model.h; sourceTree = SOURCE_ROOT; };
+		91E1474E693F49C2A33EE2CB /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/deferred_light_box.vs */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = deferred_light_box.vs; path = shaders/deferred_light_box.vs; sourceTree = SOURCE_ROOT; };
+		92C54A9FFE5E4968A85E362E /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/g_buffer.vs */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = g_buffer.vs; path = shaders/g_buffer.vs; sourceTree = SOURCE_ROOT; };
+		936EA5A80ACA4F898A22BD5F /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/include/mesh.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mesh.h; path = include/mesh.h; sourceTree = SOURCE_ROOT; };
+		9BE868B70BEA47E59209194E /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/debugDepthQuad.fs */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = debugDepthQuad.fs; path = shaders/debugDepthQuad.fs; sourceTree = SOURCE_ROOT; };
+		9D6DD6FF88D74D83B4D31417 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/light.vs */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = light.vs; path = shaders/light.vs; sourceTree = SOURCE_ROOT; };
+		9E86F5A09D39468680646F2C /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		ABD74E10CF564CE595B16F4C /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/glad/src/glad.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glad.c; path = glad/src/glad.c; sourceTree = SOURCE_ROOT; };
+		B20B21D3F00C47929530FE80 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/asteroids.fs */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = asteroids.fs; path = shaders/asteroids.fs; sourceTree = SOURCE_ROOT; };
+		CBB4F204DE1C42C69DB43E50 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/g_buffer.fs */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = g_buffer.fs; path = shaders/g_buffer.fs; sourceTree = SOURCE_ROOT; };
+		CDEACA94F4EC459380E14792 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/asteroids.vs */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = asteroids.vs; path = shaders/asteroids.vs; sourceTree = SOURCE_ROOT; };
+		D0C7F35CD9264E3DBCBAA7F2 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/src/shader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = shader.cpp; path = src/shader.cpp; sourceTree = SOURCE_ROOT; };
+		D2C4E9BCE32D4CD89904D3D0 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/ssao_geometry.vs */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = ssao_geometry.vs; path = shaders/ssao_geometry.vs; sourceTree = SOURCE_ROOT; };
+		D39548CEE76A4003B1378529 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/src/model.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = model.cpp; path = src/model.cpp; sourceTree = SOURCE_ROOT; };
+		D7F642DB15E446A8AADD945F /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/screenShader.fs */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = screenShader.fs; path = shaders/screenShader.fs; sourceTree = SOURCE_ROOT; };
+		D94ECE779D9F45379C5CF0A2 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/debugDepthQuad.vs */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = debugDepthQuad.vs; path = shaders/debugDepthQuad.vs; sourceTree = SOURCE_ROOT; };
+		E07A510475254910B5C89B54 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		E1A763D714094141B10B0FAA /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/include/camera.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = camera.h; path = include/camera.h; sourceTree = SOURCE_ROOT; };
+		E1DF6C426FAD4A45832104D3 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/simpleDepthShader.vs */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = simpleDepthShader.vs; path = shaders/simpleDepthShader.vs; sourceTree = SOURCE_ROOT; };
+		E2044C5937A949E98A78B0CE /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/skyboxShader.fs */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = skyboxShader.fs; path = shaders/skyboxShader.fs; sourceTree = SOURCE_ROOT; };
+		E37E60A3BB894E4B8AA87489 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/screenShader.vs */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = screenShader.vs; path = shaders/screenShader.vs; sourceTree = SOURCE_ROOT; };
+		E46B1FF755DA42608E17EBEA /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/shapes.fs */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = shapes.fs; path = shaders/shapes.fs; sourceTree = SOURCE_ROOT; };
+		E4EE12379D1041728CB57D1F /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/simpleDepthShader.fs */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = simpleDepthShader.fs; path = shaders/simpleDepthShader.fs; sourceTree = SOURCE_ROOT; };
+		F0DDFBC0D20E445ABD06D519 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/ssao_geometry.fs */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = ssao_geometry.fs; path = shaders/ssao_geometry.fs; sourceTree = SOURCE_ROOT; };
+		F1D785906FE74C24AB45DF6A /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/include/stb_image.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = stb_image.h; path = include/stb_image.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72CBE1240D9C4F589D05151A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1088198C20344CDFA26F6060 /* CTestDashboardTargets */ = {
+			isa = PBXGroup;
+			children = (
+				3CFDBD8AB4B944CB83675DFB /* Experimental */,
+				F3DEA23C555A4502ACC4585D /* Nightly */,
+				4E415B23A2DB4991837F4D17 /* Continuous */,
+				3211B9C9097C41F087F2E595 /* NightlyMemoryCheck */,
+			);
+			name = CTestDashboardTargets;
+			sourceTree = "<group>";
+		};
+		2FCC66453C4E491EAFB7202C /* HelloGL */ = {
+			isa = PBXGroup;
+			children = (
+				4027D1D080A84DE3A34171C3 /* Source Files */,
+				3CFE4C3BF4ED4E4683A134B4 /* Header Files */,
+				799BFEDEC8114C1B864F198A /* Shader Files */,
+				9E86F5A09D39468680646F2C /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/CMakeLists.txt */,
+			);
+			name = HelloGL;
+			sourceTree = "<group>";
+		};
+		3211B9C9097C41F087F2E595 /* NightlyMemoryCheck */ = {
+			isa = PBXGroup;
+			children = (
+				846832E64D20418E8BDC3695 /* CMake Rules */,
+				04F9C9D8A8534E369B2FBEA3 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/CMakeLists.txt */,
+			);
+			name = NightlyMemoryCheck;
+			sourceTree = "<group>";
+		};
+		3450C952E1324274B38F7D3E /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		3CFDBD8AB4B944CB83675DFB /* Experimental */ = {
+			isa = PBXGroup;
+			children = (
+				B4B6CDECA8874FA1A01D6B07 /* CMake Rules */,
+				E07A510475254910B5C89B54 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/CMakeLists.txt */,
+			);
+			name = Experimental;
+			sourceTree = "<group>";
+		};
+		3CFE4C3BF4ED4E4683A134B4 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1A763D714094141B10B0FAA /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/include/camera.h */,
+				936EA5A80ACA4F898A22BD5F /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/include/mesh.h */,
+				902FC72489EE4A70AAB6D31D /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/include/model.h */,
+				3781C6BF00C64F1DBF35EE94 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/include/shader.h */,
+				F1D785906FE74C24AB45DF6A /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/include/stb_image.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		4027D1D080A84DE3A34171C3 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABD74E10CF564CE595B16F4C /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/glad/src/glad.c */,
+				4A3584BBE5A740C98BDCFC08 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/src/camera.cpp */,
+				08C52AFA5F02400C911F8017 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/src/main.cpp */,
+				509A73BCF43E4C21AFED2BAD /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/src/mesh.cpp */,
+				D39548CEE76A4003B1378529 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/src/model.cpp */,
+				D0C7F35CD9264E3DBCBAA7F2 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/src/shader.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		4E415B23A2DB4991837F4D17 /* Continuous */ = {
+			isa = PBXGroup;
+			children = (
+				3450C952E1324274B38F7D3E /* CMake Rules */,
+				5E791F5A383A47648B5BE9B7 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/CMakeLists.txt */,
+			);
+			name = Continuous;
+			sourceTree = "<group>";
+		};
+		799BFEDEC8114C1B864F198A /* Shader Files */ = {
+			isa = PBXGroup;
+			children = (
+				B20B21D3F00C47929530FE80 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/asteroids.fs */,
+				CDEACA94F4EC459380E14792 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/asteroids.vs */,
+				35B3E91348304652BC9E2A0C /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/blur.fs */,
+				3B68403BDCE7427393180E64 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/blur.vs */,
+				9BE868B70BEA47E59209194E /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/debugDepthQuad.fs */,
+				D94ECE779D9F45379C5CF0A2 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/debugDepthQuad.vs */,
+				17B47B1B938E46558B5EBC11 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/deferred_light_box.fs */,
+				91E1474E693F49C2A33EE2CB /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/deferred_light_box.vs */,
+				16377B2141144BD48DE76ABD /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/deferred_shading.fs */,
+				4FE9148BC9CA47A0B633EAE6 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/deferred_shading.vs */,
+				CBB4F204DE1C42C69DB43E50 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/g_buffer.fs */,
+				92C54A9FFE5E4968A85E362E /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/g_buffer.vs */,
+				4662C3ADC54A4AABA2402FF0 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/hdr.fs */,
+				0B2053F6EB39402687C2DB5E /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/hdr.vs */,
+				0EE6805829CD494BBBB197A6 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/light.fs */,
+				9D6DD6FF88D74D83B4D31417 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/light.vs */,
+				4174D15EC3C14463B1EBDD8B /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/lightShader.fs */,
+				76CB5C9699B9488CA75BB04E /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/lighting.fs */,
+				482F2CA8DDD245AFB78BE118 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/lighting.vs */,
+				D7F642DB15E446A8AADD945F /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/screenShader.fs */,
+				E37E60A3BB894E4B8AA87489 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/screenShader.vs */,
+				72C916CE04024CD787952489 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/shader.fs */,
+				0A0C6A7902F843D7823B59AA /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/shader.gs */,
+				8B2809A3C8A34FBAB45383AA /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/shader.vs */,
+				38962F4A35BF4AB48AB3EB21 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/shaderSingleColor.fs */,
+				E46B1FF755DA42608E17EBEA /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/shapes.fs */,
+				5E136AD34D5546E78B44A434 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/shapes.vs */,
+				E4EE12379D1041728CB57D1F /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/simpleDepthShader.fs */,
+				E1DF6C426FAD4A45832104D3 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/simpleDepthShader.vs */,
+				E2044C5937A949E98A78B0CE /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/skyboxShader.fs */,
+				249A433271FB470DB9FC66D2 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/skyboxShader.vs */,
+				3BDEF738EF3B46459B681011 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/ssao.fs */,
+				9027F83B339D4FD0B798217E /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/ssao.vs */,
+				82EBE2AD94194CC4B1256075 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/ssao_blur.fs */,
+				F0DDFBC0D20E445ABD06D519 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/ssao_geometry.fs */,
+				D2C4E9BCE32D4CD89904D3D0 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/ssao_geometry.vs */,
+				6A5FCC37CF5C45838B58344E /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/shaders/ssao_lighting.fs */,
+			);
+			name = "Shader Files";
+			sourceTree = "<group>";
+		};
+		8266D4CADF654C6EBE2A78D5 = {
+			isa = PBXGroup;
+			children = (
+				2FCC66453C4E491EAFB7202C /* HelloGL */,
+				1088198C20344CDFA26F6060 /* CTestDashboardTargets */,
+				C08A56AA91354DEC9F018327 /* ALL_BUILD */,
+				D140D24A03D94E08B50C02F0 /* Products */,
+				B5938BD8F6364028A3DE6E98 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		846832E64D20418E8BDC3695 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		B4B6CDECA8874FA1A01D6B07 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		B5938BD8F6364028A3DE6E98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C08A56AA91354DEC9F018327 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				F1915964E5444AB6A765B746 /* CMake Rules */,
+				5FD0D76DC9FD4A07B5FC30AA /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		CEC4D740F361410F8231D318 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		D140D24A03D94E08B50C02F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7EFA5E26D47D4E43A89695FA /* HelloGL */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1915964E5444AB6A765B746 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		F3DEA23C555A4502ACC4585D /* Nightly */ = {
+			isa = PBXGroup;
+			children = (
+				CEC4D740F361410F8231D318 /* CMake Rules */,
+				113F9A39A8454E9088313454 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/CMakeLists.txt */,
+			);
+			name = Nightly;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0FC81096C955450B88946A9D /* HelloGL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F27CD417912948A482075298 /* Build configuration list for PBXNativeTarget "HelloGL" */;
+			buildPhases = (
+				9E80D39ECAF5468790DB4126 /* Sources */,
+				72CBE1240D9C4F589D05151A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9215654FE9EA4BB6B06855E7 /* PBXTargetDependency */,
+			);
+			name = HelloGL;
+			productName = HelloGL;
+			productReference = 7EFA5E26D47D4E43A89695FA /* HelloGL */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2BAD7B54EC20405EAB947DA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1420;
+			};
+			buildConfigurationList = F9F8A98BD14D4697AA460E30 /* Build configuration list for PBXProject "HelloGL" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				8F4826FDE3B64304954B9FFE /* Debug */,
+				C85D4DAE341340EAB8D7DC27 /* Release */,
+				5A1A82C7FE51465E86D3B4BE /* MinSizeRel */,
+				34115B7FC31D4EA3A1C7B38D /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 8266D4CADF654C6EBE2A78D5;
+			projectDirPath = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting;
+			projectRoot = "";
+			targets = (
+				66CB63E51C274558A847A87C /* ALL_BUILD */,
+				F28B22DB1E9B4B3F8F68AF4D /* Continuous */,
+				B6175FB84BA04CD0983824CB /* Experimental */,
+				0FC81096C955450B88946A9D /* HelloGL */,
+				6E7CB212085046A0A765C2F0 /* Nightly */,
+				1FBDCC219CEB4BBBBE38E78E /* NightlyMemoryCheck */,
+				0C1B851B8D19442D995771DB /* RUN_TESTS */,
+				BB05D18BE9A241A6B3F30304 /* ZERO_CHECK */,
+				184D6178942D4A9BAEB6926F /* package */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		003C8D08B0008F35F218E126 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build
+  /usr/local/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build
+  /usr/local/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build
+  /usr/local/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build
+  /usr/local/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		099966CFADCE118ED85804F2 /* Generate CMakeFiles/NightlyMemoryCheck */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/NightlyMemoryCheck";
+			outputPaths = (
+/Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build/CMakeFiles/NightlyMemoryCheck			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D NightlyMemoryCheck
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D NightlyMemoryCheck
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D NightlyMemoryCheck
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D NightlyMemoryCheck
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		09FB783FD30DC6E66DF354AF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		23E0E19C1FE635DB84934AD9 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		323E6CE94951678BF055CC89 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		38F82B9D85E9A98AF452FABE /* Generate CMakeFiles/Nightly */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/Nightly";
+			outputPaths = (
+/Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build/CMakeFiles/Nightly			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Nightly
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Nightly
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Nightly
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Nightly
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		571234464C2A5D0D43F1AB42 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build
+  /usr/local/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build
+  /usr/local/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build
+  /usr/local/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build
+  /usr/local/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		661D9C604B3B91332E7543CC = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		6943A8BDD2605F2B80CC3CD8 /* Generate CMakeFiles/Experimental */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/Experimental";
+			outputPaths = (
+/Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build/CMakeFiles/Experimental			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Experimental
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Experimental
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Experimental
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Experimental
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		81B1BB01F2324F9F40EB6803 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+/Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build/CMakeFiles/ALL_BUILD			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		910A41151295C5F9742C25BD = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		A68D7F74133ED74D8658B427 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		C4C377029831841A068EE2A0 /* Generate CMakeFiles/Continuous */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/Continuous";
+			outputPaths = (
+/Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build/CMakeFiles/Continuous			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Continuous
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Continuous
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Continuous
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Continuous
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		ECA6FD8E018EF7911B9E3C29 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+/Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build/CMakeFiles/ZERO_CHECK			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build
+  make -f /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build
+  make -f /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build
+  make -f /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build
+  make -f /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E80D39ECAF5468790DB4126 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D82CAA9E7DF4CFDBE3FCFD9 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/glad/src/glad.c */,
+				B91FDB2B1AFE4C839CD3C6F4 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/src/camera.cpp */,
+				3C2A10D7076B4F28B9404D93 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/src/main.cpp */,
+				79AEC169698D4BB8ADD9A061 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/src/mesh.cpp */,
+				B150C92C6B87436A94FDF841 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/src/model.cpp */,
+				0C2E86D7108E41E2AED5CC27 /* /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/src/shader.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2962C51C26114430AE09BABD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB05D18BE9A241A6B3F30304 /* ZERO_CHECK */;
+			targetProxy = 5191B944B5D5473DA2382485 /* PBXContainerItemProxy */;
+		};
+		383A02A0E795463B975A78A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FC81096C955450B88946A9D /* HelloGL */;
+			targetProxy = 38E9CF04A9E7449EAEBA9A5E /* PBXContainerItemProxy */;
+		};
+		3AF2175C64AC45ED92D078A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB05D18BE9A241A6B3F30304 /* ZERO_CHECK */;
+			targetProxy = 5D0B5DE971074DCA9CC34438 /* PBXContainerItemProxy */;
+		};
+		4B064DD236DC4A4DBA2B5D89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66CB63E51C274558A847A87C /* ALL_BUILD */;
+			targetProxy = 103EA61FC1F64B3C8585474B /* PBXContainerItemProxy */;
+		};
+		8A52D576C51045799BD45826 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB05D18BE9A241A6B3F30304 /* ZERO_CHECK */;
+			targetProxy = 3B8930A23A9F4E35A38A8A99 /* PBXContainerItemProxy */;
+		};
+		9215654FE9EA4BB6B06855E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB05D18BE9A241A6B3F30304 /* ZERO_CHECK */;
+			targetProxy = 1EB1F249ABED41C8A2C46D61 /* PBXContainerItemProxy */;
+		};
+		A8550B2A32A840B3A2964ABC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB05D18BE9A241A6B3F30304 /* ZERO_CHECK */;
+			targetProxy = 42887FE542A34B72B687384D /* PBXContainerItemProxy */;
+		};
+		EE73E1FB7EC6462BBA1030E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB05D18BE9A241A6B3F30304 /* ZERO_CHECK */;
+			targetProxy = B3608FC8424846519FDA6581 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		005D4E938DF24902959AC3A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nightly;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		01EA0A550FA54FFF948817D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		07F48740F3FF436A89F579D4 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		11D4943BBC5A4B09B80FAF4C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		128C1DEF7558420C889E8628 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		13BCBDB7575D4B1EBEE578BF /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk;
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build/build;
+			};
+			name = RelWithDebInfo;
+		};
+		1927FF8DBB154648BF4B10F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk;
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build/build;
+			};
+			name = Release;
+		};
+		2B8386BA985D4724867ECD84 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NightlyMemoryCheck;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		3401978185DD4B02A15781AD /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		35081DE9BFE74888BD62BBBA /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nightly;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		3C61AE9C64AF45F792D9CF3C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/handabao/MyFile/code/opengl/41_02_PBRLighting/glad/include,/opt/homebrew/Cellar/glfw/3.3.8/include,/Users/handabao/MyFile/code/opengl/41_02_PBRLighting/glm,/opt/homebrew/Cellar/assimp/5.2.5/include,/Users/handabao/MyFile/code/opengl/41_02_PBRLighting/include,"$(inherited)");
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("    -DNDEBUG ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++11' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/opt/homebrew/Cellar/glfw/3.3.8/lib/libglfw.3.dylib,/opt/homebrew/Cellar/assimp/5.2.5/lib/libassimp.5.dylib,"-framework OpenGL","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = HelloGL;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		40F45ADA568A4C47BA31656A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Continuous;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		449852C64B9C4F2E8BCC940B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		46F642152293404AB5AE408B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Continuous;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		490896A0EEA14361A075F3DB /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		531B6FF86A2D4A7CAA73EB0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Experimental;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		5C92E952F88D46C3BB477D25 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		6379ADBCC03A482BB31AEB0E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nightly;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		7132B8F935B748BB99A412E1 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Experimental;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		73D49B41EA7A4D1ABD772083 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		78DB839DC6E34C33A7862A26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		824ACFCA71464AAAAA81707C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NightlyMemoryCheck;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		82DA3D400AE54BC1B0C85955 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk;
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build/build;
+			};
+			name = Debug;
+		};
+		8509B582A04A4BD6BA88B3F2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk;
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build/build;
+			};
+			name = MinSizeRel;
+		};
+		8A428A038EA94E3F95893718 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		8ED06CB720054416BEC83900 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NightlyMemoryCheck;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		958A0A11FF8A46E093044DB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Continuous;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		9B4F28222D0443E398BACC9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NightlyMemoryCheck;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		9B5F0D362EB2463383BC916A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nightly;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		A38BFA30B7474B9CB5C932C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		ADD80346EF4240C99C65E1FA /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Continuous;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		AFFF6DA4A9E744D1AB0F7517 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/handabao/MyFile/code/opengl/41_02_PBRLighting/glad/include,/opt/homebrew/Cellar/glfw/3.3.8/include,/Users/handabao/MyFile/code/opengl/41_02_PBRLighting/glm,/opt/homebrew/Cellar/assimp/5.2.5/include,/Users/handabao/MyFile/code/opengl/41_02_PBRLighting/include,"$(inherited)");
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("       -DNDEBUG ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++11' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/opt/homebrew/Cellar/glfw/3.3.8/lib/libglfw.3.dylib,/opt/homebrew/Cellar/assimp/5.2.5/lib/libassimp.5.dylib,"-framework OpenGL","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = HelloGL;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		BF75258D7DFF4C028529E26E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		C463D3D7E125437384455FDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		C893C1D0361645008E995749 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		CE43DFBB7EBF4759B0565457 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Experimental;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		DAFA7A6D6BEC49B497370D91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/handabao/MyFile/code/opengl/41_02_PBRLighting/glad/include,/opt/homebrew/Cellar/glfw/3.3.8/include,/Users/handabao/MyFile/code/opengl/41_02_PBRLighting/glm,/opt/homebrew/Cellar/assimp/5.2.5/include,/Users/handabao/MyFile/code/opengl/41_02_PBRLighting/include,"$(inherited)");
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("   ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++11' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/opt/homebrew/Cellar/glfw/3.3.8/lib/libglfw.3.dylib,/opt/homebrew/Cellar/assimp/5.2.5/lib/libassimp.5.dylib,"-framework OpenGL","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = HelloGL;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		EB5D9B88A9624D1182DC31C8 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		F14A0C222C2B484F8B1F2361 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Experimental;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		F41D0E806C544C6CA9ACBA92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/handabao/MyFile/code/opengl/41_02_PBRLighting/glad/include,/opt/homebrew/Cellar/glfw/3.3.8/include,/Users/handabao/MyFile/code/opengl/41_02_PBRLighting/glm,/opt/homebrew/Cellar/assimp/5.2.5/include,/Users/handabao/MyFile/code/opengl/41_02_PBRLighting/include,"$(inherited)");
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("    -DNDEBUG ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++11' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/opt/homebrew/Cellar/glfw/3.3.8/lib/libglfw.3.dylib,/opt/homebrew/Cellar/assimp/5.2.5/lib/libassimp.5.dylib,"-framework OpenGL","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = HelloGL;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1ECF6A85396145BB83737292 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78DB839DC6E34C33A7862A26 /* Debug */,
+				BF75258D7DFF4C028529E26E /* Release */,
+				128C1DEF7558420C889E8628 /* MinSizeRel */,
+				3401978185DD4B02A15781AD /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4F4F950BE05D4C19A8073EBF /* Build configuration list for PBXAggregateTarget "Nightly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				005D4E938DF24902959AC3A6 /* Debug */,
+				9B5F0D362EB2463383BC916A /* Release */,
+				35081DE9BFE74888BD62BBBA /* MinSizeRel */,
+				6379ADBCC03A482BB31AEB0E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		62054C7203EE4996A47B5698 /* Build configuration list for PBXAggregateTarget "Experimental" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F14A0C222C2B484F8B1F2361 /* Debug */,
+				531B6FF86A2D4A7CAA73EB0E /* Release */,
+				CE43DFBB7EBF4759B0565457 /* MinSizeRel */,
+				7132B8F935B748BB99A412E1 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		70C5BDAE74364F659988C4EB /* Build configuration list for PBXAggregateTarget "Continuous" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46F642152293404AB5AE408B /* Debug */,
+				958A0A11FF8A46E093044DB3 /* Release */,
+				40F45ADA568A4C47BA31656A /* MinSizeRel */,
+				ADD80346EF4240C99C65E1FA /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8AFFE243782F42CB9A98A542 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A38BFA30B7474B9CB5C932C0 /* Debug */,
+				73D49B41EA7A4D1ABD772083 /* Release */,
+				5C92E952F88D46C3BB477D25 /* MinSizeRel */,
+				11D4943BBC5A4B09B80FAF4C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D812563100EC40CBBBCB9E39 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01EA0A550FA54FFF948817D4 /* Debug */,
+				C463D3D7E125437384455FDD /* Release */,
+				449852C64B9C4F2E8BCC940B /* MinSizeRel */,
+				490896A0EEA14361A075F3DB /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E159C8ECC73E485C9B6C1119 /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C893C1D0361645008E995749 /* Debug */,
+				8A428A038EA94E3F95893718 /* Release */,
+				07F48740F3FF436A89F579D4 /* MinSizeRel */,
+				EB5D9B88A9624D1182DC31C8 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E934295A31FC47A18A83C91D /* Build configuration list for PBXAggregateTarget "NightlyMemoryCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B4F28222D0443E398BACC9A /* Debug */,
+				8ED06CB720054416BEC83900 /* Release */,
+				824ACFCA71464AAAAA81707C /* MinSizeRel */,
+				2B8386BA985D4724867ECD84 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F27CD417912948A482075298 /* Build configuration list for PBXNativeTarget "HelloGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAFA7A6D6BEC49B497370D91 /* Debug */,
+				F41D0E806C544C6CA9ACBA92 /* Release */,
+				3C61AE9C64AF45F792D9CF3C /* MinSizeRel */,
+				AFFF6DA4A9E744D1AB0F7517 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F9F8A98BD14D4697AA460E30 /* Build configuration list for PBXProject "HelloGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82DA3D400AE54BC1B0C85955 /* Debug */,
+				1927FF8DBB154648BF4B10F5 /* Release */,
+				8509B582A04A4BD6BA88B3F2 /* MinSizeRel */,
+				13BCBDB7575D4B1EBEE578BF /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2BAD7B54EC20405EAB947DA4 /* Project object */;
+}

@@ -1,0 +1,9 @@
+/Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build/CMakeFiles/HelloGL.dir
+/Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build/CMakeFiles/Experimental.dir
+/Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build/CMakeFiles/Nightly.dir
+/Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build/CMakeFiles/Continuous.dir
+/Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build/CMakeFiles/NightlyMemoryCheck.dir
+/Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build/CMakeFiles/package.dir
+/Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build/CMakeFiles/RUN_TESTS.dir
+/Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build/CMakeFiles/ALL_BUILD.dir
+/Users/handabao/MyFile/code/opengl/41_02_PBRLighting/build/CMakeFiles/ZERO_CHECK.dir
