@@ -6,7 +6,7 @@ uniform mat4 view;
 
 out vec3 WorldPos;
 
-void main() 
+void main()
 {
     WorldPos = aPos;
 

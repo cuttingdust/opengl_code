@@ -42,6 +42,8 @@ set(SHADERS
  shaders/pdr.fs
  shaders/background.vs
  shaders/background.fs
+ shaders/cubemap.vs
+ shaders/irradiance_convolution.fs
  shaders/hdr.vs
  shaders/hdr.fs
  shaders/blur.vs
