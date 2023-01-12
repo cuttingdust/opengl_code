@@ -375,7 +375,7 @@ int main()
 
     // build and compile shaders
     // -------------------------
-    Shader pbrShader("../../shaders/pdr.vs", "../../shaders/shader.fs");
+    Shader pbrShader("../../shaders/pdr.vs", "../../shaders/pdr.fs");
     Shader equirectangularToCubemapShader("../../shaders/equirectangularToCubemap.vs", "../../shaders/equirectangularToCubemap.fs");
     pbrShader.use();
     pbrShader.setVec3("albedo", 0.5f, 0.0f, 0.0f);
