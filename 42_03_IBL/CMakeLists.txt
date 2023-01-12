@@ -38,12 +38,10 @@ set(SHADERS
  shaders/g_buffer.fs
  shaders/equirectangularToCubemap.vs
  shaders/equirectangularToCubemap.fs
- shaders/pdr.vs
- shaders/pdr.fs
  shaders/background.vs
  shaders/background.fs
- shaders/cubemap.vs
- shaders/irradiance_convolution.fs
+ shaders/pdr.vs
+ shaders/pdr.fs
  shaders/hdr.vs
  shaders/hdr.fs
  shaders/blur.vs

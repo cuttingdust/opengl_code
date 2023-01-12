@@ -376,7 +376,7 @@ int main()
     
     // build and compile shaders
     // -------------------------
-    Shader pbrShader("../../shaders/pdr.vs", "../../shaders/shader.fs");
+    Shader pbrShader("../../shaders/pdr.vs", "../../shaders/pdr.fs");
     Shader equirectangularToCubemapShader("../../shaders/equirectangularToCubemap.vs", "../../shaders/equirectangularToCubemap.fs");
     Shader backgroundShader("../../shaders/background.vs", "../../shaders/background.fs");
     Shader irradianceShader("../../shaders/cubemap.vs", "../../shaders/irradiance_convolution.fs");
@@ -560,7 +560,7 @@ int main()
         
         // render
         // ------
-        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+        glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         
         // render scene, supplying the convoluted irradiance map to the final shader.
@@ -569,10 +569,6 @@ int main()
         glm::mat4 view = camera.GetViewMatrix();
         pbrShader.setMat4("view", view);
         pbrShader.setVec3("camPos", camera.position_);
-        
-        // bind pre-computed IBL data
-        glActiveTexture(GL_TEXTURE0);
-        glBindTexture(GL_TEXTURE_CUBE_MAP, irradianceMap);
         
         // render rows*column number of spheres with varying metallic/roughness values scaled by rows and columns respectively
         glm::mat4 model = glm::mat4(1.0f);

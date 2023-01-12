@@ -1,0 +1,9 @@
+/Users/handabao/MyFile/code/opengl/42_04_IBL/build/CMakeFiles/HelloGL.dir
+/Users/handabao/MyFile/code/opengl/42_04_IBL/build/CMakeFiles/Experimental.dir
+/Users/handabao/MyFile/code/opengl/42_04_IBL/build/CMakeFiles/Nightly.dir
+/Users/handabao/MyFile/code/opengl/42_04_IBL/build/CMakeFiles/Continuous.dir
+/Users/handabao/MyFile/code/opengl/42_04_IBL/build/CMakeFiles/NightlyMemoryCheck.dir
+/Users/handabao/MyFile/code/opengl/42_04_IBL/build/CMakeFiles/package.dir
+/Users/handabao/MyFile/code/opengl/42_04_IBL/build/CMakeFiles/RUN_TESTS.dir
+/Users/handabao/MyFile/code/opengl/42_04_IBL/build/CMakeFiles/ALL_BUILD.dir
+/Users/handabao/MyFile/code/opengl/42_04_IBL/build/CMakeFiles/ZERO_CHECK.dir
