@@ -377,7 +377,7 @@ int main()
     // build and compile shaders
     // -------------------------
     Shader pbrShader("../../shaders/pdr.vs", "../../shaders/pdr.fs");
-    Shader equirectangularToCubemapShader("../../shaders/equirectangularToCubemap.vs", "../../shaders/equirectangularToCubemap.fs");
+    Shader equirectangularToCubemapShader("../../shaders/cubemap.vs", "../../shaders/equirectangularToCubemap.fs");
     Shader backgroundShader("../../shaders/background.vs", "../../shaders/background.fs");
     Shader irradianceShader("../../shaders/cubemap.vs", "../../shaders/irradiance_convolution.fs");
     pbrShader.use();
@@ -463,13 +463,13 @@ int main()
     glm::mat4 captureProjection = glm::perspective(glm::radians(90.0f), 1.0f, 0.1f, 10.0f);
     glm::mat4 captureViews[] =
     {
-        glm::lookAt(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(1.0f,  0.0f,  0.0f), glm::vec3(0.0f, -1.0f,  0.0f)),
+        glm::lookAt(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(1.0f,  0.0f,  0.0f),     glm::vec3(0.0f, -1.0f,  0.0f)),
         glm::lookAt(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(-1.0f,  0.0f,  0.0f), glm::vec3(0.0f, -1.0f,  0.0f)),
         glm::lookAt(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f,  1.0f,  0.0f), glm::vec3(0.0f,  0.0f,  1.0f)),
         glm::lookAt(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, -1.0f,  0.0f), glm::vec3(0.0f,  0.0f, -1.0f)),
         glm::lookAt(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f,  0.0f,  1.0f), glm::vec3(0.0f, -1.0f,  0.0f)),
         glm::lookAt(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f,  0.0f, -1.0f), glm::vec3(0.0f, -1.0f,  0.0f))
-    };
+       };
     
     // pbr: convert HDR equirectangular environment map to cubemap equivalent
     // ----------------------------------------------------------------------
@@ -569,6 +569,10 @@ int main()
         glm::mat4 view = camera.GetViewMatrix();
         pbrShader.setMat4("view", view);
         pbrShader.setVec3("camPos", camera.position_);
+        
+        // bind pre-computed IBL data
+         glActiveTexture(GL_TEXTURE0);
+         glBindTexture(GL_TEXTURE_CUBE_MAP, irradianceMap);
         
         // render rows*column number of spheres with varying metallic/roughness values scaled by rows and columns respectively
         glm::mat4 model = glm::mat4(1.0f);

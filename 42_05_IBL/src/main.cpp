@@ -382,16 +382,60 @@ int main()
     // -------------------------
     Shader pbrShader("../../shaders/pdr.vs", "../../shaders/pdr.fs");
     Shader equirectangularToCubemapShader("../../shaders/cubemap.vs", "../../shaders/equirectangularToCubemap.fs");
-    Shader backgroundShader("../../shaders/background.vs", "../../shaders/background.fs");
     Shader irradianceShader("../../shaders/cubemap.vs", "../../shaders/irradiance_convolution.fs");
+    Shader prefilterShader("../../shaders/cubemap.vs", "../../shaders/prefilter.fs");
+    Shader brdfShader("../../shaders/brdf.vs", "../../shaders/brdf.fs");
+    Shader backgroundShader("../../shaders/background.vs", "../../shaders/background.fs");
+    
     pbrShader.use();
     pbrShader.setInt("irradianceMap", 0);
-    pbrShader.setVec3("albedo", 0.5f, 0.0f, 0.0f);
-    pbrShader.setFloat("ao", 1.0f);
+    pbrShader.setInt("prefilterMap", 1);
+    pbrShader.setInt("brdfLUT", 2);
+    pbrShader.setInt("albedoMap", 3);
+    pbrShader.setInt("normalMap", 4);
+    pbrShader.setInt("metallicMap", 5);
+    pbrShader.setInt("roughnessMap", 6);
+    pbrShader.setInt("aoMap", 7);
     
     backgroundShader.use();
     backgroundShader.setInt("environmentMap", 0);
     
+    // load PBR material textures
+    // --------------------------
+    // rusted iron
+    unsigned int ironAlbedoMap = loadTexture("../../resources/rusted_iron/albedo.png");
+    unsigned int ironNormalMap = loadTexture("../../resources/rusted_iron/normal.png");
+    unsigned int ironMetallicMap = loadTexture("../../resources/rusted_iron/metallic.png");
+    unsigned int ironRoughnessMap = loadTexture("../../resources/rusted_iron/roughness.png");
+    unsigned int ironAOMap = loadTexture("../../resources/rusted_iron/ao.png");
+
+    // gold
+    unsigned int goldAlbedoMap = loadTexture("../../resources/light-gold-bl/albedo.png");
+    unsigned int goldNormalMap = loadTexture("../../resources/light-gold-bl/normal.png");
+    unsigned int goldMetallicMap = loadTexture("../../resources/light-gold-bl/metallic.png");
+    unsigned int goldRoughnessMap = loadTexture("../../resources/light-gold-bl/roughness.png");
+    unsigned int goldAOMap = loadTexture("../../resources/light-gold-bl/ao.png");
+
+    // copper
+    unsigned int grassAlbedoMap = loadTexture("../../resources/Copper-scuffed_bl/albedo.png");
+    unsigned int grassNormalMap = loadTexture("../../resources/Copper-scuffed_bl/normal.png");
+    unsigned int grassMetallicMap = loadTexture("../../resources/Copper-scuffed_bl/metallic.png");
+    unsigned int grassRoughnessMap = loadTexture("../../resources/Copper-scuffed_bl/roughness.png");
+    unsigned int grassAOMap = loadTexture("../../resources/Copper-scuffed_bl/ao.png");
+
+    // spaceship
+    unsigned int plasticAlbedoMap = loadTexture("../../resources/spaceship-panels-bl/albedo.png");
+    unsigned int plasticNormalMap = loadTexture("../../resources/spaceship-panels-bl/normal.png");
+    unsigned int plasticMetallicMap = loadTexture("../../resources/spaceship-panels-bl/metallic.png");
+    unsigned int plasticRoughnessMap = loadTexture("../../resources/spaceship-panels-bl/roughness.png");
+    unsigned int plasticAOMap = loadTexture("../../resources/spaceship-panels-bl/ao.png");
+
+    // wall
+    unsigned int wallAlbedoMap = loadTexture("../../resources/gray-granite-flecks-bl/albedo.png");
+    unsigned int wallNormalMap = loadTexture("../../resources/gray-granite-flecks-bl/normal.png");
+    unsigned int wallMetallicMap = loadTexture("../../resources/gray-granite-flecks-bl/metallic.png");
+    unsigned int wallRoughnessMap = loadTexture("../../resources/gray-granite-flecks-bl/roughness.png");
+    unsigned int wallAOMap = loadTexture("../../resources/gray-granite-flecks-bl/ao.png");
     
     // lights
     // ------
@@ -463,18 +507,17 @@ int main()
     glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
     
     // pbr: set up projection and view matrices for capturing data onto the 6 cubemap face directions
-    // ----------------------------------------------------------------------------------------------
-    glm::mat4 captureProjection = glm::perspective(glm::radians(90.0f), 1.0f, 0.1f, 10.0f);
-    glm::mat4 captureViews[] =
-    {
-        glm::lookAt(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(1.0f,  0.0f,  0.0f), glm::vec3(0.0f, -1.0f,  0.0f)),
-        glm::lookAt(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(-1.0f,  0.0f,  0.0f), glm::vec3(0.0f, -1.0f,  0.0f)),
-        glm::lookAt(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f,  1.0f,  0.0f), glm::vec3(0.0f,  0.0f,  1.0f)),
-        glm::lookAt(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, -1.0f,  0.0f), glm::vec3(0.0f,  0.0f, -1.0f)),
-        glm::lookAt(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f,  0.0f,  1.0f), glm::vec3(0.0f, -1.0f,  0.0f)),
-        glm::lookAt(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f,  0.0f, -1.0f), glm::vec3(0.0f, -1.0f,  0.0f))
-    };
-    
+       // ----------------------------------------------------------------------------------------------
+       glm::mat4 captureProjection = glm::perspective(glm::radians(90.0f), 1.0f, 0.1f, 10.0f);
+       glm::mat4 captureViews[] =
+       {
+           glm::lookAt(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(1.0f,  0.0f,  0.0f), glm::vec3(0.0f, -1.0f,  0.0f)),
+           glm::lookAt(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(-1.0f,  0.0f,  0.0f), glm::vec3(0.0f, -1.0f,  0.0f)),
+           glm::lookAt(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f,  1.0f,  0.0f), glm::vec3(0.0f,  0.0f,  1.0f)),
+           glm::lookAt(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, -1.0f,  0.0f), glm::vec3(0.0f,  0.0f, -1.0f)),
+           glm::lookAt(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f,  0.0f,  1.0f), glm::vec3(0.0f, -1.0f,  0.0f)),
+           glm::lookAt(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f,  0.0f, -1.0f), glm::vec3(0.0f, -1.0f,  0.0f))
+       };
     // pbr: convert HDR equirectangular environment map to cubemap equivalent
     // ----------------------------------------------------------------------
     equirectangularToCubemapShader.use();
@@ -495,6 +538,10 @@ int main()
         renderCube();
     }
     glBindFramebuffer(GL_FRAMEBUFFER, 0);
+    
+    // then let OpenGL generate mipmaps from first mip face (combatting visible dots artifact)
+    glBindTexture(GL_TEXTURE_CUBE_MAP, envCubemap);
+    glGenerateMipmap(GL_TEXTURE_CUBE_MAP);
     
     // pbr: create an irradiance cubemap, and re-scale capture FBO to irradiance scale.
     // --------------------------------------------------------------------------------
@@ -535,6 +582,85 @@ int main()
     }
     glBindFramebuffer(GL_FRAMEBUFFER, 0);
     
+    // pbr: create a pre-filter cubemap, and re-scale capture FBO to pre-filter scale.
+    // --------------------------------------------------------------------------------
+    unsigned int prefilterMap;
+    glGenTextures(1, &prefilterMap);
+    glBindTexture(GL_TEXTURE_CUBE_MAP, prefilterMap);
+    for (unsigned int i = 0; i < 6; ++i)
+    {
+        glTexImage2D(GL_TEXTURE_CUBE_MAP_POSITIVE_X + i, 0, GL_RGB16F, 128, 128, 0, GL_RGB, GL_FLOAT, nullptr);
+    }
+    glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_R, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR); // be sure to set minification filter to mip_linear
+    glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    // generate mipmaps for the cubemap so OpenGL automatically allocates the required memory.
+    glGenerateMipmap(GL_TEXTURE_CUBE_MAP);
+    
+    
+    
+    // pbr: run a quasi monte-carlo simulation on the environment lighting to create a prefilter (cube)map.
+   // ----------------------------------------------------------------------------------------------------
+   prefilterShader.use();
+   prefilterShader.setInt("environmentMap", 0);
+   prefilterShader.setMat4("projection", captureProjection);
+   glActiveTexture(GL_TEXTURE0);
+   glBindTexture(GL_TEXTURE_CUBE_MAP, envCubemap);
+
+   glBindFramebuffer(GL_FRAMEBUFFER, captureFBO);
+   unsigned int maxMipLevels = 5;
+   for (unsigned int mip = 0; mip < maxMipLevels; ++mip)
+   {
+       // reisze framebuffer according to mip-level size.
+       unsigned int mipWidth = static_cast<unsigned int>(128 * std::pow(0.5, mip));
+       unsigned int mipHeight = static_cast<unsigned int>(128 * std::pow(0.5, mip));
+       glBindRenderbuffer(GL_RENDERBUFFER, captureRBO);
+       glRenderbufferStorage(GL_RENDERBUFFER, GL_DEPTH_COMPONENT24, mipWidth, mipHeight);
+       glViewport(0, 0, mipWidth, mipHeight);
+
+       float roughness = (float)mip / (float)(maxMipLevels - 1);
+       prefilterShader.setFloat("roughness", roughness);
+       for (unsigned int i = 0; i < 6; ++i)
+       {
+           prefilterShader.setMat4("view", captureViews[i]);
+           glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_CUBE_MAP_POSITIVE_X + i, prefilterMap, mip);
+
+           glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+           renderCube();
+       }
+   }
+   glBindFramebuffer(GL_FRAMEBUFFER, 0);
+    
+    
+    // pbr: generate a 2D LUT from the BRDF equations used.
+    // ----------------------------------------------------
+    unsigned int brdfLUTTexture;
+    glGenTextures(1, &brdfLUTTexture);
+
+    // pre-allocate enough memory for the LUT texture.
+    glBindTexture(GL_TEXTURE_2D, brdfLUTTexture);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RG16F, 512, 512, 0, GL_RG, GL_FLOAT, 0);
+    // be sure to set wrapping mode to GL_CLAMP_TO_EDGE
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+
+    // then re-configure capture framebuffer object and render screen-space quad with BRDF shader.
+    glBindFramebuffer(GL_FRAMEBUFFER, captureFBO);
+    glBindRenderbuffer(GL_RENDERBUFFER, captureRBO);
+    glRenderbufferStorage(GL_RENDERBUFFER, GL_DEPTH_COMPONENT24, 512, 512);
+    glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, brdfLUTTexture, 0);
+
+    glViewport(0, 0, 512, 512);
+    brdfShader.use();
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    renderQuad();
+
+    glBindFramebuffer(GL_FRAMEBUFFER, 0);
+
     
     // initialize static shader uniforms before rendering
     // --------------------------------------------------
@@ -570,6 +696,7 @@ int main()
         // render scene, supplying the convoluted irradiance map to the final shader.
         // ------------------------------------------------------------------------------------------
         pbrShader.use();
+        glm::mat4 model = glm::mat4(1.0f);
         glm::mat4 view = camera.GetViewMatrix();
         pbrShader.setMat4("view", view);
         pbrShader.setVec3("camPos", camera.position_);
@@ -577,28 +704,97 @@ int main()
         // bind pre-computed IBL data
         glActiveTexture(GL_TEXTURE0);
         glBindTexture(GL_TEXTURE_CUBE_MAP, irradianceMap);
+        glActiveTexture(GL_TEXTURE1);
+        glBindTexture(GL_TEXTURE_CUBE_MAP, prefilterMap);
+        glActiveTexture(GL_TEXTURE2);
+        glBindTexture(GL_TEXTURE_2D, brdfLUTTexture);
         
-        // render rows*column number of spheres with varying metallic/roughness values scaled by rows and columns respectively
-        glm::mat4 model = glm::mat4(1.0f);
-        for (int row = 0; row < nrRows; ++row)
-        {
-            pbrShader.setFloat("metallic", (float)row / (float)nrRows);
-            for (int col = 0; col < nrColumns; ++col)
-            {
-                // we clamp the roughness to 0.05 - 1.0 as perfectly smooth surfaces (roughness of 0.0) tend to look a bit off
-                // on direct lighting.
-                pbrShader.setFloat("roughness", glm::clamp((float)col / (float)nrColumns,   0.05f, 1.0f));
-                
-                model = glm::mat4(1.0f);
-                model = glm::translate(model, glm::vec3(
-                                                        (col - (nrColumns / 2)) * spacing,
-                                                        (row - (nrRows / 2)) * spacing,
-                                                        -2.0f
-                                                        ));
-                pbrShader.setMat4("model", model);
-                renderSphere();
-            }
-        }
+        // rusted iron
+        glActiveTexture(GL_TEXTURE3);
+        glBindTexture(GL_TEXTURE_2D, ironAlbedoMap);
+        glActiveTexture(GL_TEXTURE4);
+        glBindTexture(GL_TEXTURE_2D, ironNormalMap);
+        glActiveTexture(GL_TEXTURE5);
+        glBindTexture(GL_TEXTURE_2D, ironMetallicMap);
+        glActiveTexture(GL_TEXTURE6);
+        glBindTexture(GL_TEXTURE_2D, ironRoughnessMap);
+        glActiveTexture(GL_TEXTURE7);
+        glBindTexture(GL_TEXTURE_2D, ironAOMap);
+        model = glm::mat4(1.0f);
+        model = glm::translate(model, glm::vec3(-5.0, 0.0, 2.0));
+        pbrShader.setMat4("model", model);
+        renderSphere();
+        
+        
+        // gold
+        glActiveTexture(GL_TEXTURE3);
+        glBindTexture(GL_TEXTURE_2D, goldAlbedoMap);
+        glActiveTexture(GL_TEXTURE4);
+        glBindTexture(GL_TEXTURE_2D, goldNormalMap);
+        glActiveTexture(GL_TEXTURE5);
+        glBindTexture(GL_TEXTURE_2D, goldMetallicMap);
+        glActiveTexture(GL_TEXTURE6);
+        glBindTexture(GL_TEXTURE_2D, goldRoughnessMap);
+        glActiveTexture(GL_TEXTURE7);
+        glBindTexture(GL_TEXTURE_2D, goldAOMap);
+        
+        model = glm::mat4(1.0f);
+        model = glm::translate(model, glm::vec3(-3.0, 0.0, 2.0));
+        pbrShader.setMat4("model", model);
+        renderSphere();
+        
+        
+        // grass
+        glActiveTexture(GL_TEXTURE3);
+        glBindTexture(GL_TEXTURE_2D, grassAlbedoMap);
+        glActiveTexture(GL_TEXTURE4);
+        glBindTexture(GL_TEXTURE_2D, grassNormalMap);
+        glActiveTexture(GL_TEXTURE5);
+        glBindTexture(GL_TEXTURE_2D, grassMetallicMap);
+        glActiveTexture(GL_TEXTURE6);
+        glBindTexture(GL_TEXTURE_2D, grassRoughnessMap);
+        glActiveTexture(GL_TEXTURE7);
+        glBindTexture(GL_TEXTURE_2D, grassAOMap);
+        
+        model = glm::mat4(1.0f);
+        model = glm::translate(model, glm::vec3(-1.0, 0.0, 2.0));
+        pbrShader.setMat4("model", model);
+        renderSphere();
+        
+        // plastic
+        glActiveTexture(GL_TEXTURE3);
+        glBindTexture(GL_TEXTURE_2D, plasticAlbedoMap);
+        glActiveTexture(GL_TEXTURE4);
+        glBindTexture(GL_TEXTURE_2D, plasticNormalMap);
+        glActiveTexture(GL_TEXTURE5);
+        glBindTexture(GL_TEXTURE_2D, plasticMetallicMap);
+        glActiveTexture(GL_TEXTURE6);
+        glBindTexture(GL_TEXTURE_2D, plasticRoughnessMap);
+        glActiveTexture(GL_TEXTURE7);
+        glBindTexture(GL_TEXTURE_2D, plasticAOMap);
+
+        model = glm::mat4(1.0f);
+        model = glm::translate(model, glm::vec3(1.0, 0.0, 2.0));
+        pbrShader.setMat4("model", model);
+        renderSphere();
+        
+        // wall
+        glActiveTexture(GL_TEXTURE3);
+        glBindTexture(GL_TEXTURE_2D, wallAlbedoMap);
+        glActiveTexture(GL_TEXTURE4);
+        glBindTexture(GL_TEXTURE_2D, wallNormalMap);
+        glActiveTexture(GL_TEXTURE5);
+        glBindTexture(GL_TEXTURE_2D, wallMetallicMap);
+        glActiveTexture(GL_TEXTURE6);
+        glBindTexture(GL_TEXTURE_2D, wallRoughnessMap);
+        glActiveTexture(GL_TEXTURE7);
+        glBindTexture(GL_TEXTURE_2D, wallAOMap);
+
+        model = glm::mat4(1.0f);
+        model = glm::translate(model, glm::vec3(3.0, 0.0, 2.0));
+        pbrShader.setMat4("model", model);
+        renderSphere();
+        
         
         // render light source (simply re-render sphere at light positions)
         // this looks a bit off as we use the same shader, but it'll make their positions obvious and
@@ -609,7 +805,7 @@ int main()
             newPos = lightPositions[i];
             pbrShader.setVec3("lightPositions[" + std::to_string(i) + "]", newPos);
             pbrShader.setVec3("lightColors[" + std::to_string(i) + "]", lightColors[i]);
-            
+
             model = glm::mat4(1.0f);
             model = glm::translate(model, newPos);
             model = glm::scale(model, glm::vec3(0.5f));
@@ -617,19 +813,19 @@ int main()
             renderSphere();
         }
         
+        
         // render skybox (render as last to prevent overdraw)
         backgroundShader.use();
         backgroundShader.setMat4("view", view);
         glActiveTexture(GL_TEXTURE0);
         glBindTexture(GL_TEXTURE_CUBE_MAP, envCubemap);
         //glBindTexture(GL_TEXTURE_CUBE_MAP, irradianceMap);
+        //glBindTexture(GL_TEXTURE_CUBE_MAP, prefilterMap); // display prefilter map
         renderCube();
         
-        //        equirectangularToCubemapShader.use();
-        //        equirectangularToCubemapShader.setMat4("view", view);
-        //        glActiveTexture(GL_TEXTURE0);
-        //        glBindTexture(GL_TEXTURE_2D, hdrTexture);
-        //        renderCube();
+        // render BRDF map to screen
+        //brdfShader.Use();
+        //renderQuad();
         
         // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
         // -------------------------------------------------------------------------------
