@@ -1,0 +1,7 @@
+
+P	cpp:S6003"4Replace this use of "push_back" with "emplace_back".(üÚÇ€8Ýÿ®ì†1
+X	cpp:S1238("<Pass expensive to copy object "_name" by reference to const.(ø°ã‘8„ó’ì†1
+_	cpp:S5566)"CChange this raw for-loop to a range for-loop or an "std::for_each".(ªÝý…8„ó’ì†1
+†	cpp:S32305"eDo not assign data members in a constructor. Initialize member "duration_" in an initialization list.(©ÿ‡˜üÿÿÿÿ8ù‹ÿë†1
+‡	cpp:S32306"kDo not assign data members in a constructor. Initialize member "ticksPerSecond_" in an initialization list.(×ïÉã8…ó’ì†1
+€cpp:S9954"eMake the type of this parameter a pointer-to-const. The current type of "_root" is "struct aiNode *".(òù¿ç8…ó’ì†1

@@ -1,0 +1,7 @@
+
+J	cpp:S5817")This function should be declared "const".(ÆõëŒşÿÿÿÿ8ÄˆĞ‡1
+ƒ	cpp:S3230"hDo not assign data members in a constructor. Initialize member "currentTime_" in an initialization list.(é²8ˆíî†1
+‰	cpp:S3230"mDo not assign data members in a constructor. Initialize member "currentAnimation_" in an initialization list.(ç¥Ã¿8‰íî†1
+U	cpp:S6003"4Replace this use of "push_back" with "emplace_back".(ÄĞ»Íûÿÿÿÿ8‰íî†1
+V	cpp:S1238!";Pass large object "_parentTransform" by reference to const.(‘èĞK8Šíî†1
+d	cpp:S55665"CChange this raw for-loop to a range for-loop or an "std::for_each".(õ±®¿şÿÿÿÿ8‹íî†1

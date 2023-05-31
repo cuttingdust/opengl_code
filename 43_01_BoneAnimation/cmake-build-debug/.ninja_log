@@ -1,0 +1,11 @@
+# ninja log v5
+1	65	1685541222217520296	CMakeFiles/HelloGL.dir/glad/src/glad.c.o	fc71511a19ab1ef
+1	223	1685541222373589198	CMakeFiles/HelloGL.dir/src/camera.cpp.o	e649fc1ea14f11be
+1	368	1685541222518028910	CMakeFiles/HelloGL.dir/src/mesh.cpp.o	72af1b084dc2a4f8
+1	399	1685541222549807642	CMakeFiles/HelloGL.dir/src/shader.cpp.o	511e5d74ce52aeb5
+2	482	1685541222632932895	CMakeFiles/HelloGL.dir/src/bone.cpp.o	cb39028b775933bb
+2	523	1685541222673507769	CMakeFiles/HelloGL.dir/src/animation.cpp.o	b9d86fb8bfe6218a
+65	541	1685541222691945432	CMakeFiles/HelloGL.dir/src/animator.cpp.o	2a2af3b9e705e58c
+1	560	1685541222710975596	CMakeFiles/HelloGL.dir/src/model.cpp.o	1333b87a9a2ca745
+1	620	1685541222770853510	CMakeFiles/HelloGL.dir/src/main.cpp.o	381d76d21a4453ce
+620	661	1685541222814530641	HelloGL	98bcf0778028374c

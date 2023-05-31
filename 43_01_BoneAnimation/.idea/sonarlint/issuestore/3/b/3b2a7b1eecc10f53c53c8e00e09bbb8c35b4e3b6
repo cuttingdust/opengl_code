@@ -1,0 +1,25 @@
+
+Mcpp:S836"9field 'bGammaCorrection_' is uninitialized when used here(éşĞ
+K	cpp:S1172"7Remove the unused parameter "gamma" or make it unnamed.(Şœ¬
+Š	cpp:S5350"oMake the type of this variable a pointer-to-const. The current type of "_animation0" is "struct aiAnimation *".(¬¾çt8•ùñí†1
+r	cpp:S5025"QReplace the use of "new" with an operation that automatically manages the memory.(˜Ö†Šùÿÿÿÿ8—ùñí†1
+r	cpp:S5025"QReplace the use of "new" with an operation that automatically manages the memory.(›¼Í¶úÿÿÿÿ8—ùñí†1
+cpp:S995""dMake the type of this parameter a pointer-to-const. The current type of "node" is "struct aiNode *".(’•ıÅ8Ñ—ëí†1
+>	cpp:S1116ˆ"Remove this empty statement.(–èÖëùÿÿÿÿ8Ö—ëí†1
+a	cpp:S1238‹"?Pass expensive to copy object "typeName" by reference to const.(™Ğ©¥üÿÿÿÿ8Ü—ëí†1
+ˆcpp:S995‹"gMake the type of this parameter a pointer-to-const. The current type of "mat" is "struct aiMaterial *".(™Ğ©¥üÿÿÿÿ8Ü—ëí†1
+>	cpp:S1116©"Remove this empty statement.(‡ÙÏüÿÿÿÿ8ß—ëí†1
+`	cpp:S5566“"CChange this raw for-loop to a range for-loop or an "std::for_each".(¯²¡‡8à—ëí†1
+N	cpp:S1066"1Merge this "if" statement with the enclosing one.(òôÌô8à—ëí†1
+y	cpp:S3973œ"\Use curly braces or indentation to denote the code conditionally executed by this statement.(òôÌô8à—ëí†1
+e	cpp:S5566³"CChange this raw for-loop to a range for-loop or an "std::for_each".(Ï˜Ò©úÿÿÿÿ8À‰î†1
+9	cpp:S1116´"Remove this empty statement.(„éçœ8ö‰î†1
+K	cpp:S5817·")This function should be declared "const".(öÅ¤øÿÿÿÿ8ö‰î†1
+Y	cpp:S1172·"7Remove the unused parameter "gamma" or make it unnamed.(öÅ¤øÿÿÿÿ8â—ëí†1
+D	cpp:S5827¸"'Replace the redundant type with "auto".(Ñ¯ƒ¿8ã—ëí†1
+R	cpp:S1659¾"0Define each identifier in a dedicated statement.(äû¥Œÿÿÿÿÿ8ã—ëí†1
+W	cpp:S1172Ş":Remove the unused parameter "_pScence" or make it unnamed.(¢’êÖ8å—ëí†1
+‚cpp:S995Ş"fMake the type of this parameter a pointer-to-const. The current type of "_pMesh" is "struct aiMesh *".(¢’êÖ8æ—ëí†1
+	cpp:S5350õ"pMake the type of this variable a pointer-to-const. The current type of "_pWeights" is "struct aiVertexWeight *".(²‹Å8ç—ëí†1
+F	cpp:S5817ƒ")This function should be declared "const".(•Şí¯8¦ö‰î†1
+Pcpp:S836Ë"43rd function call argument is an uninitialized value(Õå«¸8úµëí†1

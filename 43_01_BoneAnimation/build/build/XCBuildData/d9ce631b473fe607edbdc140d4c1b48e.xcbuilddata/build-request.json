@@ -1,0 +1,43 @@
+{
+  "buildCommand" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : false,
+    "targets" : null
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "17c28c7ca18625f2fafcf2ea0e1afaf0092bc2773cde60785faf866d8d40dda2"
+    }
+  ],
+  "containerPath" : "/Users/handabao/MyFile/code/opengl/43_01_BoneAnimation/build/HelloGL.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/handabao/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/handabao/Library/Developer/Xcode/DerivedData/HelloGL-bynergfvukgsqtgqtckekyiwntmb/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/handabao/Library/Developer/Xcode/DerivedData/HelloGL-bynergfvukgsqtgqtckekyiwntmb/Index.noindex/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}
