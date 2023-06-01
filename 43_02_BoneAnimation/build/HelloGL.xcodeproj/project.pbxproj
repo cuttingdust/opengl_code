@@ -7,9 +7,34 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		0DEE246FCAEA40B7A2F74EF8 /* RUN_TESTS */ = {
+		2B891597D67143F0AFD7BC4E /* ALL_BUILD */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = F928992D75884E01985BD0BE /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildConfigurationList = 82638F19777C46479F531110 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				80B1EF1376AB10E09378B716 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				4BDB6D66B4FB45659E0B9EE2 /* PBXTargetDependency */,
+				391DFB325A2C45E7B50C7939 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		300D4EEE3A234F6EACA4BA74 /* Experimental */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 32EA0F9234A24DFF826C5661 /* Build configuration list for PBXAggregateTarget "Experimental" */;
+			buildPhases = (
+				D262DAC030456B4AE334CDF7 /* Generate CMakeFiles/Experimental */,
+			);
+			dependencies = (
+				CA1F91C322B8439EA73FD59A /* PBXTargetDependency */,
+			);
+			name = Experimental;
+			productName = Experimental;
+		};
+		42207C8390064BA2AE37DF43 /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 082905DEA985451B8FDC5AE4 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
 			buildPhases = (
 				003C8D08B0008F35F218E126 /* CMake PostBuild Rules */,
 			);
@@ -18,250 +43,225 @@
 			name = RUN_TESTS;
 			productName = RUN_TESTS;
 		};
-		1918E99C402D4DE2A5CE195B /* package */ = {
+		71B8B5BD7F6842E7942F454B /* Continuous */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = CA646913FC734C1682128CDD /* Build configuration list for PBXAggregateTarget "package" */;
+			buildConfigurationList = 5EC05F825F8640A6B445D4A1 /* Build configuration list for PBXAggregateTarget "Continuous" */;
 			buildPhases = (
-				571234464C2A5D0D43F1AB42 /* CMake PostBuild Rules */,
+				F9BDD8E9AD9DB4F0C5494211 /* Generate CMakeFiles/Continuous */,
 			);
 			dependencies = (
-				91FD49BA293F4FB2BD13C86B /* PBXTargetDependency */,
+				4E82C40D75C54E73BC0F972F /* PBXTargetDependency */,
 			);
-			name = package;
-			productName = package;
+			name = Continuous;
+			productName = Continuous;
 		};
-		5DDCCB81CAF8459884B7BBC5 /* ALL_BUILD */ = {
+		7A97CEA8918B4C4998A7C39A /* ZERO_CHECK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = CBFDD0BD1B7B4FF4B869B9E3 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildConfigurationList = 0AC51F7A078648CB9458E63F /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
 			buildPhases = (
-				FACE95FBBE985F93D650A334 /* Generate CMakeFiles/ALL_BUILD */,
-			);
-			dependencies = (
-				385DB5473EDC4A9B9584A0AF /* PBXTargetDependency */,
-				BECCC0CCC975462596A73B3E /* PBXTargetDependency */,
-			);
-			name = ALL_BUILD;
-			productName = ALL_BUILD;
-		};
-		7CE1A95DE29547A4AFE5D1B0 /* NightlyMemoryCheck */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = D178E394EFDF4A42AD118378 /* Build configuration list for PBXAggregateTarget "NightlyMemoryCheck" */;
-			buildPhases = (
-				49ECB877FB4281D5FEB4F136 /* Generate CMakeFiles/NightlyMemoryCheck */,
-			);
-			dependencies = (
-				C5AC641361A343FB9DB13BED /* PBXTargetDependency */,
-			);
-			name = NightlyMemoryCheck;
-			productName = NightlyMemoryCheck;
-		};
-		B66DA3366555467FBA2FA627 /* ZERO_CHECK */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 62CD3873D4B34A3AAD25E6B1 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
-			buildPhases = (
-				2C96EBE27A14990A7389B2CB /* Generate CMakeFiles/ZERO_CHECK */,
+				951145813652090C00AB1CEF /* Generate CMakeFiles/ZERO_CHECK */,
 			);
 			dependencies = (
 			);
 			name = ZERO_CHECK;
 			productName = ZERO_CHECK;
 		};
-		DFABD38229DC4F8CB35E3185 /* Experimental */ = {
+		AB9A00203B81445E8CCB54C8 /* Nightly */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = A27A355834C84A5FA0DFE1D7 /* Build configuration list for PBXAggregateTarget "Experimental" */;
+			buildConfigurationList = 81B37E9585E246B0A4A65F18 /* Build configuration list for PBXAggregateTarget "Nightly" */;
 			buildPhases = (
-				35C10D043E99927D0E186791 /* Generate CMakeFiles/Experimental */,
+				A5B58E03F1AA7AB7957963D6 /* Generate CMakeFiles/Nightly */,
 			);
 			dependencies = (
-				2335B1137024495B9A8A8D93 /* PBXTargetDependency */,
-			);
-			name = Experimental;
-			productName = Experimental;
-		};
-		E1A8B85223C34A4FB612645A /* Continuous */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 1E126110115B4DD7AD8FC5AF /* Build configuration list for PBXAggregateTarget "Continuous" */;
-			buildPhases = (
-				31185B2322EAEF2F896B2F92 /* Generate CMakeFiles/Continuous */,
-			);
-			dependencies = (
-				0020FDB587214AD58D2C2B18 /* PBXTargetDependency */,
-			);
-			name = Continuous;
-			productName = Continuous;
-		};
-		EBE86DA0B84C4B098DA03A13 /* Nightly */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 9E86E31550414119A9D47DDB /* Build configuration list for PBXAggregateTarget "Nightly" */;
-			buildPhases = (
-				366D5B1EF3BB7714BC265478 /* Generate CMakeFiles/Nightly */,
-			);
-			dependencies = (
-				5D8E76154532426A991595B2 /* PBXTargetDependency */,
+				96A892FF51894ACCA0C83533 /* PBXTargetDependency */,
 			);
 			name = Nightly;
 			productName = Nightly;
 		};
+		E88A00B0CD824F39AE08FBE6 /* NightlyMemoryCheck */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4F340D5460974785895051F2 /* Build configuration list for PBXAggregateTarget "NightlyMemoryCheck" */;
+			buildPhases = (
+				275A752FA6A68BC68DDFC78D /* Generate CMakeFiles/NightlyMemoryCheck */,
+			);
+			dependencies = (
+				49424BA69D514E5AAA34932E /* PBXTargetDependency */,
+			);
+			name = NightlyMemoryCheck;
+			productName = NightlyMemoryCheck;
+		};
+		EA91BC2C64AF434DBC6A2FB1 /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2BF7B5C62D1A4E6CA9B78FA3 /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				571234464C2A5D0D43F1AB42 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				54E84666453D4374A592CD16 /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		015E1EEBBFCC466785A0F56D /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/ffImage.h */ = {isa = PBXBuildFile; fileRef = 777D8C0363B0470C85BFF8B2 /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/ffImage.h */; };
-		07FC0EFE79954ABC9356E083 /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/Base.h */ = {isa = PBXBuildFile; fileRef = AD869C19907442818BDF12B7 /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/Base.h */; };
-		093F2FE9D83A40C8A1CD0377 /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/ffAnimator.cpp */ = {isa = PBXBuildFile; fileRef = A972EA148ED240F4B751E019 /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/ffAnimator.cpp */; };
-		0D0917F589D640A9A9FC6301 /* /Users/handabao/MyFile/SkeletonAnimation - for user/shaders/vertexShader.glsl */ = {isa = PBXBuildFile; fileRef = 04F536F6BABE445582E3EE63 /* /Users/handabao/MyFile/SkeletonAnimation - for user/shaders/vertexShader.glsl */; };
-		0D656C6D06FF4724A9A724FF /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/ffModel.h */ = {isa = PBXBuildFile; fileRef = DBF6A0770DCD42AC957AB853 /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/ffModel.h */; };
-		0F167F327D2843E5AE66C514 /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/ffModel.cpp */ = {isa = PBXBuildFile; fileRef = 15731EB4FBE44197BFE56C7D /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/ffModel.cpp */; };
-		1757AC3975BF45C2A028E89C /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/ffBone.h */ = {isa = PBXBuildFile; fileRef = 434B801F730243B8A9214C4B /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/ffBone.h */; };
-		1BE069FC4DB243D9A98503BF /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/ffAssimpHelper.h */ = {isa = PBXBuildFile; fileRef = 9717932BD7CC47F0ABEF3C24 /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/ffAssimpHelper.h */; };
-		1FDF1AA33E8F4590B1865D84 /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/ffMesh.cpp */ = {isa = PBXBuildFile; fileRef = 87D37D73CDBB48A787E26F6B /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/ffMesh.cpp */; };
-		26D05E36C751462DBC313A16 /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/Camera.cpp */ = {isa = PBXBuildFile; fileRef = F73B20837874432A88B6DAAD /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/Camera.cpp */; };
-		2F77A51A0CF4414B8D3D25C8 /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/Shader.cpp */ = {isa = PBXBuildFile; fileRef = 729DDF2EBD01409B859F021E /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/Shader.cpp */; };
-		3495F54995DE4852BB61D8DD /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/stb_image.h */ = {isa = PBXBuildFile; fileRef = 5C78CB5BFBCA447B81A1E112 /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/stb_image.h */; };
-		46C4AACBA03D45A1A63F4247 /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/ffImage.cpp */ = {isa = PBXBuildFile; fileRef = 9A079191B28E42F08442DB4E /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/ffImage.cpp */; };
-		5B7B8112530545CBAD320715 /* /Users/handabao/MyFile/SkeletonAnimation - for user/shaders/fragmentShader.glsl */ = {isa = PBXBuildFile; fileRef = E1064E0FA70443AE813FFA4F /* /Users/handabao/MyFile/SkeletonAnimation - for user/shaders/fragmentShader.glsl */; };
-		604F9D7FCBA54A98A4270CBB /* /Users/handabao/MyFile/SkeletonAnimation - for user/shaders/vPointShader.glsl */ = {isa = PBXBuildFile; fileRef = 18CCB0190452427BBC666BE7 /* /Users/handabao/MyFile/SkeletonAnimation - for user/shaders/vPointShader.glsl */; };
-		620DA9675C00483D9F1F2819 /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/ffAnimator.h */ = {isa = PBXBuildFile; fileRef = 094868C1775A4A569E4790B9 /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/ffAnimator.h */; };
-		6F18A82CA89C4AB498B70084 /* /Users/handabao/MyFile/SkeletonAnimation - for user/shaders/fPointShader.glsl */ = {isa = PBXBuildFile; fileRef = 5760C2C525E641339F6E2C9B /* /Users/handabao/MyFile/SkeletonAnimation - for user/shaders/fPointShader.glsl */; };
-		750E9B90D88A41D8A5C5608A /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/main.cpp */ = {isa = PBXBuildFile; fileRef = 98FC7D935B194CF28D1EAD84 /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/main.cpp */; };
-		87242367D4E34E41934DDC8F /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/ffAnimation.h */ = {isa = PBXBuildFile; fileRef = 7A0FC3A30DB945A2B95D0F5D /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/ffAnimation.h */; };
-		A94579BE702147D7A8ED1051 /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/ffAnimation.cpp */ = {isa = PBXBuildFile; fileRef = AB5B483708224C378589F443 /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/ffAnimation.cpp */; };
-		B68AC7A6FF354DB0853F4957 /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/ffAssimpHelper.cpp */ = {isa = PBXBuildFile; fileRef = AC5B0120801B48F39DBD27FC /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/ffAssimpHelper.cpp */; };
-		B82448F1CF1248E8B7A3CE1B /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/ffBone.cpp */ = {isa = PBXBuildFile; fileRef = 9131BEC927554E07B9BAE5AE /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/ffBone.cpp */; };
-		BA0DF7C46E6E4122928AF7CF /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/Camera.h */ = {isa = PBXBuildFile; fileRef = C95F4553B0DD45E1B317CD8A /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/Camera.h */; };
-		C1AA59901E0942BDAFECB1CE /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/Shader.h */ = {isa = PBXBuildFile; fileRef = 723EB6279C20411C9C9F1EE4 /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/Shader.h */; };
-		CC67BF05F7C346B9B624B192 /* /Users/handabao/MyFile/SkeletonAnimation - for user/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 2CBE975FC2154F2FBAF656F2 /* /Users/handabao/MyFile/SkeletonAnimation - for user/CMakeLists.txt */; };
-		F245B2FC5FD843E1BC503FB4 /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/ffMesh.h */ = {isa = PBXBuildFile; fileRef = B8BB22C53F704D868B401341 /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/ffMesh.h */; };
-		FB1E31B5EF764EB9978D7CA4 /* /Users/handabao/MyFile/SkeletonAnimation - for user/glad/src/glad.c */ = {isa = PBXBuildFile; fileRef = E7616483844241D6AB655CEB /* /Users/handabao/MyFile/SkeletonAnimation - for user/glad/src/glad.c */; };
+		0C430CB3F3EC4A109F03495A /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/shaders/fragmentShader.glsl */ = {isa = PBXBuildFile; fileRef = 6B23E0B579E7483FA3BD41CC /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/shaders/fragmentShader.glsl */; };
+		261001E18305481C82A57F2D /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/shaders/fPointShader.glsl */ = {isa = PBXBuildFile; fileRef = 72D56FBCA27E455187A77A8E /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/shaders/fPointShader.glsl */; };
+		2F832ACC1657445995FD28A2 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/ffAnimator.cpp */ = {isa = PBXBuildFile; fileRef = 02ED546AEC8E4717857D149B /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/ffAnimator.cpp */; };
+		3E80ECC4A7FA494F9CC1CB4B /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/ffBone.h */ = {isa = PBXBuildFile; fileRef = B8706848B4B84C2085AFD2F4 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/ffBone.h */; };
+		42ED1AE8EAFA4464AEEC951F /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/Shader.cpp */ = {isa = PBXBuildFile; fileRef = 3836F87F049D4C5E8927CA8A /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/Shader.cpp */; };
+		5996B938E1F34691B73AD2D0 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/ffModel.cpp */ = {isa = PBXBuildFile; fileRef = 8661503F9B1C4AC0B9545127 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/ffModel.cpp */; };
+		5A437A1593D04E5CB6FBBE5E /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glad/src/glad.c */ = {isa = PBXBuildFile; fileRef = FED907626D274563B10A0F65 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glad/src/glad.c */; };
+		5EAC466A9A5C47FD8A8E36F2 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/ffImage.h */ = {isa = PBXBuildFile; fileRef = 4BFCFF3D41294101BE0D2693 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/ffImage.h */; };
+		71AA8F3779F944EFAB2FA139 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 4FF7EF039CB84CA3BBB20812 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/CMakeLists.txt */; };
+		79C62D2655A547B3BEF546AA /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/ffImage.cpp */ = {isa = PBXBuildFile; fileRef = D45DB8224D304FFF88F378AE /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/ffImage.cpp */; };
+		7D22DB71B6C34886A235C258 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/ffAssimpHelper.cpp */ = {isa = PBXBuildFile; fileRef = 90271A9E5E584EBDA5A2E985 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/ffAssimpHelper.cpp */; };
+		837588C2BD374DD3A8D11286 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/main.cpp */ = {isa = PBXBuildFile; fileRef = 8911575245974804B38E10B0 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/main.cpp */; };
+		89E5799E40E34F73988EBC71 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/ffModel.h */ = {isa = PBXBuildFile; fileRef = 345A109210C34A8D9E3D1C5F /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/ffModel.h */; };
+		94FC512C70224D31A84FEBA6 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/shaders/vPointShader.glsl */ = {isa = PBXBuildFile; fileRef = 55423BAEDC37429695C02CCA /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/shaders/vPointShader.glsl */; };
+		9ABD7F70D23644C4957E0F15 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/stb_image.h */ = {isa = PBXBuildFile; fileRef = 518F2475C88E4C979D649431 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/stb_image.h */; };
+		A5A242F32DE946A88C81AA3F /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/ffAssimpHelper.h */ = {isa = PBXBuildFile; fileRef = 4699E7218A5241229C1C8396 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/ffAssimpHelper.h */; };
+		A6AA1D006E45418C84A39ED8 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/shaders/vertexShader.glsl */ = {isa = PBXBuildFile; fileRef = F1B3D71E1B8743A4871C82B1 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/shaders/vertexShader.glsl */; };
+		B6612EA234F44C2D9479C319 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/Camera.h */ = {isa = PBXBuildFile; fileRef = 43CD3A5D5B134A88B9B82C8F /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/Camera.h */; };
+		C70429D41DC64C8397BB1DAF /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/ffMesh.h */ = {isa = PBXBuildFile; fileRef = F931E402BF8C416782CECB77 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/ffMesh.h */; };
+		CA02D3D0A1064C7E91A0FFAD /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/ffAnimator.h */ = {isa = PBXBuildFile; fileRef = A03CDA1CB98E442AB9293319 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/ffAnimator.h */; };
+		D812D35C74FA46B295858C7B /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/ffAnimation.h */ = {isa = PBXBuildFile; fileRef = ABB10B45C5974177B8945AEE /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/ffAnimation.h */; };
+		DD7D814E019449889B556712 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/ffAnimation.cpp */ = {isa = PBXBuildFile; fileRef = F1133450A5494DCD8C8C8333 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/ffAnimation.cpp */; };
+		F65DEF6A0F7342A78BE960FD /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/Base.h */ = {isa = PBXBuildFile; fileRef = 75966EB47C854A23A6F23A89 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/Base.h */; };
+		FA3DBE7E9C26419C9FB2329C /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/Shader.h */ = {isa = PBXBuildFile; fileRef = EB3CA265DECB4D70A85791A6 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/Shader.h */; };
+		FAD1295EBE204F25A0FE0B1D /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/ffBone.cpp */ = {isa = PBXBuildFile; fileRef = 9771588330B3403C9C6589DA /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/ffBone.cpp */; };
+		FB9EB7302CE943009C24A192 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/ffMesh.cpp */ = {isa = PBXBuildFile; fileRef = F38F587D90FE426F8D441137 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/ffMesh.cpp */; };
+		FE39A34084E447078882E6E1 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/Camera.cpp */ = {isa = PBXBuildFile; fileRef = 328C2E14DAE84781BD995D52 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/Camera.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildStyle section */
-		0BD9E95B352A40949339EA83 /* RelWithDebInfo */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = RelWithDebInfo;
-		};
-		2124A21B9B154B29BA528BF1 /* MinSizeRel */ = {
+		08DED862774B4E649558E012 /* MinSizeRel */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = MinSizeRel;
 		};
-		833718D1CCFB418FBD4DECC2 /* Release */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Release;
-		};
-		D47681048901427C8C8E70F0 /* Debug */ = {
+		7370AFF9162940C2AAE9E1D7 /* Debug */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = Debug;
 		};
+		822F4002CDB64956BEF64A94 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		FC54C466973E41D5BD6CB083 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
 /* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
-		13DF90AE0DCE47BC9BE67731 /* PBXContainerItemProxy */ = {
+		06A012C7987E4CD7ABDB13DC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 18618CEAD9A240A79EA282D0 /* Project object */;
+			containerPortal = E44B0F1D7DF244C7A0640C0A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B66DA3366555467FBA2FA627;
+			remoteGlobalIDString = 7A97CEA8918B4C4998A7C39A;
 			remoteInfo = ZERO_CHECK;
 		};
-		140A604995C547979C2AE70F /* PBXContainerItemProxy */ = {
+		0AE2987849CE4B3BA3D7E41B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 18618CEAD9A240A79EA282D0 /* Project object */;
+			containerPortal = E44B0F1D7DF244C7A0640C0A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B66DA3366555467FBA2FA627;
+			remoteGlobalIDString = 7A97CEA8918B4C4998A7C39A;
 			remoteInfo = ZERO_CHECK;
 		};
-		3E586CA8D4C94AAA8D39632B /* PBXContainerItemProxy */ = {
+		3E9E28EF1B3B4DD6BB3A7221 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 18618CEAD9A240A79EA282D0 /* Project object */;
+			containerPortal = E44B0F1D7DF244C7A0640C0A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D3361B80161541C78ADF1B3A;
-			remoteInfo = HelloGL;
-		};
-		73BB3E160139487EBD276F14 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 18618CEAD9A240A79EA282D0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B66DA3366555467FBA2FA627;
+			remoteGlobalIDString = 7A97CEA8918B4C4998A7C39A;
 			remoteInfo = ZERO_CHECK;
 		};
-		9C2C968EE3274DE892500047 /* PBXContainerItemProxy */ = {
+		50015850A6594BFEB4EF423E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 18618CEAD9A240A79EA282D0 /* Project object */;
+			containerPortal = E44B0F1D7DF244C7A0640C0A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B66DA3366555467FBA2FA627;
+			remoteGlobalIDString = 7A97CEA8918B4C4998A7C39A;
 			remoteInfo = ZERO_CHECK;
 		};
-		A6E4AA8C1C6746F88E03D451 /* PBXContainerItemProxy */ = {
+		6191614700E448E3A4C965FF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 18618CEAD9A240A79EA282D0 /* Project object */;
+			containerPortal = E44B0F1D7DF244C7A0640C0A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B66DA3366555467FBA2FA627;
+			remoteGlobalIDString = 7A97CEA8918B4C4998A7C39A;
 			remoteInfo = ZERO_CHECK;
 		};
-		B6FD1644FCF242228BD9FC22 /* PBXContainerItemProxy */ = {
+		9AC69CDC957B4F3BBF9E4BBD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 18618CEAD9A240A79EA282D0 /* Project object */;
+			containerPortal = E44B0F1D7DF244C7A0640C0A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5DDCCB81CAF8459884B7BBC5;
+			remoteGlobalIDString = 2B891597D67143F0AFD7BC4E;
 			remoteInfo = ALL_BUILD;
 		};
-		CC8200116588492D9F741EE3 /* PBXContainerItemProxy */ = {
+		F9FD8AAEE10D4E0CBF105B5B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 18618CEAD9A240A79EA282D0 /* Project object */;
+			containerPortal = E44B0F1D7DF244C7A0640C0A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B66DA3366555467FBA2FA627;
+			remoteGlobalIDString = 7A97CEA8918B4C4998A7C39A;
 			remoteInfo = ZERO_CHECK;
+		};
+		FBD88C36A4674BDEA86A5B11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E44B0F1D7DF244C7A0640C0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8A4813AAB794B9CA7678A13;
+			remoteInfo = HelloGL;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01A352771707452E919300ED /* /Users/handabao/MyFile/SkeletonAnimation - for user/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		04F536F6BABE445582E3EE63 /* /Users/handabao/MyFile/SkeletonAnimation - for user/shaders/vertexShader.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = vertexShader.glsl; path = shaders/vertexShader.glsl; sourceTree = SOURCE_ROOT; };
-		094868C1775A4A569E4790B9 /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/ffAnimator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ffAnimator.h; path = include/ffAnimator.h; sourceTree = SOURCE_ROOT; };
-		15731EB4FBE44197BFE56C7D /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/ffModel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ffModel.cpp; path = src/ffModel.cpp; sourceTree = SOURCE_ROOT; };
-		18CCB0190452427BBC666BE7 /* /Users/handabao/MyFile/SkeletonAnimation - for user/shaders/vPointShader.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = vPointShader.glsl; path = shaders/vPointShader.glsl; sourceTree = SOURCE_ROOT; };
-		2CBE975FC2154F2FBAF656F2 /* /Users/handabao/MyFile/SkeletonAnimation - for user/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		434B801F730243B8A9214C4B /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/ffBone.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ffBone.h; path = include/ffBone.h; sourceTree = SOURCE_ROOT; };
-		48032F63D0E7486EAFAFA7E3 /* /Users/handabao/MyFile/SkeletonAnimation - for user/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		5760C2C525E641339F6E2C9B /* /Users/handabao/MyFile/SkeletonAnimation - for user/shaders/fPointShader.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = fPointShader.glsl; path = shaders/fPointShader.glsl; sourceTree = SOURCE_ROOT; };
-		5C78CB5BFBCA447B81A1E112 /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/stb_image.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = stb_image.h; path = include/stb_image.h; sourceTree = SOURCE_ROOT; };
-		6CD7E376B091456895098D08 /* /Users/handabao/MyFile/SkeletonAnimation - for user/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		723EB6279C20411C9C9F1EE4 /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/Shader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Shader.h; path = include/Shader.h; sourceTree = SOURCE_ROOT; };
-		729DDF2EBD01409B859F021E /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/Shader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Shader.cpp; path = src/Shader.cpp; sourceTree = SOURCE_ROOT; };
-		777D8C0363B0470C85BFF8B2 /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/ffImage.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ffImage.h; path = include/ffImage.h; sourceTree = SOURCE_ROOT; };
-		7A0FC3A30DB945A2B95D0F5D /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/ffAnimation.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ffAnimation.h; path = include/ffAnimation.h; sourceTree = SOURCE_ROOT; };
-		87D37D73CDBB48A787E26F6B /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/ffMesh.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ffMesh.cpp; path = src/ffMesh.cpp; sourceTree = SOURCE_ROOT; };
-		9131BEC927554E07B9BAE5AE /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/ffBone.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ffBone.cpp; path = src/ffBone.cpp; sourceTree = SOURCE_ROOT; };
-		9717932BD7CC47F0ABEF3C24 /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/ffAssimpHelper.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ffAssimpHelper.h; path = include/ffAssimpHelper.h; sourceTree = SOURCE_ROOT; };
-		98FC7D935B194CF28D1EAD84 /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
-		9A079191B28E42F08442DB4E /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/ffImage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ffImage.cpp; path = src/ffImage.cpp; sourceTree = SOURCE_ROOT; };
-		A2EA66E68C11456083223406 /* /Users/handabao/MyFile/SkeletonAnimation - for user/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		A972EA148ED240F4B751E019 /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/ffAnimator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ffAnimator.cpp; path = src/ffAnimator.cpp; sourceTree = SOURCE_ROOT; };
-		AAB10D4A995044EB86E9BF4D /* /Users/handabao/MyFile/SkeletonAnimation - for user/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		AB5B483708224C378589F443 /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/ffAnimation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ffAnimation.cpp; path = src/ffAnimation.cpp; sourceTree = SOURCE_ROOT; };
-		AC5B0120801B48F39DBD27FC /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/ffAssimpHelper.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ffAssimpHelper.cpp; path = src/ffAssimpHelper.cpp; sourceTree = SOURCE_ROOT; };
-		AD869C19907442818BDF12B7 /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/Base.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Base.h; path = include/Base.h; sourceTree = SOURCE_ROOT; };
-		B8BB22C53F704D868B401341 /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/ffMesh.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ffMesh.h; path = include/ffMesh.h; sourceTree = SOURCE_ROOT; };
-		C4DBC5721E1C42F5859C50CA /* HelloGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = HelloGL; sourceTree = BUILT_PRODUCTS_DIR; };
-		C95F4553B0DD45E1B317CD8A /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/Camera.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Camera.h; path = include/Camera.h; sourceTree = SOURCE_ROOT; };
-		DBF6A0770DCD42AC957AB853 /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/ffModel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ffModel.h; path = include/ffModel.h; sourceTree = SOURCE_ROOT; };
-		E1064E0FA70443AE813FFA4F /* /Users/handabao/MyFile/SkeletonAnimation - for user/shaders/fragmentShader.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = fragmentShader.glsl; path = shaders/fragmentShader.glsl; sourceTree = SOURCE_ROOT; };
-		E7616483844241D6AB655CEB /* /Users/handabao/MyFile/SkeletonAnimation - for user/glad/src/glad.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glad.c; path = glad/src/glad.c; sourceTree = SOURCE_ROOT; };
-		F73B20837874432A88B6DAAD /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/Camera.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Camera.cpp; path = src/Camera.cpp; sourceTree = SOURCE_ROOT; };
+		02ED546AEC8E4717857D149B /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/ffAnimator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ffAnimator.cpp; path = src/ffAnimator.cpp; sourceTree = SOURCE_ROOT; };
+		1710022B3BBD449A8EF68A63 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		328C2E14DAE84781BD995D52 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/Camera.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Camera.cpp; path = src/Camera.cpp; sourceTree = SOURCE_ROOT; };
+		345A109210C34A8D9E3D1C5F /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/ffModel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ffModel.h; path = include/ffModel.h; sourceTree = SOURCE_ROOT; };
+		3836F87F049D4C5E8927CA8A /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/Shader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Shader.cpp; path = src/Shader.cpp; sourceTree = SOURCE_ROOT; };
+		43CD3A5D5B134A88B9B82C8F /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/Camera.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Camera.h; path = include/Camera.h; sourceTree = SOURCE_ROOT; };
+		4699E7218A5241229C1C8396 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/ffAssimpHelper.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ffAssimpHelper.h; path = include/ffAssimpHelper.h; sourceTree = SOURCE_ROOT; };
+		4BFCFF3D41294101BE0D2693 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/ffImage.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ffImage.h; path = include/ffImage.h; sourceTree = SOURCE_ROOT; };
+		4DC5E34BD4A04F2789D1611F /* HelloGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = HelloGL; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FF7EF039CB84CA3BBB20812 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		518F2475C88E4C979D649431 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/stb_image.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = stb_image.h; path = include/stb_image.h; sourceTree = SOURCE_ROOT; };
+		55423BAEDC37429695C02CCA /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/shaders/vPointShader.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = vPointShader.glsl; path = shaders/vPointShader.glsl; sourceTree = SOURCE_ROOT; };
+		6B23E0B579E7483FA3BD41CC /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/shaders/fragmentShader.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = fragmentShader.glsl; path = shaders/fragmentShader.glsl; sourceTree = SOURCE_ROOT; };
+		6C8B44FB13E04A5095B8649F /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		72D56FBCA27E455187A77A8E /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/shaders/fPointShader.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = fPointShader.glsl; path = shaders/fPointShader.glsl; sourceTree = SOURCE_ROOT; };
+		75966EB47C854A23A6F23A89 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/Base.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Base.h; path = include/Base.h; sourceTree = SOURCE_ROOT; };
+		78F6CAD084EE40308B2E7B34 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		8661503F9B1C4AC0B9545127 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/ffModel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ffModel.cpp; path = src/ffModel.cpp; sourceTree = SOURCE_ROOT; };
+		8911575245974804B38E10B0 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		8CB0BF273E314E2DB4F564D6 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		90271A9E5E584EBDA5A2E985 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/ffAssimpHelper.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ffAssimpHelper.cpp; path = src/ffAssimpHelper.cpp; sourceTree = SOURCE_ROOT; };
+		9771588330B3403C9C6589DA /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/ffBone.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ffBone.cpp; path = src/ffBone.cpp; sourceTree = SOURCE_ROOT; };
+		A03CDA1CB98E442AB9293319 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/ffAnimator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ffAnimator.h; path = include/ffAnimator.h; sourceTree = SOURCE_ROOT; };
+		ABB10B45C5974177B8945AEE /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/ffAnimation.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ffAnimation.h; path = include/ffAnimation.h; sourceTree = SOURCE_ROOT; };
+		B8579EFE2AEE45DCB458FA73 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B8706848B4B84C2085AFD2F4 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/ffBone.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ffBone.h; path = include/ffBone.h; sourceTree = SOURCE_ROOT; };
+		D45DB8224D304FFF88F378AE /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/ffImage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ffImage.cpp; path = src/ffImage.cpp; sourceTree = SOURCE_ROOT; };
+		EB3CA265DECB4D70A85791A6 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/Shader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Shader.h; path = include/Shader.h; sourceTree = SOURCE_ROOT; };
+		F1133450A5494DCD8C8C8333 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/ffAnimation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ffAnimation.cpp; path = src/ffAnimation.cpp; sourceTree = SOURCE_ROOT; };
+		F1B3D71E1B8743A4871C82B1 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/shaders/vertexShader.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = vertexShader.glsl; path = shaders/vertexShader.glsl; sourceTree = SOURCE_ROOT; };
+		F38F587D90FE426F8D441137 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/ffMesh.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ffMesh.cpp; path = src/ffMesh.cpp; sourceTree = SOURCE_ROOT; };
+		F931E402BF8C416782CECB77 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/ffMesh.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ffMesh.h; path = include/ffMesh.h; sourceTree = SOURCE_ROOT; };
+		FED907626D274563B10A0F65 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glad/src/glad.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glad.c; path = glad/src/glad.c; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		99F69B822AD644DB896E4AEA /* Frameworks */ = {
+		3F10DFE975AB4583990D20CF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -271,234 +271,234 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1339F310F9EF4D45B06B0DA4 /* Continuous */ = {
-			isa = PBXGroup;
-			children = (
-				7A77E5BD082C4BFC933C0DB7 /* CMake Rules */,
-				A2EA66E68C11456083223406 /* /Users/handabao/MyFile/SkeletonAnimation - for user/CMakeLists.txt */,
-			);
-			name = Continuous;
-			sourceTree = "<group>";
-		};
-		2E462DB6D59245B5AD7DCA59 /* Nightly */ = {
-			isa = PBXGroup;
-			children = (
-				84326FF992C14991A01B1927 /* CMake Rules */,
-				48032F63D0E7486EAFAFA7E3 /* /Users/handabao/MyFile/SkeletonAnimation - for user/CMakeLists.txt */,
-			);
-			name = Nightly;
-			sourceTree = "<group>";
-		};
-		3A969A6B1022411CB0CF2CE1 /* CMake Rules */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "CMake Rules";
-			sourceTree = "<group>";
-		};
-		3D742DAC5D00425FAF426B56 /* ALL_BUILD */ = {
-			isa = PBXGroup;
-			children = (
-				A91756A5C2FA4082BF7C5D14 /* CMake Rules */,
-				01A352771707452E919300ED /* /Users/handabao/MyFile/SkeletonAnimation - for user/CMakeLists.txt */,
-			);
-			name = ALL_BUILD;
-			sourceTree = "<group>";
-		};
-		43B6DE5E8FD348BBA72A316C /* NightlyMemoryCheck */ = {
-			isa = PBXGroup;
-			children = (
-				3A969A6B1022411CB0CF2CE1 /* CMake Rules */,
-				AAB10D4A995044EB86E9BF4D /* /Users/handabao/MyFile/SkeletonAnimation - for user/CMakeLists.txt */,
-			);
-			name = NightlyMemoryCheck;
-			sourceTree = "<group>";
-		};
-		498258EA153745079F9CD1E1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C4DBC5721E1C42F5859C50CA /* HelloGL */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		5AA9584E8D6C46B1BE77E940 /* Shader Files */ = {
-			isa = PBXGroup;
-			children = (
-				5760C2C525E641339F6E2C9B /* /Users/handabao/MyFile/SkeletonAnimation - for user/shaders/fPointShader.glsl */,
-				E1064E0FA70443AE813FFA4F /* /Users/handabao/MyFile/SkeletonAnimation - for user/shaders/fragmentShader.glsl */,
-				18CCB0190452427BBC666BE7 /* /Users/handabao/MyFile/SkeletonAnimation - for user/shaders/vPointShader.glsl */,
-				04F536F6BABE445582E3EE63 /* /Users/handabao/MyFile/SkeletonAnimation - for user/shaders/vertexShader.glsl */,
-			);
-			name = "Shader Files";
-			sourceTree = "<group>";
-		};
-		732F93A9A95B4C1EBAC6D103 = {
-			isa = PBXGroup;
-			children = (
-				8EFDF1E0D72349F1B8FF10DE /* HelloGL */,
-				CE521A94D4C24EDE9412FEB9 /* CTestDashboardTargets */,
-				3D742DAC5D00425FAF426B56 /* ALL_BUILD */,
-				498258EA153745079F9CD1E1 /* Products */,
-				DA3B91A20CA44F16A2216E62 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		7A77E5BD082C4BFC933C0DB7 /* CMake Rules */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "CMake Rules";
-			sourceTree = "<group>";
-		};
-		84326FF992C14991A01B1927 /* CMake Rules */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "CMake Rules";
-			sourceTree = "<group>";
-		};
-		8ACDF859DEEB4C54BAA2FC90 /* CMake Rules */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "CMake Rules";
-			sourceTree = "<group>";
-		};
-		8EFDF1E0D72349F1B8FF10DE /* HelloGL */ = {
-			isa = PBXGroup;
-			children = (
-				BF32B40C954C4B8180383F17 /* Source Files */,
-				B546175FD2BC49EA86D78633 /* Header Files */,
-				5AA9584E8D6C46B1BE77E940 /* Shader Files */,
-				2CBE975FC2154F2FBAF656F2 /* /Users/handabao/MyFile/SkeletonAnimation - for user/CMakeLists.txt */,
-			);
-			name = HelloGL;
-			sourceTree = "<group>";
-		};
-		A91756A5C2FA4082BF7C5D14 /* CMake Rules */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "CMake Rules";
-			sourceTree = "<group>";
-		};
-		B546175FD2BC49EA86D78633 /* Header Files */ = {
-			isa = PBXGroup;
-			children = (
-				AD869C19907442818BDF12B7 /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/Base.h */,
-				C95F4553B0DD45E1B317CD8A /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/Camera.h */,
-				723EB6279C20411C9C9F1EE4 /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/Shader.h */,
-				7A0FC3A30DB945A2B95D0F5D /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/ffAnimation.h */,
-				094868C1775A4A569E4790B9 /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/ffAnimator.h */,
-				9717932BD7CC47F0ABEF3C24 /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/ffAssimpHelper.h */,
-				434B801F730243B8A9214C4B /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/ffBone.h */,
-				777D8C0363B0470C85BFF8B2 /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/ffImage.h */,
-				B8BB22C53F704D868B401341 /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/ffMesh.h */,
-				DBF6A0770DCD42AC957AB853 /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/ffModel.h */,
-				5C78CB5BFBCA447B81A1E112 /* /Users/handabao/MyFile/SkeletonAnimation - for user/include/stb_image.h */,
-			);
-			name = "Header Files";
-			sourceTree = "<group>";
-		};
-		BF32B40C954C4B8180383F17 /* Source Files */ = {
-			isa = PBXGroup;
-			children = (
-				E7616483844241D6AB655CEB /* /Users/handabao/MyFile/SkeletonAnimation - for user/glad/src/glad.c */,
-				F73B20837874432A88B6DAAD /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/Camera.cpp */,
-				729DDF2EBD01409B859F021E /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/Shader.cpp */,
-				AB5B483708224C378589F443 /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/ffAnimation.cpp */,
-				A972EA148ED240F4B751E019 /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/ffAnimator.cpp */,
-				AC5B0120801B48F39DBD27FC /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/ffAssimpHelper.cpp */,
-				9131BEC927554E07B9BAE5AE /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/ffBone.cpp */,
-				9A079191B28E42F08442DB4E /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/ffImage.cpp */,
-				87D37D73CDBB48A787E26F6B /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/ffMesh.cpp */,
-				15731EB4FBE44197BFE56C7D /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/ffModel.cpp */,
-				98FC7D935B194CF28D1EAD84 /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/main.cpp */,
-			);
-			name = "Source Files";
-			sourceTree = "<group>";
-		};
-		C330FD8EC1D547DAA26B9A9C /* Experimental */ = {
-			isa = PBXGroup;
-			children = (
-				8ACDF859DEEB4C54BAA2FC90 /* CMake Rules */,
-				6CD7E376B091456895098D08 /* /Users/handabao/MyFile/SkeletonAnimation - for user/CMakeLists.txt */,
-			);
-			name = Experimental;
-			sourceTree = "<group>";
-		};
-		CE521A94D4C24EDE9412FEB9 /* CTestDashboardTargets */ = {
-			isa = PBXGroup;
-			children = (
-				C330FD8EC1D547DAA26B9A9C /* Experimental */,
-				2E462DB6D59245B5AD7DCA59 /* Nightly */,
-				1339F310F9EF4D45B06B0DA4 /* Continuous */,
-				43B6DE5E8FD348BBA72A316C /* NightlyMemoryCheck */,
-			);
-			name = CTestDashboardTargets;
-			sourceTree = "<group>";
-		};
-		DA3B91A20CA44F16A2216E62 /* Frameworks */ = {
+		0249D99D32C449E6AF383909 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		1DD8CC9DDCAB48A4AACB1A4B /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				EE041306B1F64BF1A8B0B483 /* CMake Rules */,
+				8CB0BF273E314E2DB4F564D6 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		1F08D3D0CE3645BEAF724FF3 /* CTestDashboardTargets */ = {
+			isa = PBXGroup;
+			children = (
+				D3170E9DA7E74ACA8C5907D6 /* Experimental */,
+				D5779EFE69184B8AA589838B /* Nightly */,
+				CBD974C5B3954DA59147E7A8 /* Continuous */,
+				588B2A0D22F6468EAB1FA807 /* NightlyMemoryCheck */,
+			);
+			name = CTestDashboardTargets;
+			sourceTree = "<group>";
+		};
+		1F38EF7111DB42E3B2069C47 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		377819E5BAE049B19B0A3E42 = {
+			isa = PBXGroup;
+			children = (
+				8E274D210061446BA277F3EA /* HelloGL */,
+				1F08D3D0CE3645BEAF724FF3 /* CTestDashboardTargets */,
+				1DD8CC9DDCAB48A4AACB1A4B /* ALL_BUILD */,
+				BBB3F1CA171C4948A7BA81F7 /* Products */,
+				0249D99D32C449E6AF383909 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		588B2A0D22F6468EAB1FA807 /* NightlyMemoryCheck */ = {
+			isa = PBXGroup;
+			children = (
+				E2FE7785DC8D41B4B646246E /* CMake Rules */,
+				78F6CAD084EE40308B2E7B34 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/CMakeLists.txt */,
+			);
+			name = NightlyMemoryCheck;
+			sourceTree = "<group>";
+		};
+		72C20EAE1A9A4084AC3647BC /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				FED907626D274563B10A0F65 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glad/src/glad.c */,
+				328C2E14DAE84781BD995D52 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/Camera.cpp */,
+				3836F87F049D4C5E8927CA8A /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/Shader.cpp */,
+				F1133450A5494DCD8C8C8333 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/ffAnimation.cpp */,
+				02ED546AEC8E4717857D149B /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/ffAnimator.cpp */,
+				90271A9E5E584EBDA5A2E985 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/ffAssimpHelper.cpp */,
+				9771588330B3403C9C6589DA /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/ffBone.cpp */,
+				D45DB8224D304FFF88F378AE /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/ffImage.cpp */,
+				F38F587D90FE426F8D441137 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/ffMesh.cpp */,
+				8661503F9B1C4AC0B9545127 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/ffModel.cpp */,
+				8911575245974804B38E10B0 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/main.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		8E274D210061446BA277F3EA /* HelloGL */ = {
+			isa = PBXGroup;
+			children = (
+				72C20EAE1A9A4084AC3647BC /* Source Files */,
+				DB40EA79E582480CA185E3CB /* Header Files */,
+				AEEFB2F0647A41A1B2D48B00 /* Shader Files */,
+				4FF7EF039CB84CA3BBB20812 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/CMakeLists.txt */,
+			);
+			name = HelloGL;
+			sourceTree = "<group>";
+		};
+		AEEFB2F0647A41A1B2D48B00 /* Shader Files */ = {
+			isa = PBXGroup;
+			children = (
+				72D56FBCA27E455187A77A8E /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/shaders/fPointShader.glsl */,
+				6B23E0B579E7483FA3BD41CC /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/shaders/fragmentShader.glsl */,
+				55423BAEDC37429695C02CCA /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/shaders/vPointShader.glsl */,
+				F1B3D71E1B8743A4871C82B1 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/shaders/vertexShader.glsl */,
+			);
+			name = "Shader Files";
+			sourceTree = "<group>";
+		};
+		BBB3F1CA171C4948A7BA81F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DC5E34BD4A04F2789D1611F /* HelloGL */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBD974C5B3954DA59147E7A8 /* Continuous */ = {
+			isa = PBXGroup;
+			children = (
+				1F38EF7111DB42E3B2069C47 /* CMake Rules */,
+				6C8B44FB13E04A5095B8649F /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/CMakeLists.txt */,
+			);
+			name = Continuous;
+			sourceTree = "<group>";
+		};
+		CFD7EF79A8D24CF9B08C031D /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		D17854F2A8954ACEB6458960 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		D3170E9DA7E74ACA8C5907D6 /* Experimental */ = {
+			isa = PBXGroup;
+			children = (
+				D17854F2A8954ACEB6458960 /* CMake Rules */,
+				B8579EFE2AEE45DCB458FA73 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/CMakeLists.txt */,
+			);
+			name = Experimental;
+			sourceTree = "<group>";
+		};
+		D5779EFE69184B8AA589838B /* Nightly */ = {
+			isa = PBXGroup;
+			children = (
+				CFD7EF79A8D24CF9B08C031D /* CMake Rules */,
+				1710022B3BBD449A8EF68A63 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/CMakeLists.txt */,
+			);
+			name = Nightly;
+			sourceTree = "<group>";
+		};
+		DB40EA79E582480CA185E3CB /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				75966EB47C854A23A6F23A89 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/Base.h */,
+				43CD3A5D5B134A88B9B82C8F /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/Camera.h */,
+				EB3CA265DECB4D70A85791A6 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/Shader.h */,
+				ABB10B45C5974177B8945AEE /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/ffAnimation.h */,
+				A03CDA1CB98E442AB9293319 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/ffAnimator.h */,
+				4699E7218A5241229C1C8396 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/ffAssimpHelper.h */,
+				B8706848B4B84C2085AFD2F4 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/ffBone.h */,
+				4BFCFF3D41294101BE0D2693 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/ffImage.h */,
+				F931E402BF8C416782CECB77 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/ffMesh.h */,
+				345A109210C34A8D9E3D1C5F /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/ffModel.h */,
+				518F2475C88E4C979D649431 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/stb_image.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		E2FE7785DC8D41B4B646246E /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		EE041306B1F64BF1A8B0B483 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D3361B80161541C78ADF1B3A /* HelloGL */ = {
+		F8A4813AAB794B9CA7678A13 /* HelloGL */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 82515C321D564F399633AB62 /* Build configuration list for PBXNativeTarget "HelloGL" */;
+			buildConfigurationList = BC72526F96004FD9B2F901A1 /* Build configuration list for PBXNativeTarget "HelloGL" */;
 			buildPhases = (
-				B4A159B19B6448F7A646F7D2 /* Sources */,
-				99F69B822AD644DB896E4AEA /* Frameworks */,
+				7059163B0BF048A5A9632323 /* Sources */,
+				3F10DFE975AB4583990D20CF /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9B3A52C0B78249738E752E23 /* PBXTargetDependency */,
+				42A884A722064DD89058793B /* PBXTargetDependency */,
 			);
 			name = HelloGL;
 			productName = HelloGL;
-			productReference = C4DBC5721E1C42F5859C50CA /* HelloGL */;
+			productReference = 4DC5E34BD4A04F2789D1611F /* HelloGL */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		18618CEAD9A240A79EA282D0 /* Project object */ = {
+		E44B0F1D7DF244C7A0640C0A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
 			};
-			buildConfigurationList = D8F92DEA20664D809120C722 /* Build configuration list for PBXProject "HelloGL" */;
+			buildConfigurationList = 32C74C0954D4472B813FC384 /* Build configuration list for PBXProject "HelloGL" */;
 			buildSettings = {
 			};
 			buildStyles = (
-				D47681048901427C8C8E70F0 /* Debug */,
-				833718D1CCFB418FBD4DECC2 /* Release */,
-				2124A21B9B154B29BA528BF1 /* MinSizeRel */,
-				0BD9E95B352A40949339EA83 /* RelWithDebInfo */,
+				7370AFF9162940C2AAE9E1D7 /* Debug */,
+				822F4002CDB64956BEF64A94 /* Release */,
+				08DED862774B4E649558E012 /* MinSizeRel */,
+				FC54C466973E41D5BD6CB083 /* RelWithDebInfo */,
 			);
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 0;
-			mainGroup = 732F93A9A95B4C1EBAC6D103;
-			projectDirPath = "/Users/handabao/MyFile/SkeletonAnimation - for user";
+			mainGroup = 377819E5BAE049B19B0A3E42;
+			projectDirPath = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation;
 			projectRoot = "";
 			targets = (
-				5DDCCB81CAF8459884B7BBC5 /* ALL_BUILD */,
-				E1A8B85223C34A4FB612645A /* Continuous */,
-				DFABD38229DC4F8CB35E3185 /* Experimental */,
-				D3361B80161541C78ADF1B3A /* HelloGL */,
-				EBE86DA0B84C4B098DA03A13 /* Nightly */,
-				7CE1A95DE29547A4AFE5D1B0 /* NightlyMemoryCheck */,
-				0DEE246FCAEA40B7A2F74EF8 /* RUN_TESTS */,
-				B66DA3366555467FBA2FA627 /* ZERO_CHECK */,
-				1918E99C402D4DE2A5CE195B /* package */,
+				2B891597D67143F0AFD7BC4E /* ALL_BUILD */,
+				71B8B5BD7F6842E7942F454B /* Continuous */,
+				300D4EEE3A234F6EACA4BA74 /* Experimental */,
+				F8A4813AAB794B9CA7678A13 /* HelloGL */,
+				AB9A00203B81445E8CCB54C8 /* Nightly */,
+				E88A00B0CD824F39AE08FBE6 /* NightlyMemoryCheck */,
+				42207C8390064BA2AE37DF43 /* RUN_TESTS */,
+				7A97CEA8918B4C4998A7C39A /* ZERO_CHECK */,
+				EA91BC2C64AF434DBC6A2FB1 /* package */,
 			);
 		};
 /* End PBXProject section */
@@ -517,19 +517,19 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e
 if test \"$CONFIGURATION\" = \"Debug\"; then :
-  cd \"/Users/handabao/MyFile/SkeletonAnimation - for user/build\"
+  cd /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build
   /usr/local/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
 fi
 if test \"$CONFIGURATION\" = \"Release\"; then :
-  cd \"/Users/handabao/MyFile/SkeletonAnimation - for user/build\"
+  cd /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build
   /usr/local/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
 fi
 if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
-  cd \"/Users/handabao/MyFile/SkeletonAnimation - for user/build\"
+  cd /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build
   /usr/local/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
 fi
 if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
-  cd \"/Users/handabao/MyFile/SkeletonAnimation - for user/build\"
+  cd /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build
   /usr/local/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
 fi
 ";
@@ -565,7 +565,7 @@ exit 0";
 exit 0";
 			showEnvVarsInLog = 0;
 		};
-		2C96EBE27A14990A7389B2CB /* Generate CMakeFiles/ZERO_CHECK */ = {
+		275A752FA6A68BC68DDFC78D /* Generate CMakeFiles/NightlyMemoryCheck */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -573,60 +573,27 @@ exit 0";
 			);
 			inputPaths = (
 			);
-			name = "Generate CMakeFiles/ZERO_CHECK";
+			name = "Generate CMakeFiles/NightlyMemoryCheck";
 			outputPaths = (
-"/Users/handabao/MyFile/SkeletonAnimation - for user/build/CMakeFiles/ZERO_CHECK"			);
+/Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build/CMakeFiles/NightlyMemoryCheck			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -e
 if test \"$CONFIGURATION\" = \"Debug\"; then :
-  cd \"/Users/handabao/MyFile/SkeletonAnimation - for user/build\"
-  make -f /Users/handabao/MyFile/SkeletonAnimation\\ -\\ for\\ user/build/CMakeScripts/ReRunCMake.make
+  cd /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D NightlyMemoryCheck
 fi
 if test \"$CONFIGURATION\" = \"Release\"; then :
-  cd \"/Users/handabao/MyFile/SkeletonAnimation - for user/build\"
-  make -f /Users/handabao/MyFile/SkeletonAnimation\\ -\\ for\\ user/build/CMakeScripts/ReRunCMake.make
+  cd /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D NightlyMemoryCheck
 fi
 if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
-  cd \"/Users/handabao/MyFile/SkeletonAnimation - for user/build\"
-  make -f /Users/handabao/MyFile/SkeletonAnimation\\ -\\ for\\ user/build/CMakeScripts/ReRunCMake.make
+  cd /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D NightlyMemoryCheck
 fi
 if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
-  cd \"/Users/handabao/MyFile/SkeletonAnimation - for user/build\"
-  make -f /Users/handabao/MyFile/SkeletonAnimation\\ -\\ for\\ user/build/CMakeScripts/ReRunCMake.make
-fi
-";
-			showEnvVarsInLog = 0;
-		};
-		31185B2322EAEF2F896B2F92 /* Generate CMakeFiles/Continuous */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Generate CMakeFiles/Continuous";
-			outputPaths = (
-"/Users/handabao/MyFile/SkeletonAnimation - for user/build/CMakeFiles/Continuous"			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "set -e
-if test \"$CONFIGURATION\" = \"Debug\"; then :
-  cd \"/Users/handabao/MyFile/SkeletonAnimation - for user/build\"
-  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Continuous
-fi
-if test \"$CONFIGURATION\" = \"Release\"; then :
-  cd \"/Users/handabao/MyFile/SkeletonAnimation - for user/build\"
-  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Continuous
-fi
-if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
-  cd \"/Users/handabao/MyFile/SkeletonAnimation - for user/build\"
-  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Continuous
-fi
-if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
-  cd \"/Users/handabao/MyFile/SkeletonAnimation - for user/build\"
-  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Continuous
+  cd /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D NightlyMemoryCheck
 fi
 ";
 			showEnvVarsInLog = 0;
@@ -646,72 +613,6 @@ fi
 exit 0";
 			showEnvVarsInLog = 0;
 		};
-		35C10D043E99927D0E186791 /* Generate CMakeFiles/Experimental */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Generate CMakeFiles/Experimental";
-			outputPaths = (
-"/Users/handabao/MyFile/SkeletonAnimation - for user/build/CMakeFiles/Experimental"			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "set -e
-if test \"$CONFIGURATION\" = \"Debug\"; then :
-  cd \"/Users/handabao/MyFile/SkeletonAnimation - for user/build\"
-  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Experimental
-fi
-if test \"$CONFIGURATION\" = \"Release\"; then :
-  cd \"/Users/handabao/MyFile/SkeletonAnimation - for user/build\"
-  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Experimental
-fi
-if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
-  cd \"/Users/handabao/MyFile/SkeletonAnimation - for user/build\"
-  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Experimental
-fi
-if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
-  cd \"/Users/handabao/MyFile/SkeletonAnimation - for user/build\"
-  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Experimental
-fi
-";
-			showEnvVarsInLog = 0;
-		};
-		366D5B1EF3BB7714BC265478 /* Generate CMakeFiles/Nightly */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Generate CMakeFiles/Nightly";
-			outputPaths = (
-"/Users/handabao/MyFile/SkeletonAnimation - for user/build/CMakeFiles/Nightly"			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "set -e
-if test \"$CONFIGURATION\" = \"Debug\"; then :
-  cd \"/Users/handabao/MyFile/SkeletonAnimation - for user/build\"
-  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Nightly
-fi
-if test \"$CONFIGURATION\" = \"Release\"; then :
-  cd \"/Users/handabao/MyFile/SkeletonAnimation - for user/build\"
-  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Nightly
-fi
-if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
-  cd \"/Users/handabao/MyFile/SkeletonAnimation - for user/build\"
-  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Nightly
-fi
-if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
-  cd \"/Users/handabao/MyFile/SkeletonAnimation - for user/build\"
-  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Nightly
-fi
-";
-			showEnvVarsInLog = 0;
-		};
 		3C0110FC8322DE7E50886E21 = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -727,39 +628,6 @@ fi
 exit 0";
 			showEnvVarsInLog = 0;
 		};
-		49ECB877FB4281D5FEB4F136 /* Generate CMakeFiles/NightlyMemoryCheck */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Generate CMakeFiles/NightlyMemoryCheck";
-			outputPaths = (
-"/Users/handabao/MyFile/SkeletonAnimation - for user/build/CMakeFiles/NightlyMemoryCheck"			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "set -e
-if test \"$CONFIGURATION\" = \"Debug\"; then :
-  cd \"/Users/handabao/MyFile/SkeletonAnimation - for user/build\"
-  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D NightlyMemoryCheck
-fi
-if test \"$CONFIGURATION\" = \"Release\"; then :
-  cd \"/Users/handabao/MyFile/SkeletonAnimation - for user/build\"
-  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D NightlyMemoryCheck
-fi
-if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
-  cd \"/Users/handabao/MyFile/SkeletonAnimation - for user/build\"
-  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D NightlyMemoryCheck
-fi
-if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
-  cd \"/Users/handabao/MyFile/SkeletonAnimation - for user/build\"
-  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D NightlyMemoryCheck
-fi
-";
-			showEnvVarsInLog = 0;
-		};
 		571234464C2A5D0D43F1AB42 /* CMake PostBuild Rules */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -773,19 +641,19 @@ fi
 			shellPath = /bin/sh;
 			shellScript = "set -e
 if test \"$CONFIGURATION\" = \"Debug\"; then :
-  cd \"/Users/handabao/MyFile/SkeletonAnimation - for user/build\"
+  cd /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build
   /usr/local/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
 fi
 if test \"$CONFIGURATION\" = \"Release\"; then :
-  cd \"/Users/handabao/MyFile/SkeletonAnimation - for user/build\"
+  cd /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build
   /usr/local/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
 fi
 if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
-  cd \"/Users/handabao/MyFile/SkeletonAnimation - for user/build\"
+  cd /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build
   /usr/local/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
 fi
 if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
-  cd \"/Users/handabao/MyFile/SkeletonAnimation - for user/build\"
+  cd /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build
   /usr/local/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
 fi
 ";
@@ -806,6 +674,39 @@ fi
 exit 0";
 			showEnvVarsInLog = 0;
 		};
+		80B1EF1376AB10E09378B716 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+/Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build/CMakeFiles/ALL_BUILD			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
 		910A41151295C5F9742C25BD = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -819,6 +720,39 @@ exit 0";
 			shellPath = /bin/sh;
 			shellScript = "# shell script goes here
 exit 0";
+			showEnvVarsInLog = 0;
+		};
+		951145813652090C00AB1CEF /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+/Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build/CMakeFiles/ZERO_CHECK			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build
+  make -f /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build
+  make -f /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build
+  make -f /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build
+  make -f /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build/CMakeScripts/ReRunCMake.make
+fi
+";
 			showEnvVarsInLog = 0;
 		};
 		9B50530E35CC49C82C2FACCF = {
@@ -836,6 +770,39 @@ exit 0";
 exit 0";
 			showEnvVarsInLog = 0;
 		};
+		A5B58E03F1AA7AB7957963D6 /* Generate CMakeFiles/Nightly */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/Nightly";
+			outputPaths = (
+/Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build/CMakeFiles/Nightly			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Nightly
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Nightly
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Nightly
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Nightly
+fi
+";
+			showEnvVarsInLog = 0;
+		};
 		A68D7F74133ED74D8658B427 = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -851,7 +818,7 @@ exit 0";
 exit 0";
 			showEnvVarsInLog = 0;
 		};
-		FACE95FBBE985F93D650A334 /* Generate CMakeFiles/ALL_BUILD */ = {
+		D262DAC030456B4AE334CDF7 /* Generate CMakeFiles/Experimental */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -859,27 +826,60 @@ exit 0";
 			);
 			inputPaths = (
 			);
-			name = "Generate CMakeFiles/ALL_BUILD";
+			name = "Generate CMakeFiles/Experimental";
 			outputPaths = (
-"/Users/handabao/MyFile/SkeletonAnimation - for user/build/CMakeFiles/ALL_BUILD"			);
+/Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build/CMakeFiles/Experimental			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -e
 if test \"$CONFIGURATION\" = \"Debug\"; then :
-  cd \"/Users/handabao/MyFile/SkeletonAnimation - for user/build\"
-  echo Build\\ all\\ projects
+  cd /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Experimental
 fi
 if test \"$CONFIGURATION\" = \"Release\"; then :
-  cd \"/Users/handabao/MyFile/SkeletonAnimation - for user/build\"
-  echo Build\\ all\\ projects
+  cd /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Experimental
 fi
 if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
-  cd \"/Users/handabao/MyFile/SkeletonAnimation - for user/build\"
-  echo Build\\ all\\ projects
+  cd /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Experimental
 fi
 if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
-  cd \"/Users/handabao/MyFile/SkeletonAnimation - for user/build\"
-  echo Build\\ all\\ projects
+  cd /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Experimental
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		F9BDD8E9AD9DB4F0C5494211 /* Generate CMakeFiles/Continuous */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/Continuous";
+			outputPaths = (
+/Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build/CMakeFiles/Continuous			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Continuous
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Continuous
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Continuous
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Continuous
 fi
 ";
 			showEnvVarsInLog = 0;
@@ -887,144 +887,71 @@ fi
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B4A159B19B6448F7A646F7D2 /* Sources */ = {
+		7059163B0BF048A5A9632323 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB1E31B5EF764EB9978D7CA4 /* /Users/handabao/MyFile/SkeletonAnimation - for user/glad/src/glad.c */,
-				26D05E36C751462DBC313A16 /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/Camera.cpp */,
-				2F77A51A0CF4414B8D3D25C8 /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/Shader.cpp */,
-				A94579BE702147D7A8ED1051 /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/ffAnimation.cpp */,
-				093F2FE9D83A40C8A1CD0377 /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/ffAnimator.cpp */,
-				B68AC7A6FF354DB0853F4957 /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/ffAssimpHelper.cpp */,
-				B82448F1CF1248E8B7A3CE1B /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/ffBone.cpp */,
-				46C4AACBA03D45A1A63F4247 /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/ffImage.cpp */,
-				1FDF1AA33E8F4590B1865D84 /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/ffMesh.cpp */,
-				0F167F327D2843E5AE66C514 /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/ffModel.cpp */,
-				750E9B90D88A41D8A5C5608A /* /Users/handabao/MyFile/SkeletonAnimation - for user/src/main.cpp */,
+				5A437A1593D04E5CB6FBBE5E /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glad/src/glad.c */,
+				FE39A34084E447078882E6E1 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/Camera.cpp */,
+				42ED1AE8EAFA4464AEEC951F /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/Shader.cpp */,
+				DD7D814E019449889B556712 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/ffAnimation.cpp */,
+				2F832ACC1657445995FD28A2 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/ffAnimator.cpp */,
+				7D22DB71B6C34886A235C258 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/ffAssimpHelper.cpp */,
+				FAD1295EBE204F25A0FE0B1D /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/ffBone.cpp */,
+				79C62D2655A547B3BEF546AA /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/ffImage.cpp */,
+				FB9EB7302CE943009C24A192 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/ffMesh.cpp */,
+				5996B938E1F34691B73AD2D0 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/ffModel.cpp */,
+				837588C2BD374DD3A8D11286 /* /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/main.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0020FDB587214AD58D2C2B18 /* PBXTargetDependency */ = {
+		391DFB325A2C45E7B50C7939 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B66DA3366555467FBA2FA627 /* ZERO_CHECK */;
-			targetProxy = 9C2C968EE3274DE892500047 /* PBXContainerItemProxy */;
+			target = 7A97CEA8918B4C4998A7C39A /* ZERO_CHECK */;
+			targetProxy = 6191614700E448E3A4C965FF /* PBXContainerItemProxy */;
 		};
-		2335B1137024495B9A8A8D93 /* PBXTargetDependency */ = {
+		42A884A722064DD89058793B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B66DA3366555467FBA2FA627 /* ZERO_CHECK */;
-			targetProxy = 140A604995C547979C2AE70F /* PBXContainerItemProxy */;
+			target = 7A97CEA8918B4C4998A7C39A /* ZERO_CHECK */;
+			targetProxy = 06A012C7987E4CD7ABDB13DC /* PBXContainerItemProxy */;
 		};
-		385DB5473EDC4A9B9584A0AF /* PBXTargetDependency */ = {
+		49424BA69D514E5AAA34932E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D3361B80161541C78ADF1B3A /* HelloGL */;
-			targetProxy = 3E586CA8D4C94AAA8D39632B /* PBXContainerItemProxy */;
+			target = 7A97CEA8918B4C4998A7C39A /* ZERO_CHECK */;
+			targetProxy = 0AE2987849CE4B3BA3D7E41B /* PBXContainerItemProxy */;
 		};
-		5D8E76154532426A991595B2 /* PBXTargetDependency */ = {
+		4BDB6D66B4FB45659E0B9EE2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B66DA3366555467FBA2FA627 /* ZERO_CHECK */;
-			targetProxy = 73BB3E160139487EBD276F14 /* PBXContainerItemProxy */;
+			target = F8A4813AAB794B9CA7678A13 /* HelloGL */;
+			targetProxy = FBD88C36A4674BDEA86A5B11 /* PBXContainerItemProxy */;
 		};
-		91FD49BA293F4FB2BD13C86B /* PBXTargetDependency */ = {
+		4E82C40D75C54E73BC0F972F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5DDCCB81CAF8459884B7BBC5 /* ALL_BUILD */;
-			targetProxy = B6FD1644FCF242228BD9FC22 /* PBXContainerItemProxy */;
+			target = 7A97CEA8918B4C4998A7C39A /* ZERO_CHECK */;
+			targetProxy = 3E9E28EF1B3B4DD6BB3A7221 /* PBXContainerItemProxy */;
 		};
-		9B3A52C0B78249738E752E23 /* PBXTargetDependency */ = {
+		54E84666453D4374A592CD16 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B66DA3366555467FBA2FA627 /* ZERO_CHECK */;
-			targetProxy = CC8200116588492D9F741EE3 /* PBXContainerItemProxy */;
+			target = 2B891597D67143F0AFD7BC4E /* ALL_BUILD */;
+			targetProxy = 9AC69CDC957B4F3BBF9E4BBD /* PBXContainerItemProxy */;
 		};
-		BECCC0CCC975462596A73B3E /* PBXTargetDependency */ = {
+		96A892FF51894ACCA0C83533 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B66DA3366555467FBA2FA627 /* ZERO_CHECK */;
-			targetProxy = 13DF90AE0DCE47BC9BE67731 /* PBXContainerItemProxy */;
+			target = 7A97CEA8918B4C4998A7C39A /* ZERO_CHECK */;
+			targetProxy = F9FD8AAEE10D4E0CBF105B5B /* PBXContainerItemProxy */;
 		};
-		C5AC641361A343FB9DB13BED /* PBXTargetDependency */ = {
+		CA1F91C322B8439EA73FD59A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B66DA3366555467FBA2FA627 /* ZERO_CHECK */;
-			targetProxy = A6E4AA8C1C6746F88E03D451 /* PBXContainerItemProxy */;
+			target = 7A97CEA8918B4C4998A7C39A /* ZERO_CHECK */;
+			targetProxy = 50015850A6594BFEB4EF423E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		028791DCD7DC4FC08ECC2E3C /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("\"/Users/handabao/MyFile/SkeletonAnimation - for user/glad/include\"",/opt/homebrew/Cellar/glfw/3.3.8/include,"\"/Users/handabao/MyFile/SkeletonAnimation - for user/glm\"",/opt/homebrew/Cellar/assimp/5.2.5/include,"\"/Users/handabao/MyFile/SkeletonAnimation - for user/include\"","$(inherited)");
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CFLAGS = ("    -DNDEBUG ","$(inherited)");
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++11' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/opt/homebrew/Cellar/glfw/3.3.8/lib/libglfw.3.dylib,/opt/homebrew/Cellar/assimp/5.2.5/lib/libassimp.5.dylib,"-framework OpenGL","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = HelloGL;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		166ED06556F943739FAC4855 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("\"/Users/handabao/MyFile/SkeletonAnimation - for user/glad/include\"",/opt/homebrew/Cellar/glfw/3.3.8/include,"\"/Users/handabao/MyFile/SkeletonAnimation - for user/glm\"",/opt/homebrew/Cellar/assimp/5.2.5/include,"\"/Users/handabao/MyFile/SkeletonAnimation - for user/include\"","$(inherited)");
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CFLAGS = ("   ","$(inherited)");
-				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++11' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/opt/homebrew/Cellar/glfw/3.3.8/lib/libglfw.3.dylib,/opt/homebrew/Cellar/assimp/5.2.5/lib/libassimp.5.dylib,"-framework OpenGL","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = HelloGL;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		180681EBBFB349ED97D856CD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = Continuous;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		1935AE0498C746A19F87BA3B /* Release */ = {
+		005A6F75D64B4EF590E9F555 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = arm64;
@@ -1039,705 +966,13 @@ fi
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = package;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build;
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = Release;
 		};
-		1B546D3112804687A976B564 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = Nightly;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		2E5972103D1748BCAAFD3ABA /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		32B55BC741D149BB8F61B5EA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = RUN_TESTS;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		3699151B13194ED18F837BED /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = package;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		3CD9D9DD3B084DFE82FC3B58 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build/build";
-			};
-			name = RelWithDebInfo;
-		};
-		3CFD770623004387B5CD1437 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("\"/Users/handabao/MyFile/SkeletonAnimation - for user/glad/include\"",/opt/homebrew/Cellar/glfw/3.3.8/include,"\"/Users/handabao/MyFile/SkeletonAnimation - for user/glm\"",/opt/homebrew/Cellar/assimp/5.2.5/include,"\"/Users/handabao/MyFile/SkeletonAnimation - for user/include\"","$(inherited)");
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CFLAGS = ("       -DNDEBUG ","$(inherited)");
-				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++11' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/opt/homebrew/Cellar/glfw/3.3.8/lib/libglfw.3.dylib,/opt/homebrew/Cellar/assimp/5.2.5/lib/libassimp.5.dylib,"-framework OpenGL","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = HelloGL;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		408858890A834CA9A991A3CF /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = package;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		40C1AB4549874C09A8F4253B /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = Nightly;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		48B9791F9FD544FBB837A7D6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		49575EED79794378B87565DB /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		4CC1A46F64BE4F78A382C4AB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		54EA14B7E4B34155BEF68E70 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = package;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		5D816AD2FB1543ABACD52834 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = Continuous;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		5F8D3EA8163C4F75A8B69D21 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build/build";
-			};
-			name = MinSizeRel;
-		};
-		65EE9FB5F7DC42939E3E2A62 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = Experimental;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		6769FA12E55B422BB0FA513C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = Continuous;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		697A49F5455A487A86254017 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = NightlyMemoryCheck;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		6EA32FF0C835494DA40CF31D /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = Nightly;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		74620A14E97245C1A639732B /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = NightlyMemoryCheck;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		7D09B325B643496AB7B20D71 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build/build";
-			};
-			name = Debug;
-		};
-		832B5559740D4F7C974389D6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		8CD924CDE091432E97C33F89 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		9CA5B2BD831C40C9A8DD444F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = Experimental;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		A46D7CBDCDEA42EF892061E5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = RUN_TESTS;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		A8C56BD13E6C4773BB6ED45C /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = RUN_TESTS;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		BF03CDF81D604820B2B6A7AF /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		C78A81C9EF014DEEA38CBAF4 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = RUN_TESTS;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		CAD33971BB9640C69F72DDA1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = Experimental;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		E29A39109A0B4CCEBC9E5C71 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = Experimental;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		E3C6F246450D461BA47D0EC5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = Nightly;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		E53074BE9B0A4A5F9EEA4E0B /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = NightlyMemoryCheck;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		E6E35096CA694EDBBECE9E52 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = Continuous;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		EC01F2D6325A4FBA8E47C212 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		ECA8FB275FA8438C9248D568 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = NightlyMemoryCheck;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		F5AA2B7544054E83BC478E7F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build/build";
-			};
-			name = Release;
-		};
-		F8B535302CBF49298556E528 /* Release */ = {
+		03730F8BCB49441DA9DAEABC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = arm64;
@@ -1749,7 +984,7 @@ fi
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("\"/Users/handabao/MyFile/SkeletonAnimation - for user/glad/include\"",/opt/homebrew/Cellar/glfw/3.3.8/include,"\"/Users/handabao/MyFile/SkeletonAnimation - for user/glm\"",/opt/homebrew/Cellar/assimp/5.2.5/include,"\"/Users/handabao/MyFile/SkeletonAnimation - for user/include\"","$(inherited)");
+				HEADER_SEARCH_PATHS = (/Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glad/include,/opt/homebrew/Cellar/glfw/3.3.8/include,/Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm,/opt/homebrew/Cellar/assimp/5.2.5/include,/Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include,"$(inherited)");
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = ("    -DNDEBUG ","$(inherited)");
 				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++11' ";
@@ -1757,7 +992,772 @@ fi
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = HelloGL;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/handabao/MyFile/SkeletonAnimation - for user/build";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		04D68BD31232455CB1288F84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		0D2257E7C354413F9CB567CE /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build/build;
+			};
+			name = RelWithDebInfo;
+		};
+		0FCEBD2D4D02416D91D5C53C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build/build;
+			};
+			name = Release;
+		};
+		173B0D896796430997979C31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nightly;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		1B20C08365CE4A91AB15EBA5 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		1E03AF47C52747FF812B8891 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		2370320B32EF43E7980ADDA5 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nightly;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		29A180D664D8440F9AEC4473 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		29B7820411FD4174973477A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glad/include,/opt/homebrew/Cellar/glfw/3.3.8/include,/Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm,/opt/homebrew/Cellar/assimp/5.2.5/include,/Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include,"$(inherited)");
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("   ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++11' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/opt/homebrew/Cellar/glfw/3.3.8/lib/libglfw.3.dylib,/opt/homebrew/Cellar/assimp/5.2.5/lib/libassimp.5.dylib,"-framework OpenGL","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = HelloGL;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		2A3AB40579A1401DAA1F3F06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NightlyMemoryCheck;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		35F5ECB6F66E4921B0C1DF62 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Experimental;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		37759DE02D5048158BA7E0D8 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Experimental;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		38BC6ACFA32141C68103BFFB /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		3A4A8DC358DE4E38AD746889 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Experimental;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		41BA6EE378C0456BB2387EC9 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NightlyMemoryCheck;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		4659BE60B2AE4EFEA8DE4A13 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		47A2E2B0D4AF478B96602BB0 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build/build;
+			};
+			name = MinSizeRel;
+		};
+		49C8387D283B427DB38B52CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		4C9484F907004BECADC2DDFB /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Continuous;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		51EC3685EC7D43209EF14BE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		5AD030BACF164B429514F5FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Continuous;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		5B83E2144ACD404D83EFB5BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NightlyMemoryCheck;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		64651CA906E943299FA06FF2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NightlyMemoryCheck;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		7A0C6D8E1DAE4EDFB49A2845 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nightly;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		7AD8F0E75B134E14991AD96D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		7B9EDCBA07424C79B3EDFC5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Continuous;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		8054973DAF72420692C631E7 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		AF991CE4EC8C44F68CF9D07D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Experimental;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		B519DC44B3604B6AA7C9023E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		B87E92F43A774B528E78AC5A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nightly;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C03ADAB072684E63A562CA7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build/build;
+			};
+			name = Debug;
+		};
+		C249BC8A26FF42CC912FD92A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C761246CA2D346208F44493F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		C7E41901AAC248DFB5F75FEE /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glad/include,/opt/homebrew/Cellar/glfw/3.3.8/include,/Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm,/opt/homebrew/Cellar/assimp/5.2.5/include,/Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include,"$(inherited)");
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("       -DNDEBUG ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++11' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/opt/homebrew/Cellar/glfw/3.3.8/lib/libglfw.3.dylib,/opt/homebrew/Cellar/assimp/5.2.5/lib/libassimp.5.dylib,"-framework OpenGL","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = HelloGL;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		CE1556841032469B80F6D87C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		CE8916708CA84506A0E34BB8 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glad/include,/opt/homebrew/Cellar/glfw/3.3.8/include,/Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm,/opt/homebrew/Cellar/assimp/5.2.5/include,/Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include,"$(inherited)");
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("    -DNDEBUG ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++11' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/opt/homebrew/Cellar/glfw/3.3.8/lib/libglfw.3.dylib,/opt/homebrew/Cellar/assimp/5.2.5/lib/libassimp.5.dylib,"-framework OpenGL","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = HelloGL;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		D308557AFDF140E390E3EA17 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Continuous;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		FB032CD3BE8B440196A0AF90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build;
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
@@ -1766,117 +1766,117 @@ fi
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1E126110115B4DD7AD8FC5AF /* Build configuration list for PBXAggregateTarget "Continuous" */ = {
+		082905DEA985451B8FDC5AE4 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				180681EBBFB349ED97D856CD /* Debug */,
-				6769FA12E55B422BB0FA513C /* Release */,
-				E6E35096CA694EDBBECE9E52 /* MinSizeRel */,
-				5D816AD2FB1543ABACD52834 /* RelWithDebInfo */,
+				1E03AF47C52747FF812B8891 /* Debug */,
+				29A180D664D8440F9AEC4473 /* Release */,
+				7AD8F0E75B134E14991AD96D /* MinSizeRel */,
+				C249BC8A26FF42CC912FD92A /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		62CD3873D4B34A3AAD25E6B1 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+		0AC51F7A078648CB9458E63F /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4CC1A46F64BE4F78A382C4AB /* Debug */,
-				EC01F2D6325A4FBA8E47C212 /* Release */,
-				2E5972103D1748BCAAFD3ABA /* MinSizeRel */,
-				BF03CDF81D604820B2B6A7AF /* RelWithDebInfo */,
+				49C8387D283B427DB38B52CA /* Debug */,
+				FB032CD3BE8B440196A0AF90 /* Release */,
+				CE1556841032469B80F6D87C /* MinSizeRel */,
+				1B20C08365CE4A91AB15EBA5 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		82515C321D564F399633AB62 /* Build configuration list for PBXNativeTarget "HelloGL" */ = {
+		2BF7B5C62D1A4E6CA9B78FA3 /* Build configuration list for PBXAggregateTarget "package" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				166ED06556F943739FAC4855 /* Debug */,
-				F8B535302CBF49298556E528 /* Release */,
-				028791DCD7DC4FC08ECC2E3C /* MinSizeRel */,
-				3CFD770623004387B5CD1437 /* RelWithDebInfo */,
+				04D68BD31232455CB1288F84 /* Debug */,
+				005A6F75D64B4EF590E9F555 /* Release */,
+				C761246CA2D346208F44493F /* MinSizeRel */,
+				38BC6ACFA32141C68103BFFB /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		9E86E31550414119A9D47DDB /* Build configuration list for PBXAggregateTarget "Nightly" */ = {
+		32C74C0954D4472B813FC384 /* Build configuration list for PBXProject "HelloGL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1B546D3112804687A976B564 /* Debug */,
-				E3C6F246450D461BA47D0EC5 /* Release */,
-				6EA32FF0C835494DA40CF31D /* MinSizeRel */,
-				40C1AB4549874C09A8F4253B /* RelWithDebInfo */,
+				C03ADAB072684E63A562CA7F /* Debug */,
+				0FCEBD2D4D02416D91D5C53C /* Release */,
+				47A2E2B0D4AF478B96602BB0 /* MinSizeRel */,
+				0D2257E7C354413F9CB567CE /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		A27A355834C84A5FA0DFE1D7 /* Build configuration list for PBXAggregateTarget "Experimental" */ = {
+		32EA0F9234A24DFF826C5661 /* Build configuration list for PBXAggregateTarget "Experimental" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9CA5B2BD831C40C9A8DD444F /* Debug */,
-				CAD33971BB9640C69F72DDA1 /* Release */,
-				E29A39109A0B4CCEBC9E5C71 /* MinSizeRel */,
-				65EE9FB5F7DC42939E3E2A62 /* RelWithDebInfo */,
+				AF991CE4EC8C44F68CF9D07D /* Debug */,
+				3A4A8DC358DE4E38AD746889 /* Release */,
+				35F5ECB6F66E4921B0C1DF62 /* MinSizeRel */,
+				37759DE02D5048158BA7E0D8 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		CA646913FC734C1682128CDD /* Build configuration list for PBXAggregateTarget "package" */ = {
+		4F340D5460974785895051F2 /* Build configuration list for PBXAggregateTarget "NightlyMemoryCheck" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				54EA14B7E4B34155BEF68E70 /* Debug */,
-				1935AE0498C746A19F87BA3B /* Release */,
-				3699151B13194ED18F837BED /* MinSizeRel */,
-				408858890A834CA9A991A3CF /* RelWithDebInfo */,
+				5B83E2144ACD404D83EFB5BC /* Debug */,
+				2A3AB40579A1401DAA1F3F06 /* Release */,
+				64651CA906E943299FA06FF2 /* MinSizeRel */,
+				41BA6EE378C0456BB2387EC9 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		CBFDD0BD1B7B4FF4B869B9E3 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+		5EC05F825F8640A6B445D4A1 /* Build configuration list for PBXAggregateTarget "Continuous" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				48B9791F9FD544FBB837A7D6 /* Debug */,
-				832B5559740D4F7C974389D6 /* Release */,
-				8CD924CDE091432E97C33F89 /* MinSizeRel */,
-				49575EED79794378B87565DB /* RelWithDebInfo */,
+				5AD030BACF164B429514F5FF /* Debug */,
+				7B9EDCBA07424C79B3EDFC5D /* Release */,
+				4C9484F907004BECADC2DDFB /* MinSizeRel */,
+				D308557AFDF140E390E3EA17 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		D178E394EFDF4A42AD118378 /* Build configuration list for PBXAggregateTarget "NightlyMemoryCheck" */ = {
+		81B37E9585E246B0A4A65F18 /* Build configuration list for PBXAggregateTarget "Nightly" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ECA8FB275FA8438C9248D568 /* Debug */,
-				697A49F5455A487A86254017 /* Release */,
-				E53074BE9B0A4A5F9EEA4E0B /* MinSizeRel */,
-				74620A14E97245C1A639732B /* RelWithDebInfo */,
+				7A0C6D8E1DAE4EDFB49A2845 /* Debug */,
+				173B0D896796430997979C31 /* Release */,
+				2370320B32EF43E7980ADDA5 /* MinSizeRel */,
+				B87E92F43A774B528E78AC5A /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		D8F92DEA20664D809120C722 /* Build configuration list for PBXProject "HelloGL" */ = {
+		82638F19777C46479F531110 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7D09B325B643496AB7B20D71 /* Debug */,
-				F5AA2B7544054E83BC478E7F /* Release */,
-				5F8D3EA8163C4F75A8B69D21 /* MinSizeRel */,
-				3CD9D9DD3B084DFE82FC3B58 /* RelWithDebInfo */,
+				B519DC44B3604B6AA7C9023E /* Debug */,
+				51EC3685EC7D43209EF14BE3 /* Release */,
+				8054973DAF72420692C631E7 /* MinSizeRel */,
+				4659BE60B2AE4EFEA8DE4A13 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		F928992D75884E01985BD0BE /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+		BC72526F96004FD9B2F901A1 /* Build configuration list for PBXNativeTarget "HelloGL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A46D7CBDCDEA42EF892061E5 /* Debug */,
-				32B55BC741D149BB8F61B5EA /* Release */,
-				A8C56BD13E6C4773BB6ED45C /* MinSizeRel */,
-				C78A81C9EF014DEEA38CBAF4 /* RelWithDebInfo */,
+				29B7820411FD4174973477A8 /* Debug */,
+				03730F8BCB49441DA9DAEABC /* Release */,
+				CE8916708CA84506A0E34BB8 /* MinSizeRel */,
+				C7E41901AAC248DFB5F75FEE /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 18618CEAD9A240A79EA282D0 /* Project object */;
+	rootObject = E44B0F1D7DF244C7A0640C0A /* Project object */;
 }

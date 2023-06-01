@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: /Users/handabao/MyFile/SkeletonAnimation - for user
-BuildDirectory: /Users/handabao/MyFile/SkeletonAnimation - for user/build
+SourceDirectory: /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation
+BuildDirectory: /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build
 
 # Where to place the cost data store
 CostDataFile: 
@@ -27,7 +27,7 @@ SubmitInactivityTimeout:
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/local/bin/cmake" "/Users/handabao/MyFile/SkeletonAnimation - for user"
+ConfigureCommand: "/usr/local/bin/cmake" "/Users/handabao/MyFile/code/opengl/43_02_BoneAnimation"
 MakeCommand: /usr/local/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 

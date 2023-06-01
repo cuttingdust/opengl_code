@@ -1,151 +1,151 @@
 dependencies: \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/src/main.cpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/include/Base.h \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glad/include/glad/glad.h \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glad/include/KHR/khrplatform.h \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/main.cpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/Base.h \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glad/include/glad/glad.h \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glad/include/KHR/khrplatform.h \
   /opt/homebrew/Cellar/glfw/3.3.8/include/GLFW/glfw3.h \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/glm.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/_fixes.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/fwd.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/type_int.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/setup.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/../simd/platform.h \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/type_float.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/type_vec.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/precision.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/type_mat.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/vec2.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/type_vec2.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/type_vec2.inl \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/vec3.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/type_vec3.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/type_vec3.inl \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/vec4.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/type_vec4.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/type_vec4.inl \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/type_vec4_simd.inl \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/mat2x2.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/type_mat2x2.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/../fwd.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/type_mat2x2.inl \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/func_matrix.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/../detail/precision.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/../detail/setup.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/../detail/type_mat.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/../vec2.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/../vec3.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/../vec4.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/../mat2x2.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/../mat2x3.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/type_mat2x3.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/type_mat2x3.inl \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/../mat2x4.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/type_mat2x4.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/type_mat2x4.inl \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/../mat3x2.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/type_mat3x2.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/type_mat3x2.inl \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/../mat3x3.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/type_mat3x3.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/type_mat3x3.inl \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/../mat3x4.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/type_mat3x4.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/type_mat3x4.inl \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/../mat4x2.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/type_mat4x2.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/type_mat4x2.inl \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/../mat4x3.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/type_mat4x3.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/type_mat4x3.inl \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/../mat4x4.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/type_mat4x4.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/type_mat4x4.inl \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/type_mat4x4_simd.inl \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/func_matrix.inl \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/../geometric.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/func_geometric.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/func_geometric.inl \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/func_exponential.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/type_vec1.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/type_vec1.inl \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/func_exponential.inl \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/func_vector_relational.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/func_vector_relational.inl \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/func_vector_relational_simd.inl \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/_vectorize.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/func_exponential_simd.inl \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/../simd/exponential.h \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/func_common.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/func_common.inl \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/func_common_simd.inl \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/func_geometric_simd.inl \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/../simd/geometric.h \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/../simd/common.h \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/func_matrix_simd.inl \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/mat2x3.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/mat2x4.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/mat3x2.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/mat3x3.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/mat3x4.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/mat4x2.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/mat4x3.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/mat4x4.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/trigonometric.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/func_trigonometric.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/func_trigonometric.inl \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/func_trigonometric_simd.inl \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/exponential.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/common.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/packing.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/func_packing.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/func_packing.inl \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/type_half.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/type_half.inl \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/func_packing_simd.inl \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/geometric.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/matrix.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/vector_relational.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/integer.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/func_integer.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/func_integer.inl \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/func_integer_simd.inl \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/detail/../simd/integer.h \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/gtc/matrix_transform.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/gtc/../mat4x4.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/gtc/../vec2.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/gtc/../vec3.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/gtc/../vec4.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/gtc/../gtc/constants.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/gtc/../detail/setup.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/gtc/constants.inl \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/gtc/matrix_transform.inl \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/gtc/../geometric.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/gtc/../trigonometric.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/gtc/../matrix.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/gtc/type_ptr.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/gtc/../gtc/quaternion.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/gtc/../mat3x3.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/gtc/quaternion.inl \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/gtc/../exponential.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/gtc/quaternion_simd.inl \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/gtc/../mat2x2.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/gtc/../mat2x3.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/gtc/../mat2x4.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/gtc/../mat3x2.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/gtc/../mat3x4.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/gtc/../mat4x2.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/gtc/../mat4x3.hpp \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/glm/glm/gtc/type_ptr.inl \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/include/Shader.h \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/include/ffImage.h \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/include/Camera.h \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/include/ffModel.h \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/glm.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/_fixes.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/fwd.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/type_int.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/setup.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/../simd/platform.h \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/type_float.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/type_vec.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/precision.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/type_mat.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/vec2.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/type_vec2.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/type_vec2.inl \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/vec3.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/type_vec3.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/type_vec3.inl \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/vec4.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/type_vec4.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/type_vec4.inl \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/type_vec4_simd.inl \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/mat2x2.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/type_mat2x2.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/../fwd.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/type_mat2x2.inl \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/func_matrix.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/../detail/precision.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/../detail/setup.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/../detail/type_mat.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/../vec2.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/../vec3.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/../vec4.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/../mat2x2.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/../mat2x3.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/type_mat2x3.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/type_mat2x3.inl \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/../mat2x4.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/type_mat2x4.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/type_mat2x4.inl \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/../mat3x2.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/type_mat3x2.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/type_mat3x2.inl \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/../mat3x3.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/type_mat3x3.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/type_mat3x3.inl \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/../mat3x4.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/type_mat3x4.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/type_mat3x4.inl \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/../mat4x2.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/type_mat4x2.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/type_mat4x2.inl \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/../mat4x3.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/type_mat4x3.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/type_mat4x3.inl \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/../mat4x4.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/type_mat4x4.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/type_mat4x4.inl \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/type_mat4x4_simd.inl \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/func_matrix.inl \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/../geometric.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/func_geometric.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/func_geometric.inl \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/func_exponential.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/type_vec1.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/type_vec1.inl \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/func_exponential.inl \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/func_vector_relational.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/func_vector_relational.inl \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/func_vector_relational_simd.inl \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/_vectorize.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/func_exponential_simd.inl \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/../simd/exponential.h \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/func_common.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/func_common.inl \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/func_common_simd.inl \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/func_geometric_simd.inl \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/../simd/geometric.h \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/../simd/common.h \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/func_matrix_simd.inl \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/mat2x3.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/mat2x4.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/mat3x2.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/mat3x3.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/mat3x4.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/mat4x2.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/mat4x3.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/mat4x4.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/trigonometric.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/func_trigonometric.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/func_trigonometric.inl \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/func_trigonometric_simd.inl \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/exponential.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/common.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/packing.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/func_packing.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/func_packing.inl \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/type_half.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/type_half.inl \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/func_packing_simd.inl \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/geometric.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/matrix.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/vector_relational.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/integer.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/func_integer.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/func_integer.inl \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/func_integer_simd.inl \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/detail/../simd/integer.h \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/gtc/matrix_transform.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/gtc/../mat4x4.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/gtc/../vec2.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/gtc/../vec3.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/gtc/../vec4.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/gtc/../gtc/constants.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/gtc/../detail/setup.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/gtc/constants.inl \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/gtc/matrix_transform.inl \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/gtc/../geometric.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/gtc/../trigonometric.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/gtc/../matrix.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/gtc/type_ptr.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/gtc/../gtc/quaternion.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/gtc/../mat3x3.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/gtc/quaternion.inl \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/gtc/../exponential.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/gtc/quaternion_simd.inl \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/gtc/../mat2x2.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/gtc/../mat2x3.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/gtc/../mat2x4.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/gtc/../mat3x2.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/gtc/../mat3x4.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/gtc/../mat4x2.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/gtc/../mat4x3.hpp \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/glm/glm/gtc/type_ptr.inl \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/Shader.h \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/ffImage.h \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/Camera.h \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/ffModel.h \
   /opt/homebrew/Cellar/assimp/5.2.5/include/assimp/Importer.hpp \
   /opt/homebrew/Cellar/assimp/5.2.5/include/assimp/scene.h \
   /opt/homebrew/Cellar/assimp/5.2.5/include/assimp/postprocess.h \
   /opt/homebrew/Cellar/assimp/5.2.5/include/assimp/types.h \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/include/ffAssimpHelper.h \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/include/ffMesh.h \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/include/ffBone.h \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/include/ffAnimation.h \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/include/ffAnimator.h
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/ffAssimpHelper.h \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/ffMesh.h \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/ffBone.h \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/ffAnimation.h \
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/include/ffAnimator.h

@@ -1,4 +1,4 @@
-# Install script for directory: /Users/handabao/MyFile/SkeletonAnimation - for user
+# Install script for directory: /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -37,7 +37,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/objdump")
 endif()
 
-set(CMAKE_BINARY_DIR "/Users/handabao/MyFile/SkeletonAnimation - for user/build")
+set(CMAKE_BINARY_DIR "/Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build")
 
 if(CMAKE_INSTALL_COMPONENT)
   set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
@@ -47,5 +47,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/handabao/MyFile/SkeletonAnimation - for user/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

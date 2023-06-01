@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/handabao/MyFile/SkeletonAnimation\ -\ for\ user/src/ffAssimpHelper.cpp
+  /Users/handabao/MyFile/code/opengl/43_02_BoneAnimation/src/ffAssimpHelper.cpp
