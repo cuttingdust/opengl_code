@@ -8,7 +8,7 @@ void Animation::readAnimationData(
         , unsigned int _boneCounter) {
     for (unsigned int i = 0; i < _aiAnim->mNumChannels; ++i) {
         std::string _boneName = _aiAnim->mChannels[i]->mNodeName.C_Str();
-        if (_boneInfoMap.find(_boneName) != _boneInfoMap.end())
+        if (_boneInfoMap.find(_boneName) == _boneInfoMap.end())
         {
             BoneInfo _boneInfo;
             _boneInfo.id_ = _boneCounter;
@@ -29,7 +29,7 @@ void Animation::readHeirachyData(AssimpNodeData &_dst, const aiNode *_src) {
     _dst.name_ = _src->mName.C_Str();
     _dst.transform_ = AssimpHelper::getGLMMat4(_src->mTransformation);
 
-    for (unsigned int i = 0; i < _src->mNumChildren; ++i) {
+    for (unsigned int i = 0; i < _src->mNumChildren; i++) {
         AssimpNodeData _newNode;
         this->readHeirachyData(_newNode, _src->mChildren[i]);
         _dst.children_.push_back(_newNode);
@@ -38,7 +38,7 @@ void Animation::readHeirachyData(AssimpNodeData &_dst, const aiNode *_src) {
 }
 
 Bone *Animation::findBone(std::string _name) {
-    for (unsigned int i = 0; i < boneVec_.size(); ++i) {
+    for (unsigned int i = 0; i < boneVec_.size(); i++) {
         if (boneVec_[i].getName() == _name)
         {
             return &boneVec_[i];

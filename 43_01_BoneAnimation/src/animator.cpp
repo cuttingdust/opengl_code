@@ -3,14 +3,14 @@
 
 void Animator::playAnimation(Animation *_pAnimation) {
     currentAnimation_ = _pAnimation;
-    currentTime_ = 0;
+    currentTime_ = 0.0;
 }
 
 void Animator::updateAnimation(float _dt, std::map<std::string, BoneInfo> &_boneInfoMap) {
     deltaTime_  = _dt;
     if (currentAnimation_)
     {
-        currentTime_ = currentAnimation_->getTickPerSecond() * _dt;
+        currentTime_ += currentAnimation_->getTickPerSecond() * _dt;
         currentTime_ = fmod(currentTime_, currentAnimation_->getDuration());
         this->calcuateBoneTransform(&currentAnimation_->getRootNode(), glm::mat4(1.0), _boneInfoMap);
     }
@@ -21,11 +21,11 @@ std::vector<glm::mat4> Animator::getFinalBoneMatrice() {
 }
 
 Animator::Animator(Animation *_animation) {
-    currentTime_ = 0;
+    currentTime_ = 0.0f;
     currentAnimation_ = _animation;
 
     finalBoneMatrices_.reserve(150);
-    for (unsigned  int i = 0; i < 150; ++i) {
+    for (unsigned  int i = 0; i < 150; i++) {
         finalBoneMatrices_.push_back(glm::mat4(1.0f));
     }
 }
