@@ -33,23 +33,23 @@ set(SOURCES
  src/main.cpp
  src/Shader.cpp
  src/Camera.cpp
- src/ffMesh.cpp
+ src/mesh.cpp
  src/ffModel.cpp
- src/ffAssimpHelper.cpp
- src/ffBone.cpp
+ src/assimpHelper.cpp
+ src/bone.cpp
  src/ffImage.cpp
- src/ffAnimation.cpp
- src/ffAnimator.cpp
+ src/animation.cpp
+ src/animator.cpp
  
  include/Shader.h
  include/Camera.h
- include/ffMesh.h
+ include/mesh.h
  include/ffModel.h
- include/ffAssimpHelper.h
- include/ffBone.h
+ include/assimpHelper.h
+ include/bone.h
  include/ffImage.h
- include/ffAnimation.h
- include/ffAnimator.h
+ include/animation.h
+ include/animator.h
  include/Base.h
  include/stb_image.h
 )

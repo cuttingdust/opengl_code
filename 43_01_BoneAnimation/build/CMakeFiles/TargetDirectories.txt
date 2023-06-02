@@ -1,9 +1,0 @@
-/Users/handabao/MyFile/code/opengl/43_01_BoneAnimation/build/CMakeFiles/HelloGL.dir
-/Users/handabao/MyFile/code/opengl/43_01_BoneAnimation/build/CMakeFiles/Experimental.dir
-/Users/handabao/MyFile/code/opengl/43_01_BoneAnimation/build/CMakeFiles/Nightly.dir
-/Users/handabao/MyFile/code/opengl/43_01_BoneAnimation/build/CMakeFiles/Continuous.dir
-/Users/handabao/MyFile/code/opengl/43_01_BoneAnimation/build/CMakeFiles/NightlyMemoryCheck.dir
-/Users/handabao/MyFile/code/opengl/43_01_BoneAnimation/build/CMakeFiles/package.dir
-/Users/handabao/MyFile/code/opengl/43_01_BoneAnimation/build/CMakeFiles/RUN_TESTS.dir
-/Users/handabao/MyFile/code/opengl/43_01_BoneAnimation/build/CMakeFiles/ALL_BUILD.dir
-/Users/handabao/MyFile/code/opengl/43_01_BoneAnimation/build/CMakeFiles/ZERO_CHECK.dir

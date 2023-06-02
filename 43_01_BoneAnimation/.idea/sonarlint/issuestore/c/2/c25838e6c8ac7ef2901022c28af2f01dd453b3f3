@@ -1,7 +1,0 @@
-
-t	cpp:S35391"SRemove this redundant access specifier; it does not change the accessibility level.(ÐòÚÚüÿÿÿÿ8ÏŸøë†1
-J	cpp:S5817'")This function should be declared "const".(š”©ëýÿÿÿÿ8ÏŸøë†1
-E	cpp:S5817(")This function should be declared "const".(©â±á8ÏŸøë†1
-E	cpp:S5817)")This function should be declared "const".(©³šÁ8ÐŸøë†1
-‹	cpp:S3230"qDo not use the constructor's initializer list for data member "transform_". Use the in-class initializer instead.(ö»¼Œúÿÿÿÿ
-†	cpp:S3230"lDo not use the constructor's initializer list for data member "name_". Use the in-class initializer instead.(ö»¼Œúÿÿÿÿ

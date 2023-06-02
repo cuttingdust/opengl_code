@@ -1,52 +1,0 @@
-
-b	cpp:S5276Ç"Gimplicit conversion loses floating-point precision: 'double' to 'float'(èË‹”úÿÿÿÿ
-J	cpp:S1659d"0Define each identifier in a dedicated statement.(ó¶ÓÒÿÿÿÿÿ
-6	cpp:S5421!"!Global variables should be const.(ÿ‡ß·
-6	cpp:S5421""!Global variables should be const.(°ß­ñ
-6	cpp:S5421#"!Global variables should be const.(¦½Ä²
-6	cpp:S5421$"!Global variables should be const.(Õ³æ™
-;	cpp:S5421'"!Global variables should be const.(‘ÊÖıÿÿÿÿ
-;	cpp:S5421("!Global variables should be const.(‰Âï‰úÿÿÿÿ
-R	cpp:S5945,"=Use "std::array" or "std::vector" instead of a C-style array.(¨Ôèğ
-6	cpp:S5421,"!Global variables should be const.(¨Ôèğ
-P	cpp:S5945X"=Use "std::array" or "std::vector" instead of a C-style array.(•Š5
-4	cpp:S5421X"!Global variables should be const.(•Š5
-;	cpp:S5421d"!Global variables should be const.(ó¶ÓÒÿÿÿÿÿ
-;	cpp:S5421d"!Global variables should be const.(ó¶ÓÒÿÿÿÿÿ
-;	cpp:S5421e"!Global variables should be const.(‚Úİ’ùÿÿÿÿ
-;	cpp:S5421f"!Global variables should be const.(é±½Ìúÿÿÿÿ
-5	cpp:S5421i"!Global variables should be const.(â¿ÔD
-6	cpp:S5421j"!Global variables should be const.(ê¨‹š
-6	cpp:S5421u"!Global variables should be const.(Í²µ¯
-F	cpp:S1659¸"0Define each identifier in a dedicated statement.(İÑÒ§
-D	cpp:S5827Ğ"'Replace the redundant type with "auto".(®Õ‰ı8ÒËĞ‡1
-0	cpp:S4962‡"Use the "nullptr" literal.(ŸÂ¦¼
-0	cpp:S4962‡"Use the "nullptr" literal.(ŸÂ¦¼
-0	cpp:S4962ˆ"Use the "nullptr" literal.(ŞˆÊÇ
-5	cpp:S4962¿"Use the "nullptr" literal.(Åï¦îúÿÿÿÿ
-=	cpp:S5827Ş"'Replace the redundant type with "auto".(‚ŸÎñ
-B	cpp:S5827ì"'Replace the redundant type with "auto".(Óä÷ÿşÿÿÿÿ
-Y	cpp:S5566"CChange this raw for-loop to a range for-loop or an "std::for_each".(±¦¢
-=	cpp:S6234"'Replace the redundant type with "auto".(±¦¢
-S	cpp:S1172Ò"8Remove the unused parameter "window" or make it unnamed.(´óÔøúÿÿÿÿ
-„cpp:S995Ò"jMake the type of this parameter a pointer-to-const. The current type of "window" is "struct GLFWwindow *".(´óÔøúÿÿÿÿ
-S	cpp:S1172Û"8Remove the unused parameter "window" or make it unnamed.(éçÓÉşÿÿÿÿ
-„cpp:S995Û"jMake the type of this parameter a pointer-to-const. The current type of "window" is "struct GLFWwindow *".(éçÓÉşÿÿÿÿ
-B	cpp:S5827İ"'Replace the redundant type with "auto".(Ğ®õ¼úÿÿÿÿ
-=	cpp:S5827Ş"'Replace the redundant type with "auto".(¡™ªĞ
-Y	cpp:S5566ê"CChange this raw for-loop to a range for-loop or an "std::for_each".(±¦¢
-=	cpp:S6234ê"'Replace the redundant type with "auto".(±¦¢
-K	cpp:S1172õ"6Remove the unused parameter "mods" or make it unnamed.(ï½Î
-E	cpp:S1659ö"0Define each identifier in a dedicated statement.(¤Ì
-`	cpp:S5566ˆ"CChange this raw for-loop to a range for-loop or an "std::for_each".(±¦¢8†É“î†1
-=	cpp:S6234ˆ"'Replace the redundant type with "auto".(±¦¢
-S	cpp:S1172œ"8Remove the unused parameter "window" or make it unnamed.(öå­ûúÿÿÿÿ
-T	cpp:S1172œ"9Remove the unused parameter "xoffset" or make it unnamed.(öå­ûúÿÿÿÿ
-„cpp:S995œ"jMake the type of this parameter a pointer-to-const. The current type of "window" is "struct GLFWwindow *".(öå­ûúÿÿÿÿ
-K	cpp:S1659¨"0Define each identifier in a dedicated statement.(äû¥Œÿÿÿÿÿ
-Icpp:S836µ"43rd function call argument is an uninitialized value(Õå«¸
-8cpp:S125©"Remove the commented out code.(ë¶ÁÁûÿÿÿÿ
-8cpp:S125Ó"Remove the commented out code.(¸æôıûÿÿÿÿ
-3cpp:S125ó"Remove the commented out code.(ú«‰Á
-8cpp:S125¢"Remove the commented out code.(¾Ş—°ıÿÿÿÿ
-3cpp:S125È"Remove the commented out code.(®ÛÎ
