@@ -1,0 +1,4 @@
+# ninja log v5
+0	41	1689786036422574389	CMakeFiles/HelloGL.dir/glad/src/glad.c.o	1b3edcfbb3b16ae2
+0	225	1689786036605060368	CMakeFiles/HelloGL.dir/src/main.cpp.o	8dbf281f9a1b3786
+226	260	1689786036642035263	/Users/handabao/MyFile/code/opengl/01_HelloGL/bin/HelloGL	49b3344b01b92021

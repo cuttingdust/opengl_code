@@ -1,0 +1,1777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		22C7CEB990454BB3B9CE205B /* Nightly */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 07A790ECDD084BADB2720586 /* Build configuration list for PBXAggregateTarget "Nightly" */;
+			buildPhases = (
+				81AE9C404720AD270D30763B /* Generate CMakeFiles/Nightly */,
+			);
+			dependencies = (
+				72D29CB018DA46C4B7A73E26 /* PBXTargetDependency */,
+			);
+			name = Nightly;
+			productName = Nightly;
+		};
+		7BE678517F724FB497E8B92D /* Continuous */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 434D63D4EFD74C24AB115F43 /* Build configuration list for PBXAggregateTarget "Continuous" */;
+			buildPhases = (
+				C92A39568346AD44651E523E /* Generate CMakeFiles/Continuous */,
+			);
+			dependencies = (
+				D01000C6DC86466380D36D13 /* PBXTargetDependency */,
+			);
+			name = Continuous;
+			productName = Continuous;
+		};
+		969C59F35CE54582955FF88D /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C6A75B0A38A94E8194887B99 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				003C8D08B0008F35F218E126 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+		9B792C1F3C914043B45826B0 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 77B8E30D9D2B42CBA12012E8 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				CB767456737F0F43165DEDE0 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		D4073919C507477AAA2B265A /* Experimental */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2773FCC1A9DA4D5684FF77FC /* Build configuration list for PBXAggregateTarget "Experimental" */;
+			buildPhases = (
+				4C648A6A7E1E517E9D6201A4 /* Generate CMakeFiles/Experimental */,
+			);
+			dependencies = (
+				23768A8685D2455396490819 /* PBXTargetDependency */,
+			);
+			name = Experimental;
+			productName = Experimental;
+		};
+		E40984522B2A40EE9A5ECFA0 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = CD6638F3A38F4FE5B93D3FC8 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				7FB4DC6C02F6D990653DE487 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				DF0CE871B9AB456EB9D5EC78 /* PBXTargetDependency */,
+				E23F3ABB0DD2481F885E192B /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		F060514342AC4A9A83A45B0E /* NightlyMemoryCheck */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C26A9FB510D6429BB6AE4F9B /* Build configuration list for PBXAggregateTarget "NightlyMemoryCheck" */;
+			buildPhases = (
+				7BFFED07274630FF5F90B68A /* Generate CMakeFiles/NightlyMemoryCheck */,
+			);
+			dependencies = (
+				E5EEEC1495BD411ABC3E3439 /* PBXTargetDependency */,
+			);
+			name = NightlyMemoryCheck;
+			productName = NightlyMemoryCheck;
+		};
+		FBC4D2B9238B4436B705EFBA /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F3FF3A8A65EE44DAB12ADFCA /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				571234464C2A5D0D43F1AB42 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				CA2F6E8E7CD943DCA1EFC644 /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		3AFD021AB56C40E2B3C35CD4 /* /Users/handabao/MyFile/code/opengl/01_HelloGL/glad/src/glad.c */ = {isa = PBXBuildFile; fileRef = 300174B081954FC8A4ACDA16 /* /Users/handabao/MyFile/code/opengl/01_HelloGL/glad/src/glad.c */; };
+		5C55889BF308424B890122BE /* /Users/handabao/MyFile/code/opengl/01_HelloGL/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = BD6F54B08F6E4DCB95965134 /* /Users/handabao/MyFile/code/opengl/01_HelloGL/CMakeLists.txt */; };
+		C420AA4B143949209F207AA7 /* /Users/handabao/MyFile/code/opengl/01_HelloGL/src/main.cpp */ = {isa = PBXBuildFile; fileRef = B5CDEE9809B54C3EADBE8512 /* /Users/handabao/MyFile/code/opengl/01_HelloGL/src/main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		0B1BD228B809426F8311249F /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		4E2F99C22022469CBC385CDC /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		58AC6ACCECEF4556AAD1483C /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		EF92D9AFDAA8468E99670EDE /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		13A6D7C87D4843828B3D20CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 681EE3F3655A409AA68665A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B792C1F3C914043B45826B0;
+			remoteInfo = ZERO_CHECK;
+		};
+		323604E40F1C4896B4D86A9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 681EE3F3655A409AA68665A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B792C1F3C914043B45826B0;
+			remoteInfo = ZERO_CHECK;
+		};
+		50981287377A4538B56D6BD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 681EE3F3655A409AA68665A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B792C1F3C914043B45826B0;
+			remoteInfo = ZERO_CHECK;
+		};
+		5AE753900B2F4351B8FEA326 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 681EE3F3655A409AA68665A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B792C1F3C914043B45826B0;
+			remoteInfo = ZERO_CHECK;
+		};
+		7B4738904E3C4D9EB4FC4494 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 681EE3F3655A409AA68665A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E40984522B2A40EE9A5ECFA0;
+			remoteInfo = ALL_BUILD;
+		};
+		C37777A564904AACA5DB02EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 681EE3F3655A409AA68665A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 654DAF9AC6F846C0AFE24929;
+			remoteInfo = HelloGL;
+		};
+		D9BD454ABAE8491F91DB1E4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 681EE3F3655A409AA68665A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B792C1F3C914043B45826B0;
+			remoteInfo = ZERO_CHECK;
+		};
+		E7363F333A6044D19B394B42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 681EE3F3655A409AA68665A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B792C1F3C914043B45826B0;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		27C57FAACA48423CBD075321 /* /Users/handabao/MyFile/code/opengl/01_HelloGL/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		300174B081954FC8A4ACDA16 /* /Users/handabao/MyFile/code/opengl/01_HelloGL/glad/src/glad.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glad.c; path = glad/src/glad.c; sourceTree = SOURCE_ROOT; };
+		47E1304FB7274248A0083818 /* /Users/handabao/MyFile/code/opengl/01_HelloGL/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		67B4610E02DB4BC293A559D9 /* /Users/handabao/MyFile/code/opengl/01_HelloGL/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		70ECFB46638B45138B8682C4 /* HelloGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = HelloGL; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B3EF45FD1554F73B89E5FA6 /* /Users/handabao/MyFile/code/opengl/01_HelloGL/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B5CDEE9809B54C3EADBE8512 /* /Users/handabao/MyFile/code/opengl/01_HelloGL/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		BD6F54B08F6E4DCB95965134 /* /Users/handabao/MyFile/code/opengl/01_HelloGL/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		F5E3B8601068403DBF9FB1A0 /* /Users/handabao/MyFile/code/opengl/01_HelloGL/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A51618110594A85A1A6B43A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20CC5CC5374E472E881281F3 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		2491ED5D9E2A4B1DB5B08D41 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		24FD2A2A2C52459A8B31DB72 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		299AD014A815436FBFE3CA9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		428C42AFFCFB44119555E794 /* Nightly */ = {
+			isa = PBXGroup;
+			children = (
+				24FD2A2A2C52459A8B31DB72 /* CMake Rules */,
+				47E1304FB7274248A0083818 /* /Users/handabao/MyFile/code/opengl/01_HelloGL/CMakeLists.txt */,
+			);
+			name = Nightly;
+			sourceTree = "<group>";
+		};
+		4D1605C1573942578FB32831 /* NightlyMemoryCheck */ = {
+			isa = PBXGroup;
+			children = (
+				2491ED5D9E2A4B1DB5B08D41 /* CMake Rules */,
+				7B3EF45FD1554F73B89E5FA6 /* /Users/handabao/MyFile/code/opengl/01_HelloGL/CMakeLists.txt */,
+			);
+			name = NightlyMemoryCheck;
+			sourceTree = "<group>";
+		};
+		53A1004B51C7468DA4EE7FDB /* HelloGL */ = {
+			isa = PBXGroup;
+			children = (
+				EDD4F2161DCF46CCACC98C16 /* Source Files */,
+				BD6F54B08F6E4DCB95965134 /* /Users/handabao/MyFile/code/opengl/01_HelloGL/CMakeLists.txt */,
+			);
+			name = HelloGL;
+			sourceTree = "<group>";
+		};
+		72EC58F2B797486EA7F31EF8 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		9590598F1ED441559985C197 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				72EC58F2B797486EA7F31EF8 /* CMake Rules */,
+				27C57FAACA48423CBD075321 /* /Users/handabao/MyFile/code/opengl/01_HelloGL/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		A38E969C5FAD4270B071D01F /* Experimental */ = {
+			isa = PBXGroup;
+			children = (
+				20CC5CC5374E472E881281F3 /* CMake Rules */,
+				F5E3B8601068403DBF9FB1A0 /* /Users/handabao/MyFile/code/opengl/01_HelloGL/CMakeLists.txt */,
+			);
+			name = Experimental;
+			sourceTree = "<group>";
+		};
+		AEE4BC561B644A1FA747A29E /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		BAAA503A84FD4FD3A295BE47 /* Continuous */ = {
+			isa = PBXGroup;
+			children = (
+				AEE4BC561B644A1FA747A29E /* CMake Rules */,
+				67B4610E02DB4BC293A559D9 /* /Users/handabao/MyFile/code/opengl/01_HelloGL/CMakeLists.txt */,
+			);
+			name = Continuous;
+			sourceTree = "<group>";
+		};
+		DE1AC1C443EC438EBD775799 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70ECFB46638B45138B8682C4 /* HelloGL */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDD4F2161DCF46CCACC98C16 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				300174B081954FC8A4ACDA16 /* /Users/handabao/MyFile/code/opengl/01_HelloGL/glad/src/glad.c */,
+				B5CDEE9809B54C3EADBE8512 /* /Users/handabao/MyFile/code/opengl/01_HelloGL/src/main.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		FBCF7A764FF94297A6CAFAFE = {
+			isa = PBXGroup;
+			children = (
+				53A1004B51C7468DA4EE7FDB /* HelloGL */,
+				A38E969C5FAD4270B071D01F /* Experimental */,
+				428C42AFFCFB44119555E794 /* Nightly */,
+				BAAA503A84FD4FD3A295BE47 /* Continuous */,
+				4D1605C1573942578FB32831 /* NightlyMemoryCheck */,
+				9590598F1ED441559985C197 /* ALL_BUILD */,
+				DE1AC1C443EC438EBD775799 /* Products */,
+				299AD014A815436FBFE3CA9B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		654DAF9AC6F846C0AFE24929 /* HelloGL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1802ED1A7F741959FF131FC /* Build configuration list for PBXNativeTarget "HelloGL" */;
+			buildPhases = (
+				74162A54055C4312B6AD1E60 /* Sources */,
+				2A51618110594A85A1A6B43A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7568035CC8814BC6BEFC901B /* PBXTargetDependency */,
+			);
+			name = HelloGL;
+			productName = HelloGL;
+			productReference = 70ECFB46638B45138B8682C4 /* HelloGL */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		681EE3F3655A409AA68665A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = 759DEE36F9694771B0B4049A /* Build configuration list for PBXProject "HelloGL" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				0B1BD228B809426F8311249F /* Debug */,
+				58AC6ACCECEF4556AAD1483C /* Release */,
+				4E2F99C22022469CBC385CDC /* MinSizeRel */,
+				EF92D9AFDAA8468E99670EDE /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = FBCF7A764FF94297A6CAFAFE;
+			projectDirPath = /Users/handabao/MyFile/code/opengl/01_HelloGL;
+			projectRoot = "";
+			targets = (
+				E40984522B2A40EE9A5ECFA0 /* ALL_BUILD */,
+				7BE678517F724FB497E8B92D /* Continuous */,
+				D4073919C507477AAA2B265A /* Experimental */,
+				654DAF9AC6F846C0AFE24929 /* HelloGL */,
+				22C7CEB990454BB3B9CE205B /* Nightly */,
+				F060514342AC4A9A83A45B0E /* NightlyMemoryCheck */,
+				969C59F35CE54582955FF88D /* RUN_TESTS */,
+				9B792C1F3C914043B45826B0 /* ZERO_CHECK */,
+				FBC4D2B9238B4436B705EFBA /* package */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		003C8D08B0008F35F218E126 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug
+  /usr/local/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug
+  /usr/local/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug
+  /usr/local/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug
+  /usr/local/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		09FB783FD30DC6E66DF354AF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		23E0E19C1FE635DB84934AD9 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		323E6CE94951678BF055CC89 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		4C648A6A7E1E517E9D6201A4 /* Generate CMakeFiles/Experimental */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/Experimental";
+			outputPaths = (
+/Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug/CMakeFiles/Experimental			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Experimental
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Experimental
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Experimental
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Experimental
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		571234464C2A5D0D43F1AB42 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug
+  /usr/local/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug
+  /usr/local/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug
+  /usr/local/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug
+  /usr/local/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		661D9C604B3B91332E7543CC = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		7BFFED07274630FF5F90B68A /* Generate CMakeFiles/NightlyMemoryCheck */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/NightlyMemoryCheck";
+			outputPaths = (
+/Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug/CMakeFiles/NightlyMemoryCheck			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D NightlyMemoryCheck
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D NightlyMemoryCheck
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D NightlyMemoryCheck
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D NightlyMemoryCheck
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		7FB4DC6C02F6D990653DE487 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+/Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug/CMakeFiles/ALL_BUILD			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		81AE9C404720AD270D30763B /* Generate CMakeFiles/Nightly */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/Nightly";
+			outputPaths = (
+/Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug/CMakeFiles/Nightly			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Nightly
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Nightly
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Nightly
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Nightly
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		910A41151295C5F9742C25BD = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		A68D7F74133ED74D8658B427 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		C92A39568346AD44651E523E /* Generate CMakeFiles/Continuous */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/Continuous";
+			outputPaths = (
+/Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug/CMakeFiles/Continuous			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Continuous
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Continuous
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Continuous
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug
+  /usr/local/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME -D Continuous
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		CB767456737F0F43165DEDE0 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+/Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug/CMakeFiles/ZERO_CHECK			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug
+  make -f /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug
+  make -f /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug
+  make -f /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug
+  make -f /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		74162A54055C4312B6AD1E60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AFD021AB56C40E2B3C35CD4 /* /Users/handabao/MyFile/code/opengl/01_HelloGL/glad/src/glad.c */,
+				C420AA4B143949209F207AA7 /* /Users/handabao/MyFile/code/opengl/01_HelloGL/src/main.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		23768A8685D2455396490819 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B792C1F3C914043B45826B0 /* ZERO_CHECK */;
+			targetProxy = D9BD454ABAE8491F91DB1E4C /* PBXContainerItemProxy */;
+		};
+		72D29CB018DA46C4B7A73E26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B792C1F3C914043B45826B0 /* ZERO_CHECK */;
+			targetProxy = 5AE753900B2F4351B8FEA326 /* PBXContainerItemProxy */;
+		};
+		7568035CC8814BC6BEFC901B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B792C1F3C914043B45826B0 /* ZERO_CHECK */;
+			targetProxy = 323604E40F1C4896B4D86A9F /* PBXContainerItemProxy */;
+		};
+		CA2F6E8E7CD943DCA1EFC644 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E40984522B2A40EE9A5ECFA0 /* ALL_BUILD */;
+			targetProxy = 7B4738904E3C4D9EB4FC4494 /* PBXContainerItemProxy */;
+		};
+		D01000C6DC86466380D36D13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B792C1F3C914043B45826B0 /* ZERO_CHECK */;
+			targetProxy = 13A6D7C87D4843828B3D20CD /* PBXContainerItemProxy */;
+		};
+		DF0CE871B9AB456EB9D5EC78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B792C1F3C914043B45826B0 /* ZERO_CHECK */;
+			targetProxy = E7363F333A6044D19B394B42 /* PBXContainerItemProxy */;
+		};
+		E23F3ABB0DD2481F885E192B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 654DAF9AC6F846C0AFE24929 /* HelloGL */;
+			targetProxy = C37777A564904AACA5DB02EC /* PBXContainerItemProxy */;
+		};
+		E5EEEC1495BD411ABC3E3439 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B792C1F3C914043B45826B0 /* ZERO_CHECK */;
+			targetProxy = 50981287377A4538B56D6BD9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		048D3F8A070541E6B106A48A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Continuous;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		13B6DBF461CA4949BCB34F70 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		19D69567BFD44B80A9616B91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		1A4FA22B1F204D7DBF7FA47B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NightlyMemoryCheck;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		1B0BFA70110B4E4D91FA5000 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		2762DE5149884AA6A437B682 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/handabao/MyFile/code/opengl/01_HelloGL/glad/include,/opt/homebrew/Cellar/glfw/3.3.8/include,"$(inherited)");
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("   ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++11' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/opt/homebrew/Cellar/glfw/3.3.8/lib/libglfw.3.dylib,"-framework OpenGL","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = HelloGL;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		33A0BEE0803A415D814575FF /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nightly;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		3F76EAB1085D4CAA8EA9BC13 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		3FF763ACADBB4406B8B4E911 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		3FFF73C32DF6496296F23396 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Experimental;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		43E44D5307D64592A36DA6A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		50631D020E6F4AAB825EAA9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nightly;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		623E39B30974435889DF45B2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Continuous;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		6C65E946C5764C02822F4739 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		6E49375CB73E4EF5A70A4375 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug/build;
+			};
+			name = RelWithDebInfo;
+		};
+		71A8EF1A35904F35976AC7EB /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NightlyMemoryCheck;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		73CCF3F17C0547F3B59DA89A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug/build;
+			};
+			name = Release;
+		};
+		7D958F8B3B1D4F0EB1990F5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		88457B4203864FAA86CA1559 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		8FCA0A7F5A1149BDAC98F627 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/handabao/MyFile/code/opengl/01_HelloGL/glad/include,/opt/homebrew/Cellar/glfw/3.3.8/include,"$(inherited)");
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("    -DNDEBUG ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++11' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/opt/homebrew/Cellar/glfw/3.3.8/lib/libglfw.3.dylib,"-framework OpenGL","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = HelloGL;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		98BB087F2B0C45F0B54F39E0 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		A11DB19A223346F6ACDAB19E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		A58BEC616A9C492491F1CD67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		AFD0CBD6DF7145EE96BA56EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug/build;
+			};
+			name = Debug;
+		};
+		B48B3F14A4414E6BBACEEEC0 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		B8B4A073A8CA4E43B2FB752B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		BB5A3A1CC9B549EA9186F50F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nightly;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		BB97E2322DC94890AAA5CB8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/handabao/MyFile/code/opengl/01_HelloGL/glad/include,/opt/homebrew/Cellar/glfw/3.3.8/include,"$(inherited)");
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("    -DNDEBUG ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++11' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/opt/homebrew/Cellar/glfw/3.3.8/lib/libglfw.3.dylib,"-framework OpenGL","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = HelloGL;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		C42E6BB4E897441CA83BEF0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Continuous;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		C4A879D3A6AB426E807C0E2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Experimental;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		C520ADE0E41B432290CF1B63 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nightly;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C8AAC6FF19C3422D91E4C2B7 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Continuous;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		CEE1E970F6C14934BEA63E20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		DF0729DB49F342DFA8CE2BA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		E03CC98DCFF4429680462F08 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug/build;
+			};
+			name = MinSizeRel;
+		};
+		E333F0CF26C144B39B26F8F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NightlyMemoryCheck;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		E41A4E94A57946318356E6A3 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/handabao/MyFile/code/opengl/01_HelloGL/glad/include,/opt/homebrew/Cellar/glfw/3.3.8/include,"$(inherited)");
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("       -DNDEBUG ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++11' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/opt/homebrew/Cellar/glfw/3.3.8/lib/libglfw.3.dylib,"-framework OpenGL","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = HelloGL;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		E6F2377A11D44FCFB8CE8E47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Experimental;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		E9024D1C37B749D3A7BB5467 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NightlyMemoryCheck;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		EDD9C60FDBBA4E9DB0219599 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Experimental;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/handabao/MyFile/code/opengl/01_HelloGL/build_Debug;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07A790ECDD084BADB2720586 /* Build configuration list for PBXAggregateTarget "Nightly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50631D020E6F4AAB825EAA9D /* Debug */,
+				BB5A3A1CC9B549EA9186F50F /* Release */,
+				33A0BEE0803A415D814575FF /* MinSizeRel */,
+				C520ADE0E41B432290CF1B63 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2773FCC1A9DA4D5684FF77FC /* Build configuration list for PBXAggregateTarget "Experimental" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4A879D3A6AB426E807C0E2E /* Debug */,
+				E6F2377A11D44FCFB8CE8E47 /* Release */,
+				3FFF73C32DF6496296F23396 /* MinSizeRel */,
+				EDD9C60FDBBA4E9DB0219599 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		434D63D4EFD74C24AB115F43 /* Build configuration list for PBXAggregateTarget "Continuous" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				048D3F8A070541E6B106A48A /* Debug */,
+				C42E6BB4E897441CA83BEF0F /* Release */,
+				623E39B30974435889DF45B2 /* MinSizeRel */,
+				C8AAC6FF19C3422D91E4C2B7 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		759DEE36F9694771B0B4049A /* Build configuration list for PBXProject "HelloGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFD0CBD6DF7145EE96BA56EE /* Debug */,
+				73CCF3F17C0547F3B59DA89A /* Release */,
+				E03CC98DCFF4429680462F08 /* MinSizeRel */,
+				6E49375CB73E4EF5A70A4375 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		77B8E30D9D2B42CBA12012E8 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A11DB19A223346F6ACDAB19E /* Debug */,
+				7D958F8B3B1D4F0EB1990F5E /* Release */,
+				B48B3F14A4414E6BBACEEEC0 /* MinSizeRel */,
+				98BB087F2B0C45F0B54F39E0 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A1802ED1A7F741959FF131FC /* Build configuration list for PBXNativeTarget "HelloGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2762DE5149884AA6A437B682 /* Debug */,
+				BB97E2322DC94890AAA5CB8C /* Release */,
+				8FCA0A7F5A1149BDAC98F627 /* MinSizeRel */,
+				E41A4E94A57946318356E6A3 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C26A9FB510D6429BB6AE4F9B /* Build configuration list for PBXAggregateTarget "NightlyMemoryCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E333F0CF26C144B39B26F8F9 /* Debug */,
+				E9024D1C37B749D3A7BB5467 /* Release */,
+				1A4FA22B1F204D7DBF7FA47B /* MinSizeRel */,
+				71A8EF1A35904F35976AC7EB /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C6A75B0A38A94E8194887B99 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43E44D5307D64592A36DA6A6 /* Debug */,
+				A58BEC616A9C492491F1CD67 /* Release */,
+				6C65E946C5764C02822F4739 /* MinSizeRel */,
+				3FF763ACADBB4406B8B4E911 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CD6638F3A38F4FE5B93D3FC8 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88457B4203864FAA86CA1559 /* Debug */,
+				CEE1E970F6C14934BEA63E20 /* Release */,
+				1B0BFA70110B4E4D91FA5000 /* MinSizeRel */,
+				3F76EAB1085D4CAA8EA9BC13 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F3FF3A8A65EE44DAB12ADFCA /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19D69567BFD44B80A9616B91 /* Debug */,
+				DF0729DB49F342DFA8CE2BA1 /* Release */,
+				13B6DBF461CA4949BCB34F70 /* MinSizeRel */,
+				B8B4A073A8CA4E43B2FB752B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 681EE3F3655A409AA68665A4 /* Project object */;
+}
